@@ -17,13 +17,13 @@ const navLinks = [
     ]
   },
   { href: "/technology", label: "TECHNOLOGY", dropdown: false },
+  { href: "/careers", label: "CAREERS", dropdown: false },
   { 
     href: "/about", 
     label: "ABOUT US", 
     dropdown: true,
     dropdownItems: [
       { href: "/about", label: "About Us" },
-      { href: "/careers", label: "Careers" },
       { href: "/contact", label: "Contact Us" }
     ]
   },
@@ -66,11 +66,11 @@ export default function Navbar() {
       }`}
     >
       <div className="mx-auto flex h-[60px] sm:h-[80px] max-w-[1400px] items-center justify-between pl-0 pr-4 transition-all duration-300 ">
-        <Link href="/" className="mt-2 sm:mt-4 flex items-center">
+        <Link href="/" className="mt-2 sm:mt-4 sm:ml-4 flex items-center">
           <img
-            src="/ZzwDMj5V1QS86dQ9EZDrsExemkY.png"
+            src="/images/LogoNew.png"
             alt="QuBeats logo"
-            className="h-[60px] w-auto sm:h-[80px] md:h-[100px] object-contain scale-[0.6]"
+            className="h-[60px] w-auto sm:h-[80px] object-contain"
           />
         </Link>
         <nav className="hidden items-center gap-6 lg:gap-10 md:flex">

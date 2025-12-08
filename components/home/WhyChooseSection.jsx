@@ -28,7 +28,7 @@ export default function WhyChooseSection() {
           {/* Black rectangle in top-right corner of the box */}
           <div className="pointer-events-none absolute right-0 top-0 h-20 w-40 bg-[rgba(18,18,18,1)] max-md:hidden" />
           {/* Airplane images (placeholders) */}
-          <div className="pointer-events-none absolute right-80 -top-20 hidden lg:block">
+          <div className="pointer-events-none absolute right-30 -top-20 hidden lg:block">
             <Image
               src="/images/home/icons/airplane-2.png"
               alt=""
@@ -49,7 +49,7 @@ export default function WhyChooseSection() {
 
           {/* Heading */}
           <h2 className="ml-2 sm:ml-4 md:ml-6 font-['Courier_Prime'] text-[28px] sm:text-[36px] md:text-[40px] lg:text-[50px] font-extrabold leading-[1.1] text-[rgba(18,18,18,1)]">
-            Why teams choose QuBeats
+            Why Customers choose QuBeats
           </h2>
 
           {/* Cards – NO LOOPS, each card is a separate div */}

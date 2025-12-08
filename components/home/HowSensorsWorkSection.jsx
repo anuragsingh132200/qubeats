@@ -43,11 +43,16 @@ export default function HowSensorsWorkSection() {
           />
         </div>
 
-        <div className="relative mx-auto flex max-w-6xl flex-col gap-8 sm:gap-10 md:gap-12 px-4 sm:px-6 md:px-10 lg:px-16">
+        <div className="relative mx-auto flex max-w-7xl flex-col gap-8 sm:gap-10 md:gap-12 px-4 sm:px-6 md:px-10 lg:px-16">
           {/* Top heading block */}
           <header className="space-y-4">
             <p
-              className="text-sm uppercase tracking-[0.35em] text-slate-200/80 font-['Courier_Prime']"
+              className="text-xl uppercase text-slate-200/80 font-['Courier_Prime']"
+              style={{
+                fontSize: "24px",
+                lineHeight: "26px",
+                letterSpacing: "0.02em",
+              }}
             >
               APPLICATIONS
             </p>

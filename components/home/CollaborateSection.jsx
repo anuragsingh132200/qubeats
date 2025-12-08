@@ -25,16 +25,6 @@ export default function CollaborateSection() {
       </div>
       {/* Content container */}
       <div className="relative z-10 mx-auto flex max-w-6xl flex-col items-center gap-6 sm:gap-8 md:gap-10 px-4 sm:px-6 md:px-10 lg:px-16 text-center">
-        {/* Top label (left aligned like the design) */}
-        <div className="w-full text-left">
-          <p
-            className="text-xs sm:text-sm uppercase tracking-[0.35em] text-slate-200/80"
-            style={{ fontFamily: '"Courier Prime", monospace' }}
-          >
-            COLLABORATE WITH US
-          </p>
-        </div>
-
         {/* Main heading */}
         <h2
           className="text-3xl leading-tight sm:text-[40px] md:text-[48px]"

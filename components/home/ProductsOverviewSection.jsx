@@ -89,8 +89,8 @@ export default function ProductsOverviewSection() {
           <p
             style={{
               ...monoBodyStyle,
-              fontSize: "12px",
-              lineHeight: "16px",
+              fontSize: "22px",
+              lineHeight: "26px",
               letterSpacing: "0.4em",
               textTransform: "uppercase",
             }}
@@ -126,7 +126,7 @@ export default function ProductsOverviewSection() {
           </h2>
 
           {/* Products grid */}
-          <div className="grid gap-x-8 sm:gap-x-12 md:gap-x-16 gap-y-10 sm:gap-y-12 md:gap-y-14 md:grid-cols-2">
+          <div className="grid gap-x-8 sm:gap-x-12 md:gap-x-16 gap-y-10 sm:gap-y-12 md:gap-y-14 md:grid-cols-3">
             {products.map((product) => (
               <article key={product.name} className="flex flex-col gap-3">
                 <div className="mb-2 flex items-start gap-4">
