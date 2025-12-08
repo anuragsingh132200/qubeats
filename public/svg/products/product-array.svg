@@ -1,0 +1,25 @@
+<svg width="640" height="420" viewBox="0 0 640 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="420" rx="28" fill="#05051D"/>
+  <rect x="36" y="48" width="568" height="324" rx="24" fill="url(#paint0_linear)" opacity="0.55"/>
+  <rect x="96" y="108" width="140" height="220" rx="20" fill="#0EA5E9" fill-opacity="0.35"/>
+  <rect x="118" y="132" width="96" height="136" rx="14" stroke="#38BDF8" stroke-width="2" stroke-dasharray="8 10" opacity="0.8"/>
+  <circle cx="166" cy="298" r="16" fill="#38BDF8"/>
+  <rect x="256" y="92" width="152" height="252" rx="22" fill="#7C3AED" fill-opacity="0.35"/>
+  <rect x="284" y="120" width="96" height="160" rx="18" stroke="#C084FC" stroke-width="2"/>
+  <circle cx="332" cy="292" r="18" fill="#C084FC"/>
+  <rect x="436" y="132" width="132" height="192" rx="18" fill="#22D3EE" fill-opacity="0.28"/>
+  <rect x="456" y="158" width="92" height="120" rx="16" stroke="#38BDF8" stroke-width="2" stroke-dasharray="6 8"/>
+  <circle cx="502" cy="292" r="20" fill="#22D3EE"/>
+  <path d="M166 102L166 82L332 82L332 60" stroke="#38BDF8" stroke-width="2" stroke-dasharray="6 8" opacity="0.6"/>
+  <path d="M332 82L332 60L502 60L502 82" stroke="#C084FC" stroke-width="2" stroke-dasharray="6 8" opacity="0.6"/>
+  <text x="128" y="320" fill="#E0F2FE" font-size="12" font-family="Arial" letter-spacing="0.4em">AQUILA</text>
+  <text x="302" y="320" fill="#EDE9FE" font-size="12" font-family="Arial" letter-spacing="0.4em">VOYAGER</text>
+  <text x="470" y="320" fill="#CFFAFE" font-size="12" font-family="Arial" letter-spacing="0.4em">SENTINEL</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="36" y1="48" x2="604" y2="372" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111827"/>
+      <stop offset="1" stop-color="#1E293B"/>
+    </linearGradient>
+  </defs>
+</svg>
+
