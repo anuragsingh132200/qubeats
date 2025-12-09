@@ -40,7 +40,8 @@ export default function CareersPage() {
           backgroundRepeat: 'no-repeat'
         }}
       >
-        <div className="grid gap-8 sm:gap-10 md:gap-12 md:grid-cols-2 relative z-10">
+        <div className="relative z-10 grid gap-8 sm:gap-10 md:gap-12 lg:grid-cols-2">
+          {/* Why Work at QuBeats Section */}
           <div className="space-y-4 sm:space-y-6">
             <h2 className="text-2xl sm:text-3xl font-bold text-white">
               Why Work at QuBeats?
@@ -64,27 +65,22 @@ export default function CareersPage() {
               </li>
             </ul>
           </div>
-          
+
+          {/* Job Openings Section */}
           <div className="space-y-4 sm:space-y-6">
-            <h2 className="text-2xl sm:text-3xl font-bold text-white">
-              Get in Touch
-            </h2>
-            <p className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-slate-300">
-              Interested in joining our team? Reach out to us to learn more about opportunities at QuBeats.
-            </p>
-            <a
-              href="mailto:arjun@qubeats.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 bg-[#CB3F24] text-sm sm:text-base text-white font-semibold rounded-lg hover:bg-[#BE3B22] transition-colors"
-            >
-              Contact Us
-            </a>
+            <div className="space-y-4">
+              <h2 className="text-2xl sm:text-3xl font-bold text-white">
+                Current Job Openings
+              </h2>
+              <p className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-slate-300">
+                Explore open positions across our quantum engineering, software, and
+                research teams. Apply now to help shape the future of quantum sensing.
+              </p>
+            </div>
+            <JobOpeningsSection />
           </div>
         </div>
       </SectionWrapper>
-
-      <JobOpeningsSection />
     </>
   );
 }

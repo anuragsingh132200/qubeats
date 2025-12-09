@@ -43,21 +43,7 @@ export default function JobOpeningsSection() {
   }, [fetchJobs]);
 
   return (
-    <SectionWrapper
-      id="job-openings"
-      className="bg-[rgba(7,7,7,1)] border-t border-slate-800 relative"
-      containerClassName="relative z-10 space-y-8"
-    >
-      <div className="space-y-4">
-        <h2 className="text-2xl sm:text-3xl font-bold text-white">
-          Current Job Openings
-        </h2>
-        <p className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-slate-300 max-w-3xl">
-          Explore open positions across our quantum engineering, software, and
-          research teams. Apply now to help shape the future of quantum sensing.
-        </p>
-      </div>
-
+    <div className="space-y-4">
       <div className="flex flex-wrap items-center gap-3">
         <button
           onClick={fetchJobs}
@@ -97,19 +83,27 @@ export default function JobOpeningsSection() {
                   </span>
                 </div>
               </div>
-              <a
-                href={job.jdLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-lg border border-[#CB3F24]/60 px-4 py-2 text-sm font-semibold text-[#CB3F24] transition hover:border-[#CB3F24] hover:text-white"
-              >
-                View JD
-              </a>
+              <div className="flex flex-wrap items-center gap-3">
+                <a
+                  href={job.jdLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center rounded-lg border border-[#CB3F24]/60 px-4 py-2 text-sm font-semibold text-[#CB3F24] transition hover:border-[#CB3F24] hover:text-white"
+                >
+                  View JD
+                </a>
+                <a
+                  href={`mailto:contact@qubeats.com?subject=Application for ${encodeURIComponent(job.title)}`}
+                  className="inline-flex items-center justify-center rounded-lg bg-[#CB3F24] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#BE3B22]"
+                >
+                  Apply
+                </a>
+              </div>
             </div>
           ))}
         </div>
       )}
-    </SectionWrapper>
+    </div>
   );
 }
 
