@@ -16,7 +16,7 @@ export default function IntroHeroSection() {
       />
 
       {/* Main grey card */}
-      <div className="relative mx-auto mt-4 sm:mt-6 md:mt-8 w-full max-w-8xl overflow-visible bg-[rgba(243,243,243,0.9)] px-4 sm:px-6 md:px-10 lg:px-16 py-6 sm:py-8 md:py-10">
+      <div className="relative mx-auto mt-4 sm:mt-6 md:mt-8 w-full max-w-8xl overflow-visible px-4 sm:px-6 md:px-10 lg:px-16 py-6 sm:py-8 md:py-10">
         {/* Bottom-right cutout */}
         <div
           className="pointer-events-none absolute bottom-0 right-0 h-24 sm:h-28 md:h-32 lg:h-36 w-20 sm:w-24 md:w-28 lg:w-30 translate-y-[1px] bg-[#050505]"
@@ -26,8 +26,8 @@ export default function IntroHeroSection() {
         <div className="relative flex flex-col mr-0 sm:mr-8 md:mr-12 lg:mr-20 gap-6 sm:gap-8 md:gap-10">
           {/* Heading */}
           <h1
-            className="text-[32px] sm:text-[40px] md:text-[56px] lg:text-[70px] xl:text-[80px] leading-[1.2] font-bold"
-            style={{ fontFamily: '"Courier Prime", monospace', backgroundClip: "text", color: "transparent", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundImage: "linear-gradient(90deg, #000000 0%, #131927 100%)" }}
+            className="text-[32px] text-[rgba(192,192,192,1)] sm:text-[40px] md:text-[56px] lg:text-[70px] xl:text-[80px] leading-[1.2] font-bold"
+            style={{ fontFamily: '"Courier Prime", monospace', fontSize: "80px" }}
           >
             The Quantum Behind  
             <br />
@@ -38,16 +38,16 @@ export default function IntroHeroSection() {
           {/* Two-column body text */}
           <div className="grid gap-x-4 sm:gap-x-6 gap-y-6 sm:gap-y-8 md:gap-y-10 md:grid-cols-2">
             <p
-              className="text-sm sm:text-base md:text-lg lg:text-[18.133px] text-[rgba(0,0,0,0.6)]"
-              style={{ fontFamily: '"Courier New", monospace', fontWeight: 600, }}
+              className="text-sm sm:text-base md:text-lg lg:text-[18.133px] text-[rgba(243,243,243,0.7)]"
+              style={{ fontFamily: '"Courier New", monospace', fontWeight: 400, }}
             >
               At QuBeats Technologies, we offer a comprehensive suite of quantum
               sensing and metrology products designed to deliver unmatched
               precision and performance across various applications.
             </p>
             <p
-              className="text-sm sm:text-base md:text-lg lg:text-[18.13px] text-[rgba(0,0,0,0.6)]"
-              style={{ fontFamily: '"Courier New", monospace', fontWeight: 600, }}
+              className="text-sm sm:text-base md:text-lg lg:text-[18.13px] text-[rgba(243,243,243,0.7)]"
+              style={{ fontFamily: '"Courier New", monospace', fontWeight: 400, }}
             >
               Our innovative solutions harness the principles of quantum
               mechanics to meet the rigorous demands of industries such as

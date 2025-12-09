@@ -152,7 +152,7 @@ export default function ResourcesPage() {
             className="object-cover"
           />
         </div>
-        <div className="relative z-10 mb-8 sm:mb-10 md:mb-12 flex items-start gap-4 sm:gap-6 md:gap-8">
+        <div className="relative z-10 mb-2 flex items-start gap-2">
           <div className="flex-1">
             <h2 
               className="text-[32px] sm:text-[40px] md:text-[50px] lg:text-[58px] font-bold leading-[1.0] mb-3 sm:mb-4"
@@ -176,36 +176,25 @@ export default function ResourcesPage() {
           {/* Decorative Element */}
           
         </div>
-        
-        <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {whitePapers.map((paper, index) => (
-            <div
-              key={index}
-              className="bg-[rgba(18,18,18,1)] p-6 relative"
-            >
-              <div className="mb-4 flex items-center gap-2">
-                <Image
-                  src="/images/products/physics-svgrepo-com (1) 3.svg"
-                  alt=""
-                  width={20}
-                  height={20}
-                  className="object-contain"
-                />
-              </div>
-              <h3 
-                className="text-base font-semibold text-white mb-3 leading-tight"
-                style={{ fontFamily: '"Courier New", monospace' }}
+       
+        <div className="relative z-10 mt-4 bg-[rgba(192,192,192,1)] min-w-[100%] sm:min-w-[90%] md:min-w-[80%] px-4 sm:px-6 pt-6 sm:pt-8 md:pt-10 pb-4 sm:px-10 overflow-visible">
+          <div className="pointer-events-none absolute hidden lg:block bg-[rgba(192,192,192,1)] w-[230px] h-[140px] right-0 -top-30 transform" />
+          <div className="pointer-events-none absolute hidden lg:flex items-center justify-center w-[70px] h-[68px] bg-[rgba(192,192,192,1)] right-66 -top-47 translate-x-1/2 transform">
+            <Image
+              src="/images/home/vector-1.png"
+              alt=""
+              width={45}
+              height={45}
+              className="object-contain"
+            />
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {whitePapers.map((paper, index) => (
+              <div
+                key={index}
+                className="bg-[rgba(18,18,18,1)] p-6 relative"
               >
-                {paper.title}
-              </h3>
-              <p 
-                className="text-[13px] text-gray-300 mb-4 leading-relaxed"
-                style={{ fontFamily: '"Courier New", monospace', fontWeight: 400 }}
-              >
-                {paper.description}
-              </p>
-              <div className="flex items-center gap-4 mb-4">
-                <div className="flex items-center gap-2">
+                <div className="mb-4 flex items-center gap-2">
                   <Image
                     src="/images/products/physics-svgrepo-com (1) 3.svg"
                     alt=""
@@ -213,38 +202,61 @@ export default function ResourcesPage() {
                     height={20}
                     className="object-contain"
                   />
-                  <span 
-                    className="text-[13px] text-white"
-                    style={{ fontFamily: '"Courier New", monospace' }}
-                  >
-                    {paper.date}
-                  </span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <Image
-                    src="/images/products/physics-svgrepo-com (1) 3.svg"
-                    alt=""
-                    width={20}
-                    height={20}
-                    className="object-contain"
-                  />
-                  <span 
-                    className="text-[13px] text-white"
-                    style={{ fontFamily: '"Courier New", monospace' }}
-                  >
-                    {paper.pages}
-                  </span>
+                <h3 
+                  className="text-base font-semibold text-white mb-3 leading-tight"
+                  style={{ fontFamily: '"Courier New", monospace' }}
+                >
+                  {paper.title}
+                </h3>
+                <p 
+                  className="text-[13px] text-gray-300 mb-4 leading-relaxed"
+                  style={{ fontFamily: '"Courier New", monospace', fontWeight: 400 }}
+                >
+                  {paper.description}
+                </p>
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="flex items-center gap-2">
+                    <Image
+                      src="/images/products/physics-svgrepo-com (1) 3.svg"
+                      alt=""
+                      width={20}
+                      height={20}
+                      className="object-contain"
+                    />
+                    <span 
+                      className="text-[13px] text-white"
+                      style={{ fontFamily: '"Courier New", monospace' }}
+                    >
+                      {paper.date}
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Image
+                      src="/images/products/physics-svgrepo-com (1) 3.svg"
+                      alt=""
+                      width={20}
+                      height={20}
+                      className="object-contain"
+                    />
+                    <span 
+                      className="text-[13px] text-white"
+                      style={{ fontFamily: '"Courier New", monospace' }}
+                    >
+                      {paper.pages}
+                    </span>
+                  </div>
                 </div>
+                <Link
+                  href={paper.link}
+                  className="inline-flex items-center gap-2 text-sm font-semibold text-[#FF6B35] hover:text-[#FF8C5A] transition-colors"
+                  style={{ fontFamily: '"Courier New", monospace' }}
+                >
+                  Download PDF <span>➜</span>
+                </Link>
               </div>
-              <Link
-                href={paper.link}
-                className="inline-flex items-center gap-2 text-sm font-semibold text-[#FF6B35] hover:text-[#FF8C5A] transition-colors"
-                style={{ fontFamily: '"Courier New", monospace' }}
-              >
-                Download PDF <span>➜</span>
-              </Link>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </SectionWrapper>
 
@@ -259,7 +271,7 @@ export default function ResourcesPage() {
             className="object-cover"
           />
         </div>
-        <div className="relative z-10 mb-8 sm:mb-10 md:mb-12 flex items-start gap-4 sm:gap-6 md:gap-8">
+        <div className="relative z-10 mb-2 flex items-start gap-2">
           <div className="flex-1">
             <h2 
               className="text-[32px] sm:text-[40px] md:text-[50px] lg:text-[58px] font-bold leading-[1.0] mb-3 sm:mb-4"
@@ -284,35 +296,24 @@ export default function ResourcesPage() {
           
         </div>
         
-        <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {solutionBriefs.map((brief, index) => (
-            <div
-              key={index}
-              className="bg-[rgba(18,18,18,1)] p-6 relative"
-            >
-              <div className="mb-4 flex items-center gap-2">
-                <Image
-                  src="/images/products/physics-svgrepo-com (1) 3.svg"
-                  alt=""
-                  width={20}
-                  height={20}
-                  className="object-contain"
-                />
-              </div>
-              <h3 
-                className="text-base font-semibold text-white mb-3 leading-tight"
-                style={{ fontFamily: '"Courier New", monospace' }}
+        <div className="relative z-10 mt-4 bg-[rgba(192,192,192,1)] min-w-[100%] sm:min-w-[90%] md:min-w-[80%] px-4 sm:px-6 pt-6 sm:pt-8 md:pt-10 pb-4 sm:px-10 overflow-visible">
+          <div className="pointer-events-none absolute hidden lg:block bg-[rgba(192,192,192,1)] w-[230px] h-[140px] right-0 -top-30 transform" />
+          <div className="pointer-events-none absolute hidden lg:flex items-center justify-center w-[70px] h-[68px] bg-[rgba(192,192,192,1)] right-66 -top-47 translate-x-1/2 transform">
+            <Image
+              src="/images/home/vector-1.png"
+              alt=""
+              width={45}
+              height={45}
+              className="object-contain"
+            />
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {solutionBriefs.map((brief, index) => (
+              <div
+                key={index}
+                className="bg-[rgba(18,18,18,1)] p-6 relative"
               >
-                {brief.title}
-              </h3>
-              <p 
-                className="text-[13px] text-gray-300 mb-4 leading-relaxed"
-                style={{ fontFamily: '"Courier New", monospace', fontWeight: 400 }}
-              >
-                {brief.description}
-              </p>
-              <div className="flex items-center gap-4 mb-4">
-                <div className="flex items-center gap-2">
+                <div className="mb-4 flex items-center gap-2">
                   <Image
                     src="/images/products/physics-svgrepo-com (1) 3.svg"
                     alt=""
@@ -320,38 +321,61 @@ export default function ResourcesPage() {
                     height={20}
                     className="object-contain"
                   />
-                  <span 
-                    className="text-[13px] text-white"
-                    style={{ fontFamily: '"Courier New", monospace' }}
-                  >
-                    {brief.date}
-                  </span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <Image
-                    src="/images/products/physics-svgrepo-com (1) 3.svg"
-                    alt=""
-                    width={20}
-                    height={20}
-                    className="object-contain"
-                  />
-                  <span 
-                    className="text-[13px] text-white"
-                    style={{ fontFamily: '"Courier New", monospace' }}
-                  >
-                    {brief.pages}
-                  </span>
+                <h3 
+                  className="text-base font-semibold text-white mb-3 leading-tight"
+                  style={{ fontFamily: '"Courier New", monospace' }}
+                >
+                  {brief.title}
+                </h3>
+                <p 
+                  className="text-[13px] text-gray-300 mb-4 leading-relaxed"
+                  style={{ fontFamily: '"Courier New", monospace', fontWeight: 400 }}
+                >
+                  {brief.description}
+                </p>
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="flex items-center gap-2">
+                    <Image
+                      src="/images/products/physics-svgrepo-com (1) 3.svg"
+                      alt=""
+                      width={20}
+                      height={20}
+                      className="object-contain"
+                    />
+                    <span 
+                      className="text-[13px] text-white"
+                      style={{ fontFamily: '"Courier New", monospace' }}
+                    >
+                      {brief.date}
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Image
+                      src="/images/products/physics-svgrepo-com (1) 3.svg"
+                      alt=""
+                      width={20}
+                      height={20}
+                      className="object-contain"
+                    />
+                    <span 
+                      className="text-[13px] text-white"
+                      style={{ fontFamily: '"Courier New", monospace' }}
+                    >
+                      {brief.pages}
+                    </span>
+                  </div>
                 </div>
+                <Link
+                  href={brief.link}
+                  className="inline-flex items-center gap-2 text-sm font-semibold text-[#FF6B35] hover:text-[#FF8C5A] transition-colors"
+                  style={{ fontFamily: '"Courier New", monospace' }}
+                >
+                  Download PDF <span>➜</span>
+                </Link>
               </div>
-              <Link
-                href={brief.link}
-                className="inline-flex items-center gap-2 text-sm font-semibold text-[#FF6B35] hover:text-[#FF8C5A] transition-colors"
-                style={{ fontFamily: '"Courier New", monospace' }}
-              >
-                Download PDF <span>➜</span>
-              </Link>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </SectionWrapper>
 
@@ -366,7 +390,7 @@ export default function ResourcesPage() {
             className="object-cover"
           />
         </div>
-        <div className="relative z-10 mb-8 sm:mb-10 md:mb-12 flex items-start gap-4 sm:gap-6 md:gap-8">
+        <div className="relative z-10 mb-2 flex items-start gap-2">
           <div className="flex-1">
             <h2 
               className="text-[32px] sm:text-[40px] md:text-[50px] lg:text-[58px] font-bold leading-[1.0] mb-3 sm:mb-4"
@@ -391,35 +415,24 @@ export default function ResourcesPage() {
           
         </div>
         
-        <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {technicalNotes.map((note, index) => (
-            <div
-              key={index}
-              className="bg-[rgba(18,18,18,1)] p-6 relative"
-            >
-              <div className="mb-4 flex items-center gap-2">
-                <Image
-                  src="/images/products/physics-svgrepo-com (1) 3.svg"
-                  alt=""
-                  width={20}
-                  height={20}
-                  className="object-contain"
-                />
-              </div>
-              <h3 
-                className="text-base font-semibold text-white mb-3 leading-tight"
-                style={{ fontFamily: '"Courier New", monospace' }}
+        <div className="relative z-10 mt-4 bg-[rgba(192,192,192,1)] min-w-[100%] sm:min-w-[90%] md:min-w-[80%] px-4 sm:px-6 pt-6 sm:pt-8 md:pt-10 pb-4 sm:px-10 overflow-visible">
+          <div className="pointer-events-none absolute hidden lg:block bg-[rgba(192,192,192,1)] w-[230px] h-[140px] right-0 -top-30 transform" />
+          <div className="pointer-events-none absolute hidden lg:flex items-center justify-center w-[70px] h-[68px] bg-[rgba(192,192,192,1)] right-66 -top-47 translate-x-1/2 transform">
+            <Image
+              src="/images/home/vector-1.png"
+              alt=""
+              width={45}
+              height={45}
+              className="object-contain"
+            />
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {technicalNotes.map((note, index) => (
+              <div
+                key={index}
+                className="bg-[rgba(18,18,18,1)] p-6 relative"
               >
-                {note.title}
-              </h3>
-              <p 
-                className="text-[13px] text-gray-300 mb-4 leading-relaxed"
-                style={{ fontFamily: '"Courier New", monospace', fontWeight: 400 }}
-              >
-                {note.description}
-              </p>
-              <div className="flex items-center gap-4 mb-4">
-                <div className="flex items-center gap-2">
+                <div className="mb-4 flex items-center gap-2">
                   <Image
                     src="/images/products/physics-svgrepo-com (1) 3.svg"
                     alt=""
@@ -427,38 +440,61 @@ export default function ResourcesPage() {
                     height={20}
                     className="object-contain"
                   />
-                  <span 
-                    className="text-[13px] text-white"
-                    style={{ fontFamily: '"Courier New", monospace' }}
-                  >
-                    {note.date}
-                  </span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <Image
-                    src="/images/products/physics-svgrepo-com (1) 3.svg"
-                    alt=""
-                    width={20}
-                    height={20}
-                    className="object-contain"
-                  />
-                  <span 
-                    className="text-[13px] text-white"
-                    style={{ fontFamily: '"Courier New", monospace' }}
-                  >
-                    {note.pages}
-                  </span>
+                <h3 
+                  className="text-base font-semibold text-white mb-3 leading-tight"
+                  style={{ fontFamily: '"Courier New", monospace' }}
+                >
+                  {note.title}
+                </h3>
+                <p 
+                  className="text-[13px] text-gray-300 mb-4 leading-relaxed"
+                  style={{ fontFamily: '"Courier New", monospace', fontWeight: 400 }}
+                >
+                  {note.description}
+                </p>
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="flex items-center gap-2">
+                    <Image
+                      src="/images/products/physics-svgrepo-com (1) 3.svg"
+                      alt=""
+                      width={20}
+                      height={20}
+                      className="object-contain"
+                    />
+                    <span 
+                      className="text-[13px] text-white"
+                      style={{ fontFamily: '"Courier New", monospace' }}
+                    >
+                      {note.date}
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Image
+                      src="/images/products/physics-svgrepo-com (1) 3.svg"
+                      alt=""
+                      width={20}
+                      height={20}
+                      className="object-contain"
+                    />
+                    <span 
+                      className="text-[13px] text-white"
+                      style={{ fontFamily: '"Courier New", monospace' }}
+                    >
+                      {note.pages}
+                    </span>
+                  </div>
                 </div>
+                <Link
+                  href={note.link}
+                  className="inline-flex items-center gap-2 text-sm font-semibold text-[#FF6B35] hover:text-[#FF8C5A] transition-colors"
+                  style={{ fontFamily: '"Courier New", monospace' }}
+                >
+                  Download PDF <span>➜</span>
+                </Link>
               </div>
-              <Link
-                href={note.link}
-                className="inline-flex items-center gap-2 text-sm font-semibold text-[#FF6B35] hover:text-[#FF8C5A] transition-colors"
-                style={{ fontFamily: '"Courier New", monospace' }}
-              >
-                Download PDF <span>➜</span>
-              </Link>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </SectionWrapper>
 
@@ -473,7 +509,7 @@ export default function ResourcesPage() {
             className="object-cover"
           />
         </div>
-        <div className="relative z-10 mb-8 sm:mb-10 md:mb-12">
+        <div className="relative z-10 mb-0">
           <h2 
             className="text-[32px] sm:text-[40px] md:text-[50px] lg:text-[58px] font-bold leading-[1.0] mb-3 sm:mb-4"
             style={{
@@ -494,7 +530,8 @@ export default function ResourcesPage() {
           </p>
         </div>
         
-        <div className="relative z-10 space-y-0">
+        <div className="relative z-10 min-w-[100%] sm:min-w-[90%] md:min-w-[80%] px-4 sm:px-6 pt-6 sm:pt-8 md:pt-10 pb-6 sm:px-10 overflow-visible">
+          
           {mediaItems.map((item, index) => (
             <div
               key={index}
