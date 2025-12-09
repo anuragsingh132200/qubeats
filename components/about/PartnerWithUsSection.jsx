@@ -5,6 +5,7 @@ export default function PartnerWithUsSection() {
   return (
     <section className="relative w-full overflow-hidden bg-[rgba(7,7,7,1)] py-16 sm:py-20 md:py-24 lg:py-32">
       {/* Background world-map placeholder */}
+      <div className="pointer-events-none absolute bottom-0 z-5 h-24 sm:h-32 bg-[linear-gradient(180deg,rgba(11,11,11,0)_0%,rgba(7,7,7,1)_100%)]" />
       <div className="pointer-events-none absolute inset-0">
         <Image
           src="/images/home/bg-collaborate-map.png" // your world map placeholder

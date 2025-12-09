@@ -112,9 +112,9 @@ export default function TeamExpertiseSection() {
             letterSpacing: "0",
           }}
         >
-          Team &{" "}
+          Founding{" "}
           <span style={{ color: "#cb3f24" }}>
-            Expertise
+            Team
           </span>
         </h2>
         <p

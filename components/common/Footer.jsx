@@ -46,7 +46,7 @@ export default function Footer() {
 
       <div className="relative z-10 mx-auto w-full max-w-[1440px] px-4 sm:px-6 py-12 sm:py-16 md:px-12">
         {/* Top Navigation Links - Centered */}
-        <div className="mb-8 sm:mb-12 flex flex-wrap items-center justify-center gap-4 sm:gap-6 md:gap-8 lg:gap-12">
+        <div className="mb-8 sm:mb-12 flex flex-wrap items-center justify-end gap-4 sm:gap-6 md:gap-8 lg:gap-12">
           {navLinks.map((link) => (
             <Link
               key={link.href}
