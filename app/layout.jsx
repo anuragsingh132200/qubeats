@@ -19,6 +19,11 @@ export const metadata = {
   title: "QuBeats Quantum Sensing",
   description:
     "Quantum sensing platforms built for aerospace, defense, and life sciences innovators.",
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({ children }) {
