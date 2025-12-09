@@ -37,6 +37,15 @@ export default function AdminPage() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
+  // Banner settings state
+  const [bannerSettings, setBannerSettings] = useState({
+    isVisible: true,
+    content: "We have recently raised a capital. Click on this to learn more.",
+  });
+  const [bannerLoading, setBannerLoading] = useState(false);
+  const [bannerError, setBannerError] = useState("");
+  const [isSavingBanner, setIsSavingBanner] = useState(false);
+
   useEffect(() => {
     const storedFlag = window.localStorage.getItem(STORAGE_KEY);
     if (storedFlag === "true") {
@@ -65,11 +74,37 @@ export default function AdminPage() {
     }
   }, []);
 
+  const fetchBannerSettings = useCallback(async () => {
+    setBannerLoading(true);
+    setBannerError("");
+
+    try {
+      const response = await fetch("/api/banner", { cache: "no-store" });
+
+      if (!response.ok) {
+        throw new Error("Unable to load banner settings. Please try again.");
+      }
+
+      const data = await response.json();
+      if (data.settings) {
+        setBannerSettings({
+          isVisible: data.settings.isVisible ?? true,
+          content: data.settings.content || "We have recently raised a capital. Click on this to learn more.",
+        });
+      }
+    } catch (error) {
+      setBannerError(error.message || "Something went wrong while loading banner settings.");
+    } finally {
+      setBannerLoading(false);
+    }
+  }, []);
+
   useEffect(() => {
     if (isLoggedIn) {
       fetchJobs();
+      fetchBannerSettings();
     }
-  }, [isLoggedIn, fetchJobs]);
+  }, [isLoggedIn, fetchJobs, fetchBannerSettings]);
 
   const handleLogin = (event) => {
     event.preventDefault();
@@ -148,6 +183,47 @@ export default function AdminPage() {
       setJobsError(error.message || "Something went wrong while deleting job.");
     } finally {
       setDeletingId(null);
+    }
+  };
+
+  const handleBannerVisibilityChange = (event) => {
+    setBannerSettings((prev) => ({
+      ...prev,
+      isVisible: event.target.checked,
+    }));
+  };
+
+  const handleBannerContentChange = (event) => {
+    setBannerSettings((prev) => ({
+      ...prev,
+      content: event.target.value,
+    }));
+  };
+
+  const handleSaveBanner = async (event) => {
+    event.preventDefault();
+    setBannerError("");
+    setIsSavingBanner(true);
+
+    try {
+      const response = await fetch("/api/banner", {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(bannerSettings),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to save banner settings. Please try again.");
+      }
+
+      // Show success message or refresh
+      await fetchBannerSettings();
+    } catch (error) {
+      setBannerError(error.message || "Something went wrong while saving banner settings.");
+    } finally {
+      setIsSavingBanner(false);
     }
   };
 
@@ -237,6 +313,61 @@ export default function AdminPage() {
                 Log Out
               </button>
             </div>
+
+            {/* Banner Settings Section */}
+            <form
+              onSubmit={handleSaveBanner}
+              className="space-y-6 rounded-2xl border border-slate-800 bg-[#101113] p-6"
+            >
+              <h2 className="text-xl font-semibold text-white">
+                Announcement Banner Settings
+              </h2>
+              
+              {bannerError ? (
+                <p className="text-sm font-medium text-red-400">{bannerError}</p>
+              ) : null}
+
+              <div className="flex items-center gap-3">
+                <input
+                  type="checkbox"
+                  id="bannerVisibility"
+                  checked={bannerSettings.isVisible}
+                  onChange={handleBannerVisibilityChange}
+                  className="h-5 w-5 rounded border-slate-700 bg-[#111111] text-[#CB3F24] focus:ring-2 focus:ring-[#CB3F24]/40"
+                />
+                <label
+                  htmlFor="bannerVisibility"
+                  className="text-sm font-medium text-slate-200 cursor-pointer"
+                >
+                  Show announcement banner
+                </label>
+              </div>
+
+              <div className="flex flex-col gap-2">
+                <label className="text-sm font-medium text-slate-200">
+                  Banner Content
+                </label>
+                <textarea
+                  value={bannerSettings.content}
+                  onChange={handleBannerContentChange}
+                  rows={3}
+                  className="rounded-lg border border-slate-800 bg-[#111111] px-4 py-3 text-sm text-white outline-none transition focus:border-[#CB3F24] focus:ring-2 focus:ring-[#CB3F24]/40 resize-none"
+                  placeholder="Enter banner content..."
+                  required
+                />
+                <p className="text-xs text-slate-400">
+                  This text will scroll from right to left in the announcement banner.
+                </p>
+              </div>
+
+              <button
+                type="submit"
+                disabled={isSavingBanner || bannerLoading}
+                className="inline-flex items-center justify-center rounded-lg bg-[#CB3F24] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#BE3B22] disabled:cursor-not-allowed disabled:opacity-70"
+              >
+                {isSavingBanner ? "Saving..." : "Save Banner Settings"}
+              </button>
+            </form>
 
             <form
               onSubmit={handleCreateJob}

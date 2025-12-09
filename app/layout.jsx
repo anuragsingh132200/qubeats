@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/common/Navbar";
 import Footer from "@/components/common/Footer";
 import PageGridBackground from "@/components/common/PageGridBackground";
+import AnnouncementBanner from "@/components/common/AnnouncementBanner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
   return (
     <html>
     <body>
+          <AnnouncementBanner />
           <Navbar />
           <main>{children}</main>
           <Footer />

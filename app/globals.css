@@ -46,3 +46,22 @@ a {
   background-color: #CB3F24;
   color: white;
 }
+
+/* Scrolling text animation for announcement banner */
+@keyframes scroll-right-to-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.333%);
+  }
+}
+
+.animate-scroll-right-to-left {
+  animation: scroll-right-to-left 20s linear infinite;
+}
+
+/* Position navbar below banner when banner is visible - no gap */
+body[data-banner-visible="true"] header {
+  top: var(--banner-height, 24px);
+}
