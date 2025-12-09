@@ -53,7 +53,7 @@ export default function AdvancedSolutionsSection() {
 
             {/* TOP-RIGHT rectangular box that is *part of the same visual block* (positioned relative to wrapper) */}
             {/* It's placed overlapping the image container: top aligned, with a small offset from top and right and a slight bottom/left offset to mimic the screenshot */}
-            <div className="absolute top-0 right-9 hidden h-19 w-28 bg-[#BBBBBB] lg:block transform translate-y-0 translate-x-[-26px]" />
+            <div className="absolute top-0 right-0 hidden h-19 w-28 bg-[#BBBBBB] lg:block transform translate-y-0 translate-x-[-26px]" />
           </div>
 
           {/* Right: text block */}
