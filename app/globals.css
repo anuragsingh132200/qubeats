@@ -35,3 +35,14 @@ a {
 .font-courier-new {
   font-family: "Courier New", Courier, monospace;
 }
+
+/* Text selection highlight color */
+::selection {
+  background-color: #CB3F24;
+  color: white;
+}
+
+::-moz-selection {
+  background-color: #CB3F24;
+  color: white;
+}

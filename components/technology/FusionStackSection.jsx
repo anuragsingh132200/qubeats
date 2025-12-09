@@ -36,9 +36,9 @@ export default function FusionStackSection() {
         <div className="flex-1 relative">
           {/* Timeline */}
           <div className="absolute left-0 top-0 bottom-0 w-1 bg-white/20">
-            <div className="absolute top-0 left-0 w-1 h-full bg-[#FF6B35]" />
+            <div className="absolute top-0 left-0 w-1 h-full bg-[#CB3F24]" />
           </div>
-          <div className="absolute left-[-2px] top-0 w-6 h-1 bg-[#FF6B35]" />
+          <div className="absolute left-[-2px] top-0 w-6 h-1 bg-[#CB3F24]" />
           
           {/* Content */}
           <div className="pl-12">
@@ -46,7 +46,7 @@ export default function FusionStackSection() {
             <h2 className="text-3xl font-bold text-white mb-6">
               Fusion stack
             </h2>
-            <p className="text-base text-slate-300 mb-8 max-w-xl">
+            <p className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-slate-300 mb-8 max-w-xl">
               Combining quantum sensors with classical INS, GNSS, and AI/ML filtering: QuBeats Fusion integrates quantum magnetometry with inertial sensors and satellite positioning, using machine-learning algorithms to suppress noise, compensate drift, and enable GPS-free navigation through magnetic map-matching.
             </p>
             
@@ -71,7 +71,7 @@ export default function FusionStackSection() {
                       <h3 className="text-lg font-semibold text-white mb-2">
                         {feature.title}
                       </h3>
-                      <p className="text-sm text-slate-300 leading-relaxed">
+                      <p className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-slate-300">
                         {feature.detail}
                       </p>
                     </div>

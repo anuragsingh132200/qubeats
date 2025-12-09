@@ -127,10 +127,10 @@ export default function ResourcesPage() {
             }}
           >
             <span className="text-white">Technical </span>
-            <span className="text-[#FF6B35]">Resources</span>
+            <span className="text-[#CB3F24]">Resources</span>
           </h1>
           <p 
-            className="text-base sm:text-lg text-white max-w-[712px] leading-relaxed"
+            className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-white max-w-[712px]"
             style={{
               fontFamily: '"Courier New", monospace',
               fontWeight: 400
@@ -161,10 +161,10 @@ export default function ResourcesPage() {
               }}
             >
               <span className="text-white">White </span>
-              <span className="text-[#FF6B35]">Papers</span>
+              <span className="text-[#CB3F24]">Papers</span>
             </h2>
             <p 
-              className="text-base sm:text-lg text-white max-w-[771px] leading-relaxed"
+              className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-white max-w-[771px]"
               style={{
                 fontFamily: '"Courier New", monospace',
                 fontWeight: 400
@@ -204,13 +204,13 @@ export default function ResourcesPage() {
                   />
                 </div>
                 <h3 
-                  className="text-base font-semibold text-white mb-3 leading-tight"
+                  className="text-sm sm:text-[14px] md:text-[16px] font-semibold text-white mb-3 leading-tight"
                   style={{ fontFamily: '"Courier New", monospace' }}
                 >
                   {paper.title}
                 </h3>
                 <p 
-                  className="text-[13px] text-gray-300 mb-4 leading-relaxed"
+                  className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-gray-300 mb-4"
                   style={{ fontFamily: '"Courier New", monospace', fontWeight: 400 }}
                 >
                   {paper.description}
@@ -249,7 +249,7 @@ export default function ResourcesPage() {
                 </div>
                 <Link
                   href={paper.link}
-                  className="inline-flex items-center gap-2 text-sm font-semibold text-[#FF6B35] hover:text-[#FF8C5A] transition-colors"
+                  className="inline-flex items-center gap-2 text-sm font-semibold text-[#CB3F24] hover:text-[#BE3B22] transition-colors"
                   style={{ fontFamily: '"Courier New", monospace' }}
                 >
                   Download PDF <span>➜</span>
@@ -280,10 +280,10 @@ export default function ResourcesPage() {
               }}
             >
               <span className="text-white">Solution </span>
-              <span className="text-[#FF6B35]">Brief</span>
+              <span className="text-[#CB3F24]">Brief</span>
             </h2>
             <p 
-              className="text-base sm:text-lg text-white max-w-[771px] leading-relaxed"
+              className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-white max-w-[771px]"
               style={{
                 fontFamily: '"Courier New", monospace',
                 fontWeight: 400
@@ -329,7 +329,7 @@ export default function ResourcesPage() {
                   {brief.title}
                 </h3>
                 <p 
-                  className="text-[13px] text-gray-300 mb-4 leading-relaxed"
+                  className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-gray-300 mb-4"
                   style={{ fontFamily: '"Courier New", monospace', fontWeight: 400 }}
                 >
                   {brief.description}
@@ -368,7 +368,7 @@ export default function ResourcesPage() {
                 </div>
                 <Link
                   href={brief.link}
-                  className="inline-flex items-center gap-2 text-sm font-semibold text-[#FF6B35] hover:text-[#FF8C5A] transition-colors"
+                  className="inline-flex items-center gap-2 text-sm font-semibold text-[#CB3F24] hover:text-[#BE3B22] transition-colors"
                   style={{ fontFamily: '"Courier New", monospace' }}
                 >
                   Download PDF <span>➜</span>
@@ -399,10 +399,10 @@ export default function ResourcesPage() {
               }}
             >
               <span className="text-white">Technical Notes & </span>
-              <span className="text-[#FF6B35]">Data Sheets</span>
+              <span className="text-[#CB3F24]">Data Sheets</span>
             </h2>
             <p 
-              className="text-base sm:text-lg text-white max-w-[710px] leading-relaxed"
+              className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-white max-w-[710px]"
               style={{
                 fontFamily: '"Courier New", monospace',
                 fontWeight: 400
@@ -448,7 +448,7 @@ export default function ResourcesPage() {
                   {note.title}
                 </h3>
                 <p 
-                  className="text-[13px] text-gray-300 mb-4 leading-relaxed"
+                  className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-gray-300 mb-4"
                   style={{ fontFamily: '"Courier New", monospace', fontWeight: 400 }}
                 >
                   {note.description}
@@ -487,7 +487,7 @@ export default function ResourcesPage() {
                 </div>
                 <Link
                   href={note.link}
-                  className="inline-flex items-center gap-2 text-sm font-semibold text-[#FF6B35] hover:text-[#FF8C5A] transition-colors"
+                  className="inline-flex items-center gap-2 text-sm font-semibold text-[#CB3F24] hover:text-[#BE3B22] transition-colors"
                   style={{ fontFamily: '"Courier New", monospace' }}
                 >
                   Download PDF <span>➜</span>
@@ -517,10 +517,10 @@ export default function ResourcesPage() {
             }}
           >
             <span className="text-white">Media & </span>
-            <span className="text-[#FF6B35]">Press Conference</span>
+            <span className="text-[#CB3F24]">Press Conference</span>
           </h2>
           <p 
-            className="text-base sm:text-lg text-white max-w-[710px] leading-relaxed"
+            className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-white max-w-[710px]"
             style={{
               fontFamily: '"Courier New", monospace',
               fontWeight: 400
@@ -535,7 +535,7 @@ export default function ResourcesPage() {
           {mediaItems.map((item, index) => (
             <div
               key={index}
-              className="bg-[#1f1f1f] border-l-4 border-[#FF6B35] border-t-0 border-r-0 border-b-0 relative py-8 px-6"
+              className="bg-[#1f1f1f] border-l-4 border-[#CB3F24] border-t-0 border-r-0 border-b-0 relative py-8 px-6"
             >
               <div className="flex flex-col md:flex-row gap-4 sm:gap-6 items-start">
                 {/* Date and Source - Left */}
@@ -552,7 +552,7 @@ export default function ResourcesPage() {
                     {item.date}
                   </div>
                   <div 
-                    className="text-[15px] text-[#FF6B35] uppercase tracking-wider"
+                    className="text-[15px] text-[#CB3F24] uppercase tracking-wider"
                     style={{ 
                       fontFamily: '"Courier Prime", monospace',
                       fontWeight: 400,
@@ -567,17 +567,16 @@ export default function ResourcesPage() {
                 {/* Title and Description - Center */}
                 <div className="flex-1 min-w-0">
                   <h3 
-                    className="text-[20px] font-bold text-white mb-3 leading-[35px]"
+                    className="text-sm sm:text-[14px] md:text-[16px] font-bold text-white mb-3"
                     style={{ 
                       fontFamily: '"Courier Prime", monospace',
-                      fontWeight: 700,
-                      lineHeight: '34.943px'
+                      fontWeight: 700
                     }}
                   >
                     {item.title}
                   </h3>
                   <p 
-                    className="text-[15px] text-[rgba(243,243,243,0.65)] leading-[20px] max-w-[819px]"
+                    className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-[rgba(243,243,243,0.65)] max-w-[819px]"
                     style={{ 
                       fontFamily: '"Courier Prime", monospace',
                       fontWeight: 400
@@ -591,7 +590,7 @@ export default function ResourcesPage() {
                 <div className="flex-shrink-0">
                   <Link
                     href={item.link}
-                    className="inline-flex items-center gap-2 text-[18px] font-bold text-[#FF6B35] hover:text-[#FF8C5A] transition-colors"
+                    className="inline-flex items-center gap-2 text-[18px] font-bold text-[#CB3F24] hover:text-[#BE3B22] transition-colors"
                     style={{ 
                       fontFamily: '"Courier Prime", monospace',
                       fontWeight: 700,

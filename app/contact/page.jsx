@@ -31,7 +31,7 @@ export default function ContactPage() {
 
             {/* Description */}
             <p
-              className="max-w-2xl text-base sm:text-lg leading-relaxed text-[rgba(255, 255, 255, 0.8)] mb-8 sm:mb-12"
+              className="max-w-2xl text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-[rgba(255, 255, 255, 0.8)] mb-8 sm:mb-12"
               style={{ fontFamily: "Courier New", fontWeight: 400, letterSpacing: "-0.1em" }}
             >
               Have questions about our quantum sensing solutions? Want to explore partnership opportunities? 

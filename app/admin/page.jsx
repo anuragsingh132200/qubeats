@@ -189,7 +189,7 @@ export default function AdminPage() {
                   name="email"
                   value={email}
                   onChange={(event) => setEmail(event.target.value)}
-                  className="w-full rounded-lg border border-slate-800 bg-[#111111] px-4 py-3 text-sm text-white outline-none transition focus:border-[#FF6B35] focus:ring-2 focus:ring-[#FF6B35]/40"
+                  className="w-full rounded-lg border border-slate-800 bg-[#111111] px-4 py-3 text-sm text-white outline-none transition focus:border-[#CB3F24] focus:ring-2 focus:ring-[#CB3F24]/40"
                   placeholder="admin@qubeats.com"
                   required
                 />
@@ -203,7 +203,7 @@ export default function AdminPage() {
                   name="password"
                   value={password}
                   onChange={(event) => setPassword(event.target.value)}
-                  className="w-full rounded-lg border border-slate-800 bg-[#111111] px-4 py-3 text-sm text-white outline-none transition focus:border-[#FF6B35] focus:ring-2 focus:ring-[#FF6B35]/40"
+                  className="w-full rounded-lg border border-slate-800 bg-[#111111] px-4 py-3 text-sm text-white outline-none transition focus:border-[#CB3F24] focus:ring-2 focus:ring-[#CB3F24]/40"
                   placeholder="Enter password"
                   required
                 />
@@ -213,7 +213,7 @@ export default function AdminPage() {
               ) : null}
               <button
                 type="submit"
-                className="w-full rounded-lg bg-[#FF6B35] px-4 py-3 text-sm font-semibold text-white transition hover:bg-[#FF8C5A] focus:outline-none focus:ring-2 focus:ring-[#FF6B35]/60"
+                className="w-full rounded-lg bg-[#CB3F24] px-4 py-3 text-sm font-semibold text-white transition hover:bg-[#BE3B22] focus:outline-none focus:ring-2 focus:ring-[#CB3F24]/60"
               >
                 Log In
               </button>
@@ -255,7 +255,7 @@ export default function AdminPage() {
                     name="title"
                     value={formValues.title}
                     onChange={handleInputChange}
-                    className="rounded-lg border border-slate-800 bg-[#111111] px-4 py-3 text-sm text-white outline-none transition focus:border-[#FF6B35] focus:ring-2 focus:ring-[#FF6B35]/40"
+                    className="rounded-lg border border-slate-800 bg-[#111111] px-4 py-3 text-sm text-white outline-none transition focus:border-[#CB3F24] focus:ring-2 focus:ring-[#CB3F24]/40"
                     placeholder="Quantum Sensing Engineer"
                     required
                   />
@@ -269,7 +269,7 @@ export default function AdminPage() {
                     name="experience"
                     value={formValues.experience}
                     onChange={handleInputChange}
-                    className="rounded-lg border border-slate-800 bg-[#111111] px-4 py-3 text-sm text-white outline-none transition focus:border-[#FF6B35] focus:ring-2 focus:ring-[#FF6B35]/40"
+                    className="rounded-lg border border-slate-800 bg-[#111111] px-4 py-3 text-sm text-white outline-none transition focus:border-[#CB3F24] focus:ring-2 focus:ring-[#CB3F24]/40"
                     placeholder="2-4 years"
                     required
                   />
@@ -284,7 +284,7 @@ export default function AdminPage() {
                   name="jdLink"
                   value={formValues.jdLink}
                   onChange={handleInputChange}
-                  className="rounded-lg border border-slate-800 bg-[#111111] px-4 py-3 text-sm text-white outline-none transition focus:border-[#FF6B35] focus:ring-2 focus:ring-[#FF6B35]/40"
+                  className="rounded-lg border border-slate-800 bg-[#111111] px-4 py-3 text-sm text-white outline-none transition focus:border-[#CB3F24] focus:ring-2 focus:ring-[#CB3F24]/40"
                   placeholder="https://drive.google.com/..."
                   required
                 />
@@ -292,7 +292,7 @@ export default function AdminPage() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="inline-flex items-center justify-center rounded-lg bg-[#FF6B35] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#FF8C5A] disabled:cursor-not-allowed disabled:opacity-70"
+                className="inline-flex items-center justify-center rounded-lg bg-[#CB3F24] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#BE3B22] disabled:cursor-not-allowed disabled:opacity-70"
               >
                 {isSubmitting ? "Creating..." : "Create Job"}
               </button>
@@ -306,7 +306,7 @@ export default function AdminPage() {
                 <button
                   onClick={fetchJobs}
                   disabled={jobsLoading}
-                  className="inline-flex items-center justify-center rounded-lg border border-slate-700 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-slate-200 transition hover:border-[#FF6B35] hover:text-[#FF6B35] disabled:cursor-not-allowed disabled:opacity-60"
+                  className="inline-flex items-center justify-center rounded-lg border border-slate-700 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-slate-200 transition hover:border-[#CB3F24] hover:text-[#CB3F24] disabled:cursor-not-allowed disabled:opacity-60"
                 >
                   {jobsLoading ? "Refreshing..." : "Refresh"}
                 </button>
@@ -329,7 +329,7 @@ export default function AdminPage() {
                   {jobs.map((job) => (
                     <div
                       key={job._id}
-                      className="flex flex-col gap-4 rounded-xl border border-slate-800 bg-[#0C0D0F] p-5 transition hover:border-[#FF6B35]/50 sm:flex-row sm:items-center sm:justify-between"
+                      className="flex flex-col gap-4 rounded-xl border border-slate-800 bg-[#0C0D0F] p-5 transition hover:border-[#CB3F24]/50 sm:flex-row sm:items-center sm:justify-between"
                     >
                       <div>
                         <h3 className="text-lg font-semibold text-white">
@@ -349,7 +349,7 @@ export default function AdminPage() {
                           href={job.jdLink}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center justify-center rounded-lg border border-[#FF6B35]/60 px-4 py-2 text-sm font-semibold text-[#FF6B35] transition hover:border-[#FF6B35] hover:text-white"
+                          className="inline-flex items-center justify-center rounded-lg border border-[#CB3F24]/60 px-4 py-2 text-sm font-semibold text-[#CB3F24] transition hover:border-[#CB3F24] hover:text-white"
                         >
                           View JD
                         </a>

@@ -52,19 +52,15 @@ export default function TechnicalHighlightsSection() {
             }}
           >
             <span
-              className="bg-clip-text text-transparent"
               style={{
-                backgroundImage:
-                  "linear-gradient(90deg, #F3F3F3 0%, #BDBDBD 100%)",
+                color: "white",
               }}
             >
               Technical{" "}
             </span>
             <span
-              className="bg-clip-text text-transparent"
               style={{
-                backgroundImage:
-                  "linear-gradient(90deg, #CB3F24 0%, #BE3B22 100%)",
+                color: "#CB3F24",
               }}
             >
               Highlights
@@ -88,7 +84,7 @@ export default function TechnicalHighlightsSection() {
 
                 {/* Text */}
                 <p
-                  className="text-base sm:text-lg md:text-xl lg:text-[22.88px] leading-[1.5] tracking-[-0.04em]"
+                  className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight"
                   style={{
                     fontFamily: '"Courier New", monospace',
                     fontWeight: 400,
@@ -107,11 +103,11 @@ export default function TechnicalHighlightsSection() {
           <div className="relative ml-auto h-[300px] sm:h-[380px] md:h-[450px] lg:h-[480px] w-full max-w-[640px]">
             
 
-            {/* Aircraft image placeholder */}
+            {/* Maritime surveillance and sensing visualization */}
             <div className="relative h-full w-full bg-[rgba(18,18,18,1)]">
               <Image
-                src="/images/home/submarine.png"
-                alt="Airborne platform technical highlight visualization"
+                src="/WhatsApp Image 2025-12-09 at 14.20.30_f1beeda5.jpg"
+                alt="Maritime surveillance and sensing technical highlight visualization"
                 fill
                 className="object-cover"
                 priority

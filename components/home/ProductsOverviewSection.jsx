@@ -42,8 +42,8 @@ const monoBodyStyle = {
     '"Courier Prime", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
   fontWeight: 400,
   fontStyle: "normal",
-  fontSize: "16.74px",
-  lineHeight: "20.62px",
+  fontSize: "14px",
+  lineHeight: "1.7",
   letterSpacing: "0.01em",
   color: "rgba(243, 243, 243, 0.65)",
 };
@@ -103,10 +103,7 @@ export default function ProductsOverviewSection() {
           <span
             style={{
               ...headingBase,
-              background:
-                "linear-gradient(180deg, #F3F3F3 0%, #BDBDBD 100%)",
-              WebkitBackgroundClip: "text",
-              color: "transparent",
+              color: "white",
             }}
           >
             Products at a{" "}
@@ -114,10 +111,7 @@ export default function ProductsOverviewSection() {
           <span
             style={{
               ...headingBase,
-              background:
-                "linear-gradient(90deg, #CB3F24 0%, #BE3B22 100%)",
-              WebkitBackgroundClip: "text",
-              color: "transparent",
+              color: "#CB3F24",
             }}
           >
             Glance

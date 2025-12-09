@@ -115,16 +115,13 @@ export default function AdvancedSolutionsSection() {
           font-size: inherit;
           line-height: inherit;
           letter-spacing: 0px;
-          color: rgba(243, 243, 243, 0.98);
+          color: white;
           -webkit-font-smoothing: antialiased;
         }
 
         /* orange word gradient for "solutions" */
         .orange-word {
-          background: linear-gradient(90deg, #CB3F24 0%, #BE3B22 100%);
-          -webkit-background-clip: text;
-          background-clip: text;
-          color: transparent;
+          color: #CB3F24;
         }
 
         /* body lighter text */
@@ -132,11 +129,23 @@ export default function AdvancedSolutionsSection() {
           font-family: "Courier Prime";
           font-weight: 300;
           font-style: regular;
-          font-size: clamp(16px, 2.5vw, 19px);
-          line-height: 28px;
+          font-size: 14px;
+          line-height: 1.7;
           letter-spacing: -1.14px;
           color: rgba(243, 243, 243, 0.8);
           max-width: 640px;
+        }
+        
+        @media (min-width: 640px) {
+          .body-light-text {
+            font-size: 14px;
+          }
+        }
+        
+        @media (min-width: 768px) {
+          .body-light-text {
+            font-size: 16px;
+          }
         }
 
         /* highlight strong text (bold inline) */

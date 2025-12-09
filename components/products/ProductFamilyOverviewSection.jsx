@@ -56,7 +56,7 @@ export default function ProductFamilyOverviewSection() {
     <SectionWrapper id="product-family" className="bg-black">
       <div className="flex flex-col gap-4 sm:gap-6 mb-8 sm:mb-12">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white lg:text-5xl">
-          Product Family <span className="text-[#FF6B35]">Overview</span>
+          Product Family <span className="text-[#CB3F24]">Overview</span>
         </h2>
       </div>
       
@@ -92,7 +92,7 @@ export default function ProductFamilyOverviewSection() {
               return (
                 <tr
                   key={item.product}
-                  className="bg-[#121212] border-l-[4.4px] border-r-[4.4px] border-[#FF6B35] border-t-0 border-b-0"
+                  className="bg-[#121212] border-l-[4.4px] border-r-[4.4px] border-[#CB3F24] border-t-0 border-b-0"
                   style={{ height: `${rowHeight}px` }}
                 >
                   <td className="py-4 pl-4 sm:pl-6 md:pl-[35px] pr-3 sm:pr-6 text-white font-bold">
@@ -105,13 +105,13 @@ export default function ProductFamilyOverviewSection() {
                       <span className="text-sm sm:text-base md:text-lg lg:text-[20px]">{item.product}</span>
                     )}
                   </td>
-                  <td className="py-4 px-3 sm:px-6 text-xs sm:text-sm md:text-base lg:text-[17px] text-[rgba(243,243,243,0.68)] font-bold">
+                  <td className="py-4 px-3 sm:px-6 text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-[rgba(243,243,243,0.68)] font-bold">
                     {item.type}
                   </td>
-                  <td className="py-4 px-3 sm:px-6 text-xs sm:text-sm md:text-base lg:text-[17px] text-[rgba(243,243,243,0.68)] font-bold leading-[1.5]">
+                  <td className="py-4 px-3 sm:px-6 text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-[rgba(243,243,243,0.68)] font-bold">
                     {item.useCase}
                   </td>
-                  <td className="py-4 px-3 sm:px-6 text-xs sm:text-sm md:text-base lg:text-[17px] text-[rgba(243,243,243,0.68)] font-bold leading-[1.5]">
+                  <td className="py-4 px-3 sm:px-6 text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-[rgba(243,243,243,0.68)] font-bold">
                     {item.environment}
                   </td>
                 </tr>

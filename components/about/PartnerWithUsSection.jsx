@@ -31,15 +31,15 @@ export default function PartnerWithUsSection() {
           className="text-3xl leading-tight sm:text-[40px] md:text-[48px]"
           style={{ fontFamily: '"Courier Prime", monospace', fontWeight: 700 }}
         >
-          <span className="text-slate-50">Partner with </span>
-          <span className="bg-[linear-gradient(90deg,#CB3F24_0%,#BE3B22_100%)] bg-clip-text text-transparent">
+          <span className="text-white">Partner with </span>
+          <span className="text-[#CB3F24]">
             Qubeats
           </span>
         </h2>
 
         {/* Description text */}
         <p
-          className="max-w-4xl text-[18px] sm:text-[20px] leading-relaxed text-slate-100/90"
+          className="max-w-4xl text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-slate-100/90"
           style={{
             color: "rgba(243,243,243,0.7)",
             fontFamily: '"Courier Prime", monospace',

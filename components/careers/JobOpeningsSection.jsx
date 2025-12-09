@@ -52,7 +52,7 @@ export default function JobOpeningsSection() {
         <h2 className="text-2xl sm:text-3xl font-bold text-white">
           Current Job Openings
         </h2>
-        <p className="text-sm sm:text-base text-slate-300 max-w-3xl">
+        <p className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-slate-300 max-w-3xl">
           Explore open positions across our quantum engineering, software, and
           research teams. Apply now to help shape the future of quantum sensing.
         </p>
@@ -62,7 +62,7 @@ export default function JobOpeningsSection() {
         <button
           onClick={fetchJobs}
           disabled={isLoading}
-          className="inline-flex items-center justify-center rounded-lg border border-slate-700 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-slate-200 transition hover:border-[#FF6B35] hover:text-[#FF6B35] disabled:cursor-not-allowed disabled:opacity-60"
+          className="inline-flex items-center justify-center rounded-lg border border-slate-700 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-slate-200 transition hover:border-[#CB3F24] hover:text-[#CB3F24] disabled:cursor-not-allowed disabled:opacity-60"
         >
           {isLoading ? "Refreshing..." : "Refresh"}
         </button>
@@ -82,7 +82,7 @@ export default function JobOpeningsSection() {
           {jobs.map((job) => (
             <div
               key={job._id}
-              className="flex flex-col gap-4 rounded-2xl border border-slate-800 bg-[#0C0D0F] p-6 transition hover:border-[#FF6B35]/50 sm:flex-row sm:items-center sm:justify-between"
+              className="flex flex-col gap-4 rounded-2xl border border-slate-800 bg-[#0C0D0F] p-6 transition hover:border-[#CB3F24]/50 sm:flex-row sm:items-center sm:justify-between"
             >
               <div>
                 <h3 className="text-xl font-semibold text-white">
@@ -101,7 +101,7 @@ export default function JobOpeningsSection() {
                 href={job.jdLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-lg border border-[#FF6B35]/60 px-4 py-2 text-sm font-semibold text-[#FF6B35] transition hover:border-[#FF6B35] hover:text-white"
+                className="inline-flex items-center justify-center rounded-lg border border-[#CB3F24]/60 px-4 py-2 text-sm font-semibold text-[#CB3F24] transition hover:border-[#CB3F24] hover:text-white"
               >
                 View JD
               </a>

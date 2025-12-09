@@ -9,10 +9,10 @@ export default function WhoWeAreSection() {
           Who We <span className="text-[#cb3f24]">Are</span>
         </h1>
         <div className="grid gap-4 sm:gap-6 lg:grid-cols-2 lg:gap-12">
-          <p className="max-w-[582px] text-base sm:text-lg leading-relaxed text-[rgba(255, 255, 255, 1)]" style={{ fontFamily: "Courier New", fontWeight: 400, letterSpacing: "-0.1em" }}>
+          <p className="max-w-[582px] text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-[rgba(255, 255, 255, 1)]" style={{ fontFamily: "Courier New", fontWeight: 400, letterSpacing: "-0.1em" }}>
             QuBeats is a quantum-sensing company building magnetometers and sensor arrays for resilient navigation, defense, space, georesource, and biomedical applications.
           </p>
-          <p className="max-w-[582px] text-base sm:text-lg leading-relaxed text-[rgba(255, 255, 255, 1)]" style={{ fontFamily: "Courier New", fontWeight: 400, letterSpacing: "-0.1em" }}>
+          <p className="max-w-[582px] text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-[rgba(255, 255, 255, 1)]" style={{ fontFamily: "Courier New", fontWeight: 400, letterSpacing: "-0.1em" }}>
             We translate cutting-edge quantum physics into dependable, field-ready systems that perform in the world's most demanding environments.
           </p>
         </div>

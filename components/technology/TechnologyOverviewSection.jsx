@@ -87,13 +87,10 @@ export default function TechnologyOverviewSection() {
         className="text-[32px] sm:text-[40px] md:text-[48px] lg:text-[53px] font-bold mb-8 sm:mb-12 md:mb-16 leading-[1.1] tracking-[-1px]"
         style={{
           fontFamily: '"Courier Prime", monospace',
-          background: "linear-gradient(to bottom, #f3f3f3, #bdbdbd)",
-          WebkitBackgroundClip: "text",
-          WebkitTextFillColor: "transparent",
-          backgroundClip: "text"
+          color: "white"
         }}
       >
-        Technology <span style={{ background: "linear-gradient(to right, #cb3f24, #be3b22)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>Overview</span>
+        Technology <span style={{ color: "#CB3F24" }}>Overview</span>
       </h2>
 
       {/* Technology Sections */}
@@ -127,7 +124,7 @@ export default function TechnologyOverviewSection() {
                 </h3>
                 
                 <p 
-                  className="text-sm sm:text-base md:text-[16.524px] text-[rgba(243,243,243,0.6)] leading-[1.3] tracking-[0.1652px]"
+                  className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-[rgba(243,243,243,0.6)]"
                   style={{ fontFamily: '"Courier Prime", monospace' }}
                 >
                   {section.description}
@@ -139,7 +136,7 @@ export default function TechnologyOverviewSection() {
                     {section.features.map((feature, idx) => (
                       <div key={idx} className="space-y-3">
                         <div className="flex items-center gap-3">
-                          <div className="w-[39.5px] h-[39.5px] bg-[#FF6B35] rounded flex items-center justify-center flex-shrink-0">
+                          <div className="w-[39.5px] h-[39.5px] bg-[#CB3F24] rounded flex items-center justify-center flex-shrink-0">
                             <Image
                               src={feature.icon}
                               alt={feature.title}
@@ -156,7 +153,7 @@ export default function TechnologyOverviewSection() {
                           </h4>
                         </div>
                         <p 
-                          className="text-[12.064px] text-[rgba(243,243,243,0.6)] leading-[14.864px] tracking-[0.1206px] pl-[52px]"
+                          className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-[rgba(243,243,243,0.6)] pl-[52px]"
                           style={{ fontFamily: '"Courier Prime", monospace' }}
                         >
                           {feature.description}

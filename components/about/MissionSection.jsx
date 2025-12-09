@@ -50,7 +50,7 @@ export default function MissionSection() {
                     className="h-6 w-6 sm:h-8 sm:w-8"
                   />
                 </div>
-                <p className="font-['Courier_New',monospace] text-base sm:text-lg md:text-xl lg:text-[22.88px] leading-[1.5] tracking-[-0.078em] text-[rgba(243,243,243,0.9)]">
+                <p className="font-['Courier_New',monospace] text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-[rgba(243,243,243,0.9)]">
                   {point.text}
                 </p>
               </div>

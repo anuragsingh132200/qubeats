@@ -70,7 +70,7 @@ export default function WhyChooseSection() {
                   Array First
                 </h3>
               </div>
-              <p className="mt-2 font-['Courier_Prime',monospace] text-[18.9px] font-normal leading-[26.6px] tracking-[0.01em] text-[rgba(0,0,0,0.6)]">
+              <p className="mt-2 font-['Courier_Prime',monospace] text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-[rgba(0,0,0,0.6)]">
                 Architected for multi-sensor coherence and true gradiometry—not
                 just single-probe specs.
               </p>
@@ -92,7 +92,7 @@ export default function WhyChooseSection() {
                   Field-Ready Packaging
                 </h3>
               </div>
-              <p className="mt-2 font-['Courier_Prime',monospace] text-[18.9px] font-normal leading-[26.6px] tracking-[0.01em] text-[rgba(0,0,0,0.6)]">
+              <p className="mt-2 font-['Courier_Prime',monospace] text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-[rgba(0,0,0,0.6)]">
                 Rugged enclosures, low-SWaP electronics, and shield-aware
                 mechanicals.
               </p>
@@ -114,7 +114,7 @@ export default function WhyChooseSection() {
                   Fusion DNA
                 </h3>
               </div>
-              <p className="mt-2 font-['Courier_Prime',monospace] text-[18.9px] font-normal leading-[26.6px] tracking-[0.01em] text-[rgba(0,0,0,0.6)]">
+              <p className="mt-2 font-['Courier_Prime',monospace] text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-[rgba(0,0,0,0.6)]">
                 Native IMU/GNSS integration plus magnetic map-matching for
                 resilient PNT.
               </p>
@@ -138,7 +138,7 @@ export default function WhyChooseSection() {
                     Made in India, Built for the World
                   </h3>
                 </div>
-                <p className="mt-2 font-['Courier_Prime',monospace] text-[18.9px] font-normal leading-[26.6px] tracking-[0.01em] text-[rgba(0,0,0,0.6)]">
+                <p className="mt-2 font-['Courier_Prime',monospace] text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-[rgba(0,0,0,0.6)]">
                   Local supply chain + global research partnerships.
                 </p>
               </article>
@@ -170,7 +170,7 @@ export default function WhyChooseSection() {
 
         {/* Bottom buttons */}
         <div className="mt-8 sm:mt-10 flex flex-col items-center justify-center gap-4 md:mt-12 md:flex-row w-full">
-          <button className="w-full sm:w-[280px] md:w-[300px] h-[55px] sm:h-[60px] md:h-[65px] border border-[#E14413] bg-gradient-to-r from-[#C13D23] to-[#BE3B22] text-xs sm:text-sm font-bold tracking-[0.18em] text-white">
+          <button className="w-full sm:w-[280px] md:w-[300px] h-[55px] sm:h-[60px] md:h-[65px] border border-[#CB3F24] bg-gradient-to-r from-[#CB3F24] to-[#BE3B22] text-xs sm:text-sm font-bold tracking-[0.18em] text-white">
             Start a Scoped Pilot
           </button>
           <button className="w-full sm:w-[280px] md:w-[300px] h-[55px] sm:h-[60px] md:h-[65px] border border-slate-100 bg-transparent text-xs sm:text-sm font-semibold uppercase tracking-[0.18em] text-slate-50">

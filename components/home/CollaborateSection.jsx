@@ -30,15 +30,15 @@ export default function CollaborateSection() {
           className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight"
           style={{ fontFamily: '"Courier Prime", monospace', fontWeight: 700 }}
         >
-          <span className="text-slate-50">Collaborate with </span>
-          <span className="bg-[linear-gradient(90deg,#CB3F24_0%,#BE3B22_100%)] bg-clip-text text-transparent">
+          <span className="text-white">Collaborate with </span>
+          <span className="text-[#CB3F24]">
             Qubeats
           </span>
         </h2>
 
         {/* Description text */}
         <p
-          className="max-w-4xl text-[18px] sm:text-[20px] leading-relaxed text-slate-100/90"
+          className="max-w-4xl text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-slate-100/90"
           style={{
             fontFamily: '"Courier Prime", monospace',
             letterSpacing: "0.03em",

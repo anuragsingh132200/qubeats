@@ -46,15 +46,15 @@ export default function FindPerfectSolutionSection() {
             fontWeight: 700,
           }}
         >
-          <span className="text-slate-50">Find your perfect </span>
-          <span className="bg-[linear-gradient(90deg,#FF6B35_0%,#FF8C5A_100%)] bg-clip-text text-transparent">
+          <span className="text-white">Find your perfect </span>
+          <span className="text-[#CB3F24]">
             Solution
           </span>
         </h2>
 
         {/* Description text */}
         <p
-          className="max-w-4xl text-[18px] sm:text-[20px] leading-relaxed text-slate-100/90"
+          className="max-w-4xl text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-slate-100/90"
           style={{
             fontFamily: '"Courier Prime", monospace',
             letterSpacing: "0.03em",
@@ -72,7 +72,7 @@ export default function FindPerfectSolutionSection() {
               fontFamily: '"Courier Prime", monospace',
               fontWeight: 700,
               letterSpacing: "0.07em",
-              background: "linear-gradient(90deg,#FF6B35 0%,#FF8C5A 100%)",
+              background: "linear-gradient(90deg,#CB3F24 0%,#BE3B22 100%)",
               color: "#FFFFFF",
             }}
           >

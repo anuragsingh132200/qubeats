@@ -14,7 +14,7 @@ export default function ProductsHeroSection() {
             style={{ fontFamily: '"Courier Prime", monospace', fontWeight: 700 }}
           >
             <span className="text-white">Our </span>
-            <span className="text-[#FF6B35]">Products</span>
+            <span className="text-[#CB3F24]">Products</span>
           </h1>
         </div>
 

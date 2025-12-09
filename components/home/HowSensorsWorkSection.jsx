@@ -59,8 +59,8 @@ export default function HowSensorsWorkSection() {
             <h2
               className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-['Courier_Prime'] font-bold"
             >
-              <span className="text-[rgba(243,243,243,1)]">Where our sensors </span>
-              <span className="bg-[linear-gradient(90deg,#CB3F24_0%,#BE3B22_100%)] font-weight-700 bg-clip-text text-transparent">
+              <span className="text-white">Where our sensors </span>
+              <span className="text-[#CB3F24] font-weight-700">
                 Operate
               </span>
             </h2>
@@ -91,13 +91,11 @@ export default function HowSensorsWorkSection() {
 
                   {/* Small content block */}
                   <div
-                    className="px-4 py-3"
+                    className="px-4 py-3 text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight"
                     style={{
                       color: "rgba(243, 243, 243, 0.62)",
                       fontFamily: '"Courier Prime", monospace',
                       fontWeight: 400,
-                      fontSize: "clamp(14px, 2.5vw, 17.24px)",
-                      lineHeight: "1.15",
                       letterSpacing: "0.01em",
                     }}
                   >
@@ -130,13 +128,11 @@ export default function HowSensorsWorkSection() {
 
                   {/* Small content block */}
                   <div
-                    className="px-4 py-3"
+                    className="px-4 py-3 text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight"
                     style={{
                       color: "rgba(243, 243, 243, 0.62)",
                       fontFamily: '"Courier Prime", monospace',
                       fontWeight: 400,
-                      fontSize: "clamp(14px, 2.5vw, 17.24px)",
-                      lineHeight: "1.15",
                       letterSpacing: "0.01em",
                     }}
                   >

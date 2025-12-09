@@ -43,10 +43,8 @@ export default function HowTechnologyWorks() {
               }}
             >
               <span
-                className="bg-clip-text text-transparent"
                 style={{
-                  backgroundImage:
-                    "linear-gradient(90deg, #F3F3F3 0%, #BDBDBD 100%)",
+                  color: "white",
                 }}
               >
                 How our Quantum
@@ -54,10 +52,8 @@ export default function HowTechnologyWorks() {
                 Sensors{" "}
               </span>
               <span
-                className="bg-clip-text text-transparent"
                 style={{
-                  backgroundImage:
-                    "linear-gradient(90deg, #CB3F24 0%, #BE3B22 100%)",
+                  color: "#CB3F24",
                 }}
               >
                 Work
@@ -68,7 +64,7 @@ export default function HowTechnologyWorks() {
           {/* Right-side description box */}
           <div className="w-full max-w-md px-3 py-4 sm:py-6">
             <p
-              className="text-base sm:text-lg md:text-xl lg:text-[22.88px] leading-[1.5]"
+              className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight"
               style={{
                 fontFamily: '"Courier New", monospace',
                 fontWeight: 400,
@@ -112,7 +108,7 @@ export default function HowTechnologyWorks() {
                 OPM (vapor-cell):
               </p>
               <p
-                className="text-base sm:text-lg md:text-xl lg:text-[22.88px] leading-[1.5]"
+                className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight"
                 style={{
                   color: "rgba(0, 0, 0, 0.6)",
                   fontFamily: '"Courier New", monospace',
@@ -150,7 +146,7 @@ export default function HowTechnologyWorks() {
                 NV-diamond:
               </p>
               <p
-                className="text-base sm:text-lg md:text-xl lg:text-[21px] leading-[1.5]"
+                className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight"
                 style={{
                   fontFamily: '"Courier New", monospace',
                   fontWeight: 400,
@@ -189,7 +185,7 @@ export default function HowTechnologyWorks() {
                 Rydberg RF:
               </p>
               <p
-                className="text-base sm:text-lg md:text-xl lg:text-[22.88px] leading-[1.5]"
+                className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight"
                 style={{
                   fontFamily: '"Courier New", monospace',
                   fontWeight: 400,
@@ -207,7 +203,7 @@ export default function HowTechnologyWorks() {
         {/* Bottom paragraph */}
         <div className="mt-10 sm:mt-12 md:mt-16 flex justify-center">
           <p
-            className="max-w-4xl text-center text-base sm:text-lg md:text-xl lg:text-[22.88px] leading-[1.5] px-4"
+            className="max-w-4xl text-center text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight px-4"
             style={{
               fontFamily: '"Courier New", monospace',
               fontWeight: 400,

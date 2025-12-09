@@ -49,14 +49,14 @@ export default function SoftwareSection() {
         </h1>
 
         {/* Two header callouts */}
-        <div className="grid grid-cols-3 gap-3 text-sm sm:text-[13px] pb-3 sm:flex-row sm:justify-between">
-          <div className="max-w-sm px-4 py-3 leading-relaxed">
+        <div className="grid grid-cols-3 gap-3 text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight pb-3 sm:flex-row sm:justify-between">
+          <div className="max-w-sm px-4 py-3">
             <span className="font-semibold">QuBeats Fusion – </span>
             <span className="text-gray-300">
               AI/ML filtering, map-matching, and drift suppression for real-time navigation.
             </span>
           </div>
-          <div className="max-w-sm px-4 py-3 leading-relaxed">
+          <div className="max-w-sm px-4 py-3">
             <span className="font-semibold">QuBeats Studio – </span>
             <span className="text-gray-300">
               calibration, replay, and fleet management for distributed sensor networks.
@@ -84,12 +84,12 @@ export default function SoftwareSection() {
                 </div>
 
                 {/* Description */}
-                <p className="mb-6 mt-4 text-xs leading-relaxed text-gray-300 sm:text-[13px]">
+                <p className="mb-6 mt-4 text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-gray-300">
                   {item.description}
                 </p>
 
                 {/* Metadata */}
-                <div className="mb-6 space-y-3 text-xs sm:text-[13px]">
+                <div className="mb-6 space-y-3 text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight">
                   <div className="flex items-start gap-3">
                     <span className="mt-1 flex h-6 w-6 items-center justify-center">
                       <img
@@ -140,7 +140,7 @@ export default function SoftwareSection() {
                 </div>
 
                 {/* Download link */}
-                <button className="inline-flex items-center gap-2 text-xs font-semibold tracking-wide text-[#ff5a1f] transition-colors hover:text-[#ff7b3b] sm:text-sm">
+                <button className="inline-flex items-center gap-2 text-xs font-semibold tracking-wide text-[#CB3F24] transition-colors hover:text-[#BE3B22] sm:text-sm">
                   <span>Download Specs</span>
                   <span className="text-base">➜</span>
                 </button>

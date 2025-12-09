@@ -26,19 +26,19 @@ export default function IntroHeroSection() {
         <div className="relative flex flex-col mr-0 sm:mr-8 md:mr-12 lg:mr-20 gap-6 sm:gap-8 md:gap-10">
           {/* Heading */}
           <h1
-            className="text-[32px] text-[rgba(192,192,192,1)] sm:text-[40px] md:text-[56px] lg:text-[70px] xl:text-[80px] leading-[1.2] font-bold"
+            className="text-[32px] text-white sm:text-[40px] md:text-[56px] lg:text-[70px] xl:text-[80px] leading-[1.2] font-bold"
             style={{ fontFamily: '"Courier Prime", monospace', fontSize: "80px" }}
           >
             The Quantum Behind  
             <br />
-            the <span className="bg-clip-text text-transparent" style={{ backgroundImage: "linear-gradient(90deg, #CB3F24 0%, #BE3B22 100%)" }}>
+            the <span className="text-[#CB3F24]">
             Sensing</span>
           </h1>
 
           {/* Two-column body text */}
           <div className="grid gap-x-4 sm:gap-x-6 gap-y-6 sm:gap-y-8 md:gap-y-10 md:grid-cols-2">
             <p
-              className="text-sm sm:text-base md:text-lg lg:text-[18.133px] text-[rgba(243,243,243,0.7)]"
+              className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-[rgba(243,243,243,0.7)]"
               style={{ fontFamily: '"Courier New", monospace', fontWeight: 400, }}
             >
               At QuBeats Technologies, we offer a comprehensive suite of quantum
@@ -46,7 +46,7 @@ export default function IntroHeroSection() {
               precision and performance across various applications.
             </p>
             <p
-              className="text-sm sm:text-base md:text-lg lg:text-[18.13px] text-[rgba(243,243,243,0.7)]"
+              className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-[rgba(243,243,243,0.7)]"
               style={{ fontFamily: '"Courier New", monospace', fontWeight: 400, }}
             >
               Our innovative solutions harness the principles of quantum

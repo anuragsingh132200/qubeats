@@ -45,7 +45,7 @@ export default function HeroSection() {
         <div className="mt-6 sm:mt-8 flex flex-col gap-4 sm:gap-5 sm:flex-row sm:items-center">
           <Link
             href="#contact"
-            className="inline-flex items-center justify-center bg-[#c13d23] px-6 sm:px-8 md:px-16 py-3 sm:py-4 text-[11px] sm:text-[12px] md:text-[13px] font-semibold uppercase tracking-[0.15em] text-white shadow-lg transition hover:bg-[#d64528] text-center"
+            className="inline-flex items-center justify-center bg-[#CB3F24] px-6 sm:px-8 md:px-16 py-3 sm:py-4 text-[11px] sm:text-[12px] md:text-[13px] font-semibold uppercase tracking-[0.15em] text-white shadow-lg transition hover:bg-[#BE3B22] text-center"
             style={{
               fontFamily: '"Courier Prime", monospace',
               fontWeight: 700,

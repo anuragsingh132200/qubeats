@@ -24,9 +24,9 @@ export default function RydbergRFPlatformsSection() {
         <div className="flex-1 relative">
           {/* Timeline */}
           <div className="absolute left-0 top-0 bottom-0 w-1 bg-white/20">
-            <div className="absolute top-0 left-0 w-1 h-full bg-[#FF6B35]" />
+            <div className="absolute top-0 left-0 w-1 h-full bg-[#CB3F24]" />
           </div>
-          <div className="absolute left-[-2px] top-0 w-6 h-1 bg-[#FF6B35]" />
+          <div className="absolute left-[-2px] top-0 w-6 h-1 bg-[#CB3F24]" />
           
           {/* Content */}
           <div className="pl-12">
@@ -34,7 +34,7 @@ export default function RydbergRFPlatformsSection() {
             <h2 className="text-3xl font-bold text-white mb-6">
               Rydberg RF Platforms
             </h2>
-            <p className="text-base text-slate-300 mb-8 max-w-xl">
+            <p className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-slate-300 mb-8 max-w-xl">
               Atom-based electric-field sensors exploiting highly excited Rydberg states for passive RF detection, spectrum awareness, and electromagnetic interference mapping without traditional antennas.
             </p>
             
@@ -59,7 +59,7 @@ export default function RydbergRFPlatformsSection() {
                       <h3 className="text-lg font-semibold text-white mb-2">
                         {feature.title}
                       </h3>
-                      <p className="text-sm text-slate-300 leading-relaxed">
+                      <p className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-slate-300">
                         {feature.detail}
                       </p>
                     </div>

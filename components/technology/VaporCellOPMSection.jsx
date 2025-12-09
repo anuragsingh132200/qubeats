@@ -80,7 +80,7 @@ export default function VaporCellOPMSection() {
                   <h3 className="font-mono text-sm md:text-[15px] font-semibold text-white mb-2">
                     {feature.title}
                   </h3>
-                  <p className="font-mono text-[11px] leading-relaxed text-slate-300">
+                  <p className="font-mono text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-slate-300">
                     {feature.detail}
                   </p>
                 </div>

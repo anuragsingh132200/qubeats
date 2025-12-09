@@ -46,10 +46,10 @@ export default function ResearchPartnersSection() {
           className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-[-1px]"
           style={{ fontFamily: '"Courier Prime", monospace' }}
         >
-          <span className="bg-[linear-gradient(180deg,#F3F3F3_0%,#BDBDBD_100%)] bg-clip-text text-transparent">
+          <span className="text-white">
             Our Research{" "}
           </span>
-          <span className="bg-[linear-gradient(90deg,#CB3F24_0%,#BE3B22_100%)] bg-clip-text text-transparent">
+          <span className="text-[#CB3F24]">
             Partners
           </span>
         </h2>

@@ -63,21 +63,21 @@ export default function Magnetometers() {
         </h1>
 
         {/* Three header callouts */}
-        <div className="flex flex-col gap-3 text-sm sm:text-[13px] sm:flex-row">
-          <div className="max-w-sm  px-4 py-3 leading-relaxed">
+        <div className="flex flex-col gap-3 text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight sm:flex-row">
+          <div className="max-w-sm  px-4 py-3">
             <span className="font-semibold">Scalar &amp; Vector OPMs – </span>
             <span className="text-gray-300">
               tactical magnetometers for navigation and attitude determination
               in Earth&apos;s field.
             </span>
           </div>
-          <div className="max-w-sm  px-4 py-3 leading-relaxed">
+          <div className="max-w-sm  px-4 py-3">
             <span className="font-semibold">Optical Atomic Clock – </span>
             <span className="text-gray-300">
               superior timing stability for GNSS-denied environments.
             </span>
           </div>
-          <div className="max-w-sm bg-[rgba(192,192,192,1)] px-4 py-3 ml-26 leading-relaxed">
+          <div className="max-w-sm bg-[rgba(192,192,192,1)] px-4 py-3 ml-26">
             <span className="font-semibold text-black">Rydberg RF sensors – </span>
             <span className="text-gray-300 text-gray-600 ">
               electric-field detection for spectrum awareness and EMI
@@ -105,12 +105,12 @@ export default function Magnetometers() {
                 </div>
 
                 {/* Description */}
-                <p className="mb-6 mt-4 text-xs leading-relaxed text-gray-300 sm:text-[13px]">
+                <p className="mb-6 mt-4 text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-gray-300">
                   {item.description}
                 </p>
 
                 {/* Metadata */}
-                <div className="mb-6 space-y-3 text-xs sm:text-[13px]">
+                <div className="mb-6 space-y-3 text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight">
                   <div className="flex items-start gap-3">
                     <span className="mt-1 flex h-6 w-6 items-center justify-center">
                       <img
@@ -161,7 +161,7 @@ export default function Magnetometers() {
                 </div>
 
                 {/* Download link */}
-                <button className="inline-flex items-center gap-2 text-xs font-semibold tracking-wide text-[#ff5a1f] transition-colors hover:text-[#ff7b3b] sm:text-sm">
+                <button className="inline-flex items-center gap-2 text-xs font-semibold tracking-wide text-[#CB3F24] transition-colors hover:text-[#BE3B22] sm:text-sm">
                   <span>Download Specs</span>
                   <span className="text-base">➜</span>
                 </button>

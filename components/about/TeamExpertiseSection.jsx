@@ -86,12 +86,11 @@ export default function TeamExpertiseSection() {
 
                 {/* Smaller content inside image box */}
                 <p
+                  className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight"
                   style={{
                     color: "rgba(243,243,243,0.75)",
                     fontFamily: '"Courier Prime", monospace',
                     fontWeight: 400,
-                    fontSize: "15.71px",
-                    lineHeight: "21.6px",
                     letterSpacing: "0.01em",
                   }}
                 >
@@ -118,12 +117,11 @@ export default function TeamExpertiseSection() {
           </span>
         </h2>
         <p
-          className="max-w-xl text-sm sm:text-base"
+          className="max-w-xl text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight"
           style={{
             color: "rgba(243,243,243,0.9)",
             fontFamily: '"Courier Prime", monospace',
             fontWeight: 400,
-            lineHeight: "1.5",
             letterSpacing: "0.02em",
           }}
         >

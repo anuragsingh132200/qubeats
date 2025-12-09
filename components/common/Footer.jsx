@@ -45,22 +45,9 @@ export default function Footer() {
       </div>
 
       <div className="relative z-10 mx-auto w-full max-w-[1440px] px-4 sm:px-6 py-12 sm:py-16 md:px-12">
-        {/* Top Navigation Links - Centered */}
-        <div className="mb-8 sm:mb-12 flex flex-wrap items-center justify-end gap-4 sm:gap-6 md:gap-8 lg:gap-12">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="font-['Courier_Prime',monospace] text-sm sm:text-base md:text-[18px] font-bold leading-[21.6px] text-[#bdbdbd] opacity-80 transition-opacity hover:opacity-100"
-            >
-              {link.label}
-            </Link>
-          ))}
-        </div>
-
-        {/* Main Content: Logo/Tagline and Social Icons */}
+        {/* Main Content: Two-column layout with top alignment */}
         <div className="flex flex-col gap-8 sm:gap-12 md:flex-row md:items-start md:justify-between">
-          {/* Left: Logo and Tagline */}
+          {/* Left: Logo, Company Name, Tagline, and Description */}
           <div className="flex flex-col gap-4 sm:gap-6">
             {/* Logo */}
             <div className="flex items-center gap-4">
@@ -73,32 +60,47 @@ export default function Footer() {
               />
             </div>
             
-            {/* Tagline */}
-            <p className="font-['Courier_Prime',monospace] text-sm sm:text-base md:text-[17px] font-bold leading-[25px] text-[rgba(192,192,192,0.85)] max-w-[338px] whitespace-pre-wrap">
+            {/* Description */}
+            <p className="font-['Courier_Prime',monospace] text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-[rgba(192,192,192,0.85)] max-w-[338px] whitespace-pre-wrap">
               Quantum sensors with atomic precision.
-
               Lab-grade accuracy, engineered for the field.
             </p>
           </div>
 
-          {/* Right: Social Media Icons */}
-          <div className="flex items-center gap-3 sm:gap-4">
-            {socialItems.map((item) => (
-              <Link
-                key={item.name}
-                href={item.href}
-                className="flex h-[40px] w-[40px] sm:h-[47px] sm:w-[47px] items-center justify-center rounded-full bg-[silver] transition-opacity hover:opacity-80"
-                aria-label={item.name}
-              >
-                <Image
-                  src={item.icon}
-                  alt={item.name}
-                  width={47}
-                  height={47}
-                  className="h-full w-full object-contain"
-                />
-              </Link>
-            ))}
+          {/* Right: Navigation Links and Social Icons */}
+          <div className="flex flex-col gap-6 sm:gap-8 items-end">
+            {/* Top Navigation Links */}
+            <div className="flex flex-wrap items-center justify-end gap-4 sm:gap-6 md:gap-8 lg:gap-12">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="font-['Courier_Prime',monospace] text-sm sm:text-base md:text-[18px] font-bold leading-[21.6px] text-white transition-opacity hover:opacity-80"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+
+            {/* Social Media Icons */}
+            <div className="flex items-center gap-3 sm:gap-4">
+              {socialItems.map((item) => (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  className="flex h-[40px] w-[40px] sm:h-[47px] sm:w-[47px] items-center justify-center rounded-full bg-white transition-opacity hover:opacity-80"
+                  aria-label={item.name}
+                >
+                  <Image
+                    src={item.icon}
+                    alt={item.name}
+                    width={47}
+                    height={47}
+                    className="h-full w-full object-contain"
+                  />
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
 
