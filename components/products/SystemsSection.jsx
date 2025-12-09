@@ -58,19 +58,20 @@ export default function SystemsSection() {
         </h1>
 
         {/* Two header callouts */}
-        <div className="flex flex-col gap-3 text-sm sm:text-[13px] sm:flex-row sm:justify-between">
+        <div className="grid grid-cols-3 gap-3 text-sm sm:text-[13px] pt-3 pb-3 sm:flex-row sm:justify-between">
           <div className="max-w-sm px-4 py-3 leading-relaxed">
             <span className="font-semibold">MagNav Box – </span>
             <span className="text-gray-300">
               magnetic-field–aided PNT fused with IMU/GNSS for air, sea, and space.
             </span>
           </div>
-          <div className="max-w-sm bg-[rgba(192,192,192,1)] px-4 py-3 leading-relaxed">
-            <span className="font-semibold text-black">Maritime Quantum Pod – </span>
-            <span className="text-gray-300 text-gray-600">
+          <div className="max-w-sm px-4 py-3 leading-relaxed">
+            <span className="font-semibold">Maritime Quantum Pod – </span>
+            <span className="text-gray-300">
               multi-axis gradiometer array for underwater anomaly detection and tracking.
             </span>
           </div>
+          <div className="max-w-sm bg-[rgba(192,192,192,1)] px-4 pt-3 pb-6 -mb-3 ml-9 leading-relaxed" />
         </div>
 
         {/* Big light panel behind cards */}

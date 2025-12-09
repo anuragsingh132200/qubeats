@@ -58,19 +58,20 @@ export default function SoftwareSection() {
         </h1>
 
         {/* Two header callouts */}
-        <div className="flex flex-col gap-3 text-sm sm:text-[13px] sm:flex-row sm:justify-between">
+        <div className="grid grid-cols-3 gap-3 text-sm sm:text-[13px] pb-3 sm:flex-row sm:justify-between">
           <div className="max-w-sm px-4 py-3 leading-relaxed">
             <span className="font-semibold">QuBeats Fusion – </span>
             <span className="text-gray-300">
               AI/ML filtering, map-matching, and drift suppression for real-time navigation.
             </span>
           </div>
-          <div className="max-w-sm bg-[rgba(192,192,192,1)] px-4 py-3 leading-relaxed">
-            <span className="font-semibold text-black">QuBeats Studio – </span>
-            <span className="text-gray-300 text-gray-600">
+          <div className="max-w-sm px-4 py-3 leading-relaxed">
+            <span className="font-semibold">QuBeats Studio – </span>
+            <span className="text-gray-300">
               calibration, replay, and fleet management for distributed sensor networks.
             </span>
           </div>
+          <div className="max-w-sm bg-[rgba(192,192,192,1)] px-4 pt-3 pb-6 -mb-3 ml-9 leading-relaxed"/>
         </div>
 
         {/* Big light panel behind cards */}

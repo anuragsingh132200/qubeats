@@ -105,13 +105,12 @@ export default function TechnicalHighlightsSection() {
         {/* RIGHT: Image + overlay boxes */}
         <div className="relative flex-1 mt-8 lg:mt-0 lg:flex lg:items-center lg:justify-end max-md:hidden">
           <div className="relative ml-auto h-[300px] sm:h-[380px] md:h-[450px] lg:h-[480px] w-full max-w-[640px]">
-            {/* Grey box (above) */}
-            <div className="absolute -top-6 sm:-top-8 md:-top-10 lg:-top-13 left-8 sm:left-12 md:left-16 lg:left-19 h-[40px] sm:h-[45px] md:h-[50px] lg:h-[55px] w-[50px] sm:w-[60px] md:w-[68px] lg:w-[73px] bg-[#D9D9D9] max-md:hidden" />
+            
 
             {/* Aircraft image placeholder */}
             <div className="relative h-full w-full bg-[rgba(18,18,18,1)]">
               <Image
-                src="/images/home/technical-aircraft.png"
+                src="/images/home/submarine.png"
                 alt="Airborne platform technical highlight visualization"
                 fill
                 className="object-cover"

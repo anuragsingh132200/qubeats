@@ -14,7 +14,7 @@ export default function ResearchPartnersSection() {
       </div>
 
       {/* Small atom tile placeholder (top-right) */}
-      <div className="pointer-events-none absolute hidden lg:flex items-center justify-center w-[70px] h-[68px] bg-[rgba(192,192,192,1)] right-20 lg:right-79 top-20">
+      <div className="pointer-events-none absolute hidden lg:flex items-center justify-center w-[70px] h-[68px] bg-[rgba(192,192,192,1)] right-20 lg:right-85 top-20">
         <Image
           src="/images/home/vector-1.png" // your small atom box placeholder
           alt=""
@@ -54,7 +54,7 @@ export default function ResearchPartnersSection() {
           </span>
         </h2>
 
-        <div className="absolute hidden lg:block bg-[rgba(192,192,192,1)] w-[180px] md:w-[200px] lg:w-[220px] h-[100px] md:h-[115px] lg:h-[130px] right-4 md:right-8 lg:right-10 top-16 md:top-18 lg:top-21">
+        <div className="absolute hidden lg:block bg-[rgba(192,192,192,1)] w-[180px] md:w-[200px] lg:w-[220px] h-[100px] md:h-[115px] lg:h-[130px] right-4 md:right-16 top-16 md:top-18 lg:top-21">
 
         </div>
 

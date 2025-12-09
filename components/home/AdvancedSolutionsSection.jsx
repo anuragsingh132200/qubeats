@@ -42,7 +42,7 @@ export default function AdvancedSolutionsSection() {
             <div className="relative overflow-hidden">
               {/* Airplane image (full cover of wrapper) */}
               <Image
-                src="/images/home/Union.png"
+                src="/images/home/drone.png"
                 alt="Stealth aircraft formation"
                 width={580}
                 height={503}

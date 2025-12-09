@@ -42,7 +42,7 @@ export default function TeamExpertiseSection() {
           {/* Background image placeholder inside which the 4 boxes sit */}
           <div className="pointer-events-none absolute inset-0">
             <Image
-              src="/images/about/team-bg-placeholder.png"
+              src="/images/about/bg-about.png"
               alt=""
               fill
               className="object-cover opacity-100"
@@ -54,7 +54,7 @@ export default function TeamExpertiseSection() {
             {teamMembers.map((member) => (
               <article
                 key={member.name}
-                className="relative border border-white/10 max-w-[550px] max-h-[560px] bg-[rgba(0,0,0,0.15)] p-6 shadow-[0px_4px_20px_0px_rgba(189,189,189,0.15)]"
+                className="relative border border-white/10 max-w-[550px] max-h-[560px] bg-[rgba(255,255,255,0.1)] p-6 shadow-[0px_4px_20px_0px_rgba(189,189,189,0.15)]"
               >
                 {/* Small grey box at top-right of each image box */}
                 <div className="absolute z-10 right-0 top-0 h-[60px] w-[109px] bg-[rgba(192,192,192,0.3)]" />
