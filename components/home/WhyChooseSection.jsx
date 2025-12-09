@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function WhyChooseSection() {
   return (
-    <div className="relative overflow-hidden bg-[rgba(18,18,18,1)] px-4 sm:px-6 md:px-10 lg:px-16 py-8 sm:py-12 md:py-16">
+    <div className="relative overflow-hidden bg-[rgba(18,18,18,1)] py-8 sm:py-12 md:py-16">
       {/* Background image placeholder */}
       <div className="pointer-events-none absolute inset-0 h-1/2 opacity-90">
         <Image
@@ -14,7 +14,7 @@ export default function WhyChooseSection() {
         />
       </div>
 
-      <div className="relative z-10 mx-4 sm:mx-6 md:mx-10 px-4 sm:px-6 md:px-4">
+      <div className="relative z-10 mx-auto w-full max-w-[1400px] px-4 sm:px-6 md:px-10 lg:px-16">
         {/* Floating rectangle above the content box (top-right) */}
         <div className="pointer-events-none absolute right-4 sm:right-8 md:right-17 -top-2 sm:-top-4 h-[50px] sm:h-[60px] md:h-[76px] w-[70px] sm:w-[90px] md:w-[108px] bg-[rgba(192,192,192,1)] max-md:hidden" />
 
@@ -48,7 +48,7 @@ export default function WhyChooseSection() {
           </div>
 
           {/* Heading */}
-          <h2 className="ml-2 sm:ml-4 md:ml-6 font-['Courier_Prime'] text-[28px] sm:text-[36px] md:text-[40px] lg:text-[50px] font-extrabold leading-[1.1] text-[rgba(18,18,18,1)]">
+          <h2 className="ml-2 sm:ml-4 md:ml-6 font-['Courier_Prime'] text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.1] text-[rgba(18,18,18,1)]">
             Why Customers choose QuBeats
           </h2>
 

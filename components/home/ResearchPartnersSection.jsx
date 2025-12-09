@@ -25,7 +25,7 @@ export default function ResearchPartnersSection() {
       </div>
 
       {/* Main content container */}
-      <div className="relative mx-4 sm:mx-6 md:mx-10 lg:mx-14 flex max-w-8xl flex-col gap-6 sm:gap-8 px-4 sm:px-6 md:px-10 lg:px-16">
+      <div className="relative mx-auto w-full max-w-[1400px] flex flex-col gap-6 sm:gap-8 px-4 sm:px-6 md:px-10 lg:px-16">
         {/* OUR PARTNERS label */}
         <p
           className="inline py-2 uppercase"
@@ -43,7 +43,7 @@ export default function ResearchPartnersSection() {
 
         {/* Heading */}
         <h2
-          className="text-[32px] sm:text-[40px] md:text-[48px] lg:text-[52px] font-bold leading-[1.1] tracking-[-1px]"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-[-1px]"
           style={{ fontFamily: '"Courier Prime", monospace' }}
         >
           <span className="bg-[linear-gradient(180deg,#F3F3F3_0%,#BDBDBD_100%)] bg-clip-text text-transparent">

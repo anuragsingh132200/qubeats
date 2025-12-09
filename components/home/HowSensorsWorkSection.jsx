@@ -43,7 +43,7 @@ export default function HowSensorsWorkSection() {
           />
         </div>
 
-        <div className="relative mx-auto flex max-w-7xl flex-col gap-8 sm:gap-10 md:gap-12 px-4 sm:px-6 md:px-10 lg:px-16">
+        <div className="relative mx-auto flex w-full max-w-[1400px] flex-col gap-8 sm:gap-10 md:gap-12 px-4 sm:px-6 md:px-10 lg:px-16">
           {/* Top heading block */}
           <header className="space-y-4">
             <p
@@ -57,7 +57,7 @@ export default function HowSensorsWorkSection() {
               APPLICATIONS
             </p>
             <h2
-              className="text-2xl sm:text-3xl md:text-[36px] lg:text-[40px] font-['Courier_Prime']"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-['Courier_Prime'] font-bold"
             >
               <span className="text-[rgba(243,243,243,1)]">Where our sensors </span>
               <span className="bg-[linear-gradient(90deg,#CB3F24_0%,#BE3B22_100%)] font-weight-700 bg-clip-text text-transparent">

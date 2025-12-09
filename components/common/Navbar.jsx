@@ -10,11 +10,7 @@ const navLinks = [
   { 
     href: "/products", 
     label: "PRODUCTS", 
-    dropdown: true,
-    dropdownItems: [
-      { href: "/products", label: "Products" },
-      { href: "/products/resources", label: "Resources" }
-    ]
+    dropdown: false,
   },
   { href: "/technology", label: "TECHNOLOGY", dropdown: false },
   { href: "/careers", label: "CAREERS", dropdown: false },
@@ -23,6 +19,7 @@ const navLinks = [
     label: "ABOUT US", 
     dropdown: true,
     dropdownItems: [
+      { href: "/products/resources", label: "Resources" },
       { href: "/about", label: "About Us" },
       { href: "/contact", label: "Contact Us" }
     ]

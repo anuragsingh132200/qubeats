@@ -12,15 +12,13 @@ export default function IndiaGlobalFocusSection() {
       <div className="relative w-full max-w-8xl bg-[rgba(192,192,192,1)] pl-4 sm:pl-6 md:pl-10 lg:pl-14 pr-4 sm:pr-6 md:pr-8 pb-8 sm:pb-10 md:pb-12 pt-8 sm:pt-10 md:pt-12">
         
         {/* Heading — right aligned, no grey above */}
-        <div className="absolute top-0 -right-2 sm:-right-4 md:-right-6 lg:-right-8 bg-[rgba(7,7,7,1)] w-[calc(100%+1rem)] sm:w-[calc(100%+2rem)] md:w-[600px] lg:w-[780px] h-[100px] sm:h-[120px] md:h-[150px] px-4 sm:px-6 md:px-8 lg:px-12 py-2">
-          <h2 className="font-['Courier_Prime',monospace] font-bold text-[28px] sm:text-[36px] md:text-[48px] lg:text-[60px] leading-[1.1] tracking-[-1.2px]">
+        <div className="absolute top-0 -right-2 sm:-right-4 md:-right-6 lg:-right-8 bg-[rgba(7,7,7,1)] w-[calc(100%+1rem)] sm:w-[calc(100%+2rem)] md:w-[600px] lg:w-[720px] h-[100px] sm:h-[120px] px-4 sm:px-6 md:px-8 lg:px-12 py-2">
+          <h2 className="font-['Courier_Prime',monospace] font-bold text-[28px] sm:text-[36px] md:text-[48px] lg:text-[60px] leading-[1.1] tracking-[-1.2px] mt-6">
             <span className="bg-[linear-gradient(180deg,#F3F3F3_0%,#BDBDBD_100%)] bg-clip-text text-transparent">
               India +
             </span>{' '}
             <span className="bg-[linear-gradient(90deg,#CB3F24_0%,#BE3B22_100%)] bg-clip-text text-transparent">
               Global
-              <br />
-              Focus
             </span>
           </h2>
         </div>

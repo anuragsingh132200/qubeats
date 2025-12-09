@@ -4,7 +4,7 @@ export default function HowTechnologyWorks() {
   return (
     <section
       id="how-technology-works"
-      className="relative overflow-hidden bg-[rgba(18,18,18,1)] px-4 sm:px-6 md:px-10 lg:px-16 py-12 sm:py-16 md:py-20 lg:py-24"
+      className="relative overflow-hidden bg-[rgba(18,18,18,1)] py-12 sm:py-16 md:py-20 lg:py-24"
     >
       {/* Background pattern */}
       <div className="pointer-events-none absolute inset-0">
@@ -17,7 +17,7 @@ export default function HowTechnologyWorks() {
         />
       </div>
 
-      <div className="relative z-10 mx-auto max-w-8xl">
+      <div className="relative z-10 mx-auto w-full max-w-[1400px] px-4 sm:px-6 md:px-10 lg:px-16">
         {/* Top label */}
         <p
           className="text-base sm:text-lg md:text-xl lg:text-[24px] leading-[1.4] uppercase"
@@ -35,7 +35,7 @@ export default function HowTechnologyWorks() {
         <div className="mt-6 flex flex-col gap-6 sm:gap-8 md:gap-10 lg:flex-row lg:items-start">
           <div className="flex-1">
             <h2
-              className="text-[32px] sm:text-[40px] md:text-[45px] lg:text-[50px] leading-[1.15]"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[1.15] font-bold"
               style={{
                 fontFamily: '"Courier Prime", monospace',
                 fontWeight: 700,

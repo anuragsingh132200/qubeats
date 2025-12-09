@@ -34,7 +34,7 @@ export default function AdvancedSolutionsSection() {
       className="advanced-solutions-section relative w-full py-20 sm:py-28"
       aria-labelledby="advanced-quantum-heading"
     >
-      <div className="mx-4 sm:mx-6 md:mx-10 max-w-[1380px] px-4 sm:px-6">
+      <div className="mx-auto w-full max-w-[1400px] px-4 sm:px-6 md:px-10 lg:px-16">
         <div className="flex flex-col gap-8 sm:gap-12 lg:flex-row lg:items-start">
           {/* Left: image block + top-right rectangular box grouped inside same parent */}
           <div className="relative w-full max-w-[640px] lg:flex-1">
@@ -60,7 +60,7 @@ export default function AdvancedSolutionsSection() {
           <div className="w-full lg:flex-1">
             <h2
               id="advanced-quantum-heading"
-              className="mb-8 sm:mb-12 text-[32px] sm:text-[40px] md:text-[48px] lg:text-[52px] leading-[1.05] tracking-[-1px]"
+              className="mb-8 sm:mb-12 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.05] tracking-[-1px]"
             >
               <span className="block heading-bold">Advanced Quantum</span>
               <span className="block heading-bold">
@@ -112,8 +112,8 @@ export default function AdvancedSolutionsSection() {
           font-family: "Courier Prime";
           font-weight: 700;
           font-style: bold;
-          font-size: clamp(32px, 5vw, 52px);
-          line-height: 1.05;
+          font-size: inherit;
+          line-height: inherit;
           letter-spacing: 0px;
           color: rgba(243, 243, 243, 0.98);
           -webkit-font-smoothing: antialiased;

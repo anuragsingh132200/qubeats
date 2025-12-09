@@ -1,4 +1,5 @@
 import SectionWrapper from "@/components/common/SectionWrapper";
+import JobOpeningsSection from "@/components/careers/JobOpeningsSection";
 
 export const metadata = {
   title: "Careers | QuBeats Quantum Sensing",
@@ -82,6 +83,8 @@ export default function CareersPage() {
           </div>
         </div>
       </SectionWrapper>
+
+      <JobOpeningsSection />
     </>
   );
 }

@@ -12,7 +12,7 @@ export default function TechnicalHighlightsSection() {
   return (
     <section
       id="technical-highlights"
-      className="relative overflow-hidden bg-[rgba(18,18,18,1)] px-4 sm:px-6 md:px-10 lg:px-16 py-12 sm:py-14 md:py-16 lg:py-20"
+      className="relative overflow-hidden bg-[rgba(18,18,18,1)] py-12 sm:py-14 md:py-16 lg:py-20"
     >
       {/* Background grid */}
       <div
@@ -27,7 +27,7 @@ export default function TechnicalHighlightsSection() {
         />
       </div>
 
-      <div className="relative z-10 mx-auto flex max-w-8xl flex-col gap-12 lg:flex-row lg:items-stretch">
+      <div className="relative z-10 mx-auto flex w-full max-w-[1400px] flex-col gap-12 px-4 sm:px-6 md:px-10 lg:px-16 lg:flex-row lg:items-stretch">
         {/* LEFT: Text + bullets */}
         <div className="flex-1 pt-4 lg:pt-8">
           {/* Small label */}
@@ -44,7 +44,7 @@ export default function TechnicalHighlightsSection() {
 
           {/* Main Heading */}
           <h2
-            className="mb-6 sm:mb-8 md:mb-10 text-[32px] sm:text-[40px] md:text-[45px] lg:text-[50px] leading-[1.15]"
+            className="mb-6 sm:mb-8 md:mb-10 text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[1.15] font-bold"
             style={{
               fontFamily: '"Courier Prime", monospace',
               fontWeight: 700,

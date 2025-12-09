@@ -31,29 +31,20 @@ export default function SystemsSection() {
       id="systems"
       className="relative overflow-hidden min-h-screen text-white px-4 sm:px-6 md:px-10 lg:px-16 py-8 sm:py-12 lg:py-16"
     >
+      
       <div
         className="absolute inset-0 -z-10"
         style={{
-          backgroundImage: "url(/images/products/bg-product.png)",
-          backgroundSize: "cover",
-          backgroundPosition: "center top",
-          backgroundRepeat: "no-repeat",
-        }}
-      />
-      <div
-        className="absolute inset-0 -z-10"
-        style={{
-          background:
-            "linear-gradient(to bottom, rgba(0,0,0,0.78) 0%, rgba(0,0,0,0.78) 50%, rgba(0,0,0,0.85) 70%, rgba(0,0,0,0.95) 85%, rgba(0,0,0,1) 100%)",
+          background: "rgba(11,11,11,1)",
         }}
       />
 
       {/* subtle top overlay (HUD feel) */}
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black via-transparent z-10" />
+      {/* <div className="pointer-events-none absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black via-transparent z-10" /> */}
 
       <div className="relative z-20 mx-auto w-full max-w-7xl">
         {/* Page title */}
-        <h1 className="mb-4 sm:mb-6 text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight lg:text-5xl">
+        <h1 className="mb-4 sm:mb-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight">
           Systems
         </h1>
 
@@ -80,7 +71,7 @@ export default function SystemsSection() {
             {systems.map((item) => (
               <div
                 key={item.id}
-                className="relative bg-[rgba(18,18,18,1)] px-4 sm:px-6 py-2 shadow-[0_0_0_1px_rgba(0,0,0,0.7)]"
+                className="relative bg-[rgba(18,18,18,1)] px-4 sm:px-6 py-2"
               >
                 {/* Title block that sits on top edge */}
                 <div className="absolute -top-8 sm:-top-10 left-0 bg-[rgba(18,18,18,1)] w-4/5 sm:w-4/5 h-[45px] sm:h-[50px] px-4 sm:px-6 py-2">

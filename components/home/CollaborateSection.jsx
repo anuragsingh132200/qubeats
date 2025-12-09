@@ -24,10 +24,10 @@ export default function CollaborateSection() {
         />
       </div>
       {/* Content container */}
-      <div className="relative z-10 mx-auto flex max-w-6xl flex-col items-center gap-6 sm:gap-8 md:gap-10 px-4 sm:px-6 md:px-10 lg:px-16 text-center">
+      <div className="relative z-10 mx-auto flex w-full max-w-[1400px] flex-col items-center gap-6 sm:gap-8 md:gap-10 px-4 sm:px-6 md:px-10 lg:px-16 text-center">
         {/* Main heading */}
         <h2
-          className="text-3xl leading-tight sm:text-[40px] md:text-[48px]"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight"
           style={{ fontFamily: '"Courier Prime", monospace', fontWeight: 700 }}
         >
           <span className="text-slate-50">Collaborate with </span>

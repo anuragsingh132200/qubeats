@@ -1,0 +1,116 @@
+"use client";
+
+import { useCallback, useEffect, useState } from "react";
+import SectionWrapper from "@/components/common/SectionWrapper";
+
+function formatPostedDate(dateString) {
+  if (!dateString) return "Unknown";
+  const date = new Date(dateString);
+  if (Number.isNaN(date.getTime())) return "Unknown";
+
+  return date.toLocaleString("en-US", {
+    dateStyle: "medium",
+  });
+}
+
+export default function JobOpeningsSection() {
+  const [jobs, setJobs] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState("");
+
+  const fetchJobs = useCallback(async () => {
+    setIsLoading(true);
+    setError("");
+
+    try {
+      const response = await fetch("/api/jobs", { cache: "no-store" });
+
+      if (!response.ok) {
+        throw new Error("Failed to load job openings. Please try again.");
+      }
+
+      const data = await response.json();
+      setJobs(Array.isArray(data.jobs) ? data.jobs : []);
+    } catch (err) {
+      setError(err.message || "Something went wrong while loading jobs.");
+    } finally {
+      setIsLoading(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    fetchJobs();
+  }, [fetchJobs]);
+
+  return (
+    <SectionWrapper
+      id="job-openings"
+      className="bg-[rgba(7,7,7,1)] border-t border-slate-800 relative"
+      containerClassName="relative z-10 space-y-8"
+    >
+      <div className="space-y-4">
+        <h2 className="text-2xl sm:text-3xl font-bold text-white">
+          Current Job Openings
+        </h2>
+        <p className="text-sm sm:text-base text-slate-300 max-w-3xl">
+          Explore open positions across our quantum engineering, software, and
+          research teams. Apply now to help shape the future of quantum sensing.
+        </p>
+      </div>
+
+      <div className="flex flex-wrap items-center gap-3">
+        <button
+          onClick={fetchJobs}
+          disabled={isLoading}
+          className="inline-flex items-center justify-center rounded-lg border border-slate-700 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-slate-200 transition hover:border-[#FF6B35] hover:text-[#FF6B35] disabled:cursor-not-allowed disabled:opacity-60"
+        >
+          {isLoading ? "Refreshing..." : "Refresh"}
+        </button>
+        {error ? (
+          <span className="text-sm font-medium text-red-400">{error}</span>
+        ) : null}
+      </div>
+
+      {isLoading ? (
+        <p className="text-sm text-slate-300">Loading job openings...</p>
+      ) : jobs.length === 0 ? (
+        <p className="rounded-2xl border border-dashed border-slate-700 bg-[#0C0D0F] p-6 text-sm text-slate-300">
+          No current openings. Please check back later.
+        </p>
+      ) : (
+        <div className="grid gap-4 sm:gap-6">
+          {jobs.map((job) => (
+            <div
+              key={job._id}
+              className="flex flex-col gap-4 rounded-2xl border border-slate-800 bg-[#0C0D0F] p-6 transition hover:border-[#FF6B35]/50 sm:flex-row sm:items-center sm:justify-between"
+            >
+              <div>
+                <h3 className="text-xl font-semibold text-white">
+                  {job.title}
+                </h3>
+                <div className="mt-2 flex flex-wrap gap-2 text-xs font-medium uppercase tracking-wide text-slate-400">
+                  <span className="rounded-md border border-slate-700 px-2 py-1">
+                    {job.experience}
+                  </span>
+                  <span className="rounded-md border border-slate-700 px-2 py-1">
+                    Posted {formatPostedDate(job.createdAt)}
+                  </span>
+                </div>
+              </div>
+              <a
+                href={job.jdLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-lg border border-[#FF6B35]/60 px-4 py-2 text-sm font-semibold text-[#FF6B35] transition hover:border-[#FF6B35] hover:text-white"
+              >
+                View JD
+              </a>
+            </div>
+          ))}
+        </div>
+      )}
+    </SectionWrapper>
+  );
+}
+
+
