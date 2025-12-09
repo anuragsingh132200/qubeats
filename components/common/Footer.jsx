@@ -65,7 +65,7 @@ export default function Footer() {
             {/* Logo */}
             <div className="flex items-center gap-4">
               <Image
-                src="/images/logo-placeholder.png"
+                src="/images/LogoNew.png"
                 alt="QuBeats logo"
                 width={156}
                 height={133}
