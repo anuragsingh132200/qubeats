@@ -44,9 +44,9 @@ export default function Footer() {
               <Image
                 src="/images/home/logo 1.png"
                 alt="QuBeats logo"
-                width={156}
-                height={133}
-                className="h-auto w-[120px] sm:w-[140px] md:w-[156px]"
+                width={80}
+                height={68}
+                className="h-auto w-[60px] sm:w-[70px] md:w-[80px]"
               />
             </div>
             

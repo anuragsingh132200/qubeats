@@ -55,7 +55,7 @@ export default function IndiaGlobalFocusSection() {
                   QuBeats is building India&apos;s quantum-hardware supply
                   chain—vapor cells, micro-optics, coatings, precision
                   mechanics—while partnering globally for space and biomedical
-                  translation.
+                  application.
                 </p>
               </div>
 

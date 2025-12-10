@@ -72,7 +72,7 @@ export default function ContactPage() {
             />
           </div>
 
-          <div className="relative z-10 mx-auto max-w-4xl px-4 sm:px-6 md:px-10 lg:px-16 py-12 sm:py-16 md:py-20">
+          <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 md:px-10 lg:px-16 py-12 sm:py-16 md:py-20">
             {/* Heading */}
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1px] text-white mb-6 sm:mb-8">
               Contact <span className="text-[#cb3f24]">Us</span>
@@ -87,8 +87,59 @@ export default function ContactPage() {
               We'd love to hear from you. Get in touch with our team.
             </p>
 
-            {/* Contact Form */}
-            <form onSubmit={handleSubmit} className="space-y-6 max-w-2xl">
+            {/* Two Column Layout: Contact Information and Form */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+              {/* Contact Information */}
+              <div className="space-y-6">
+                {/* Email */}
+                <div className="flex flex-col gap-2">
+                  <h3 className="text-sm font-medium text-slate-200 mb-2" style={{ fontFamily: '"Courier Prime", monospace' }}>
+                    Email
+                  </h3>
+                  <a 
+                    href="mailto:info@qubeats.com" 
+                    className="text-sm text-[rgba(255, 255, 255, 0.8)] hover:text-[#cb3f24] transition-colors"
+                    style={{ fontFamily: "Courier New", letterSpacing: "-0.05em" }}
+                  >
+                    info@qubeats.com
+                  </a>
+                </div>
+
+                {/* Research Lab Address */}
+                <div className="flex flex-col gap-2">
+                  <h3 className="text-sm font-medium text-slate-200 mb-2" style={{ fontFamily: '"Courier Prime", monospace' }}>
+                    Research Lab
+                  </h3>
+                  <p 
+                    className="text-sm text-[rgba(255, 255, 255, 0.8)] leading-relaxed"
+                    style={{ fontFamily: "Courier New", letterSpacing: "-0.05em" }}
+                  >
+                    Institution of Eminence (IoE),<br />
+                    Ground Floor, Room No. CWC-A-003,<br />
+                    University of Hyderabad, Prof. C R Rao Road, Gachibowli,<br />
+                    Hyderabad – 500046, Telangana
+                  </p>
+                </div>
+
+                {/* Company Address */}
+                <div className="flex flex-col gap-2">
+                  <h3 className="text-sm font-medium text-slate-200 mb-2" style={{ fontFamily: '"Courier Prime", monospace' }}>
+                    M/s. Nostradamus Technologies Private Limited
+                  </h3>
+                  <p 
+                    className="text-sm text-[rgba(255, 255, 255, 0.8)] leading-relaxed"
+                    style={{ fontFamily: "Courier New", letterSpacing: "-0.05em" }}
+                  >
+                    Cabin 79, 7th Floor C/o T-Hub Foundation,<br />
+                    1/C, 83/1, Raidurg Panmaktha,<br />
+                    Near Hitech City, Ranga Reddy,<br />
+                    Hyderabad, Telangana, India, 500081
+                  </p>
+                </div>
+              </div>
+
+              {/* Contact Form */}
+              <form onSubmit={handleSubmit} className="space-y-6">
               {submitSuccess && (
                 <div className="rounded-lg border border-green-500/60 bg-green-500/10 px-4 py-3 text-sm text-green-400">
                   Message sent successfully! We'll get back to you soon.
@@ -156,6 +207,7 @@ export default function ContactPage() {
                 {isSubmitting ? "Sending..." : "Send Message"}
               </button>
             </form>
+            </div>
           </div>
         </div>
       </SectionWrapper>

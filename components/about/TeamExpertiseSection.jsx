@@ -5,14 +5,14 @@ const teamMembers = [
   {
     name: "Madhu Trivikram Talluri",
     description:
-      "Madhu Trivikram Talluri is a postdoc at UC Berkeley and a researcher at the Lawrence Berkeley National Laboratory, having earned his doctorate at Vrije University, Amsterdam. An experienced Experimental Physicist, he brings to table his ability to lead the setting up of a world-class laboratory from scratch.",
+      "Madhu Trivikram Talluri has worked as a postdoctoral researcher at Lawrence Berkeley National Laboratory. He earned his Ph.D. in precision quantum measurements from LaserLaB, Vrije University, Amsterdam. An accomplished experimental physicist, he brings extensive experience in building world-class laboratories from the ground up.",
     image: "/images/WhatsApp Image 2025-12-08 at 00.47.59_bee03dc1.jpg",
     linkedin: "https://www.linkedin.com/in/madhuttalluri/",
   },
   {
     name: "Mallikarjun Karra",
     description:
-      "Mallikarjun Karra is an entrepreneur, a published theoretical Physicist, and a graduating PhD candidate at the Fritz Haber Institute of the Max Planck Society, Berlin. His specialty lies in the understanding of manipulation of cold and ultra cold polar polarisable molecules in trapped arrays or doped into superfluid helium nanodroplets.",
+      "Mallikarjun Karra is an entrepreneur and a published theoretical physicist. His research at the Fritz Haber Institute of the Max Planck Society, Berlin, was focused on understanding and controlling cold and ultracold polar, polarisable molecules — either in trapped arrays or doped into superfluid helium nanodroplets. He has previously worked on quantum computing with molecules, proposing an architecture for universal quantum computation based on arrays of trapped ultracold polar paramagnetic molecules, including schemes for optically controlled CNOT gates and field-tunable entanglement.",
     image: "/images/Screenshot 2025-12-08 134520.png",
     linkedin: "https://www.linkedin.com/in/mallikarjun-k-628ab417/",
   },
@@ -26,7 +26,7 @@ const teamMembers = [
   {
     name: "Shouvik Mukherjee",
     description:
-      "Shouvik Mukherjee is a postdoc at the Joint Quantum Institute, University of Maryland and specialises in the trapping and probing of ultracold atomic gases. He holds a PhD in experimental Condensed Matter Physics from the University of Pittsburgh, having worked on the dynamics of a polariton Bose Einstein Condensate (BEC) in a ring geometry. At QuBeats Shouvik will lead the efforts to build compact and robust quantum sensing devices from platforms such as atomic vapour cells, atom-chip interferometry, and Nitrogen Vacancy centre in Diamonds.",
+      "Dr. Shouvik Mukherjee combines deep expertise in atomic vapor and solid-state quantum platforms with a command of complex optics, precision electronics, nanofabrication, and ultrahigh vacuum technology. A former Postdoctoral Scholar at the prestigious Joint Quantum Institute (NIST/University of Maryland), he conducted advanced research on Bose-Einstein condensates and analogue cosmology. He earned his Ph.D. in Experimental Condensed Matter Physics from the University of Pittsburgh, pioneering work on exciton-polariton transport in semiconductor microcavities, and is an alumnus of IIT Kharagpur.",
     image: "/images/WhatsApp Image 2025-12-07 at 22.06.02_e7064b99.jpg",
     linkedin: "https://www.linkedin.com/feed/",
   },
@@ -54,11 +54,11 @@ export default function TeamExpertiseSection() {
           </div>
 
           {/* 2 x 2 grid of team members */}
-          <div className="relative mt-8 sm:mt-12 md:mt-16 grid gap-x-6 sm:gap-x-8 md:gap-x-10 gap-y-6 sm:gap-y-8 md:gap-y-10 md:grid-cols-2">
+          <div className="relative mt-8 sm:mt-12 md:mt-16 grid gap-x-6 sm:gap-x-8 md:gap-x-10 gap-y-6 sm:gap-y-8 md:gap-y-10 md:grid-cols-2 items-start">
             {teamMembers.map((member) => (
               <article
                 key={member.name}
-                className="relative border border-white/10 max-w-[550px] max-h-[560px] bg-[rgba(255,255,255,0.1)] p-6 shadow-[0px_4px_20px_0px_rgba(189,189,189,0.15)]"
+                className="relative border border-white/10 max-w-[550px] bg-[rgba(255,255,255,0.1)] p-6 shadow-[0px_4px_20px_0px_rgba(189,189,189,0.15)] flex flex-col"
               >
                 {/* Small grey box at top-right of each image box */}
                 <div className="absolute z-10 right-0 top-0 h-[60px] w-[109px] bg-[rgba(192,192,192,0.3)]" />
@@ -109,7 +109,7 @@ export default function TeamExpertiseSection() {
 
                 {/* Smaller content inside image box */}
                 <p
-                  className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight"
+                  className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight flex-1 overflow-hidden"
                   style={{
                     color: "rgba(243,243,243,0.75)",
                     fontFamily: '"Courier Prime", monospace',
