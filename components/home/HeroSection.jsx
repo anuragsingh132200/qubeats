@@ -44,7 +44,7 @@ export default function HeroSection() {
 
         <div className="mt-6 sm:mt-8 flex flex-col gap-4 sm:gap-5 sm:flex-row sm:items-center">
           <Link
-            href="#contact"
+            href="/contact"
             className="inline-flex items-center justify-center bg-[#CB3F24] px-6 sm:px-8 md:px-16 py-3 sm:py-4 text-[11px] sm:text-[12px] md:text-[13px] font-semibold uppercase tracking-[0.15em] text-white shadow-lg transition hover:bg-[#BE3B22] text-center"
             style={{
               fontFamily: '"Courier Prime", monospace',
@@ -55,9 +55,10 @@ export default function HeroSection() {
           >
             Talk to a Scientist 
           </Link>
-          <Link
-            href="#solution-brief"
-          className="inline-flex box-border items-center justify-center border-2 border-white bg-transparent px-6 sm:px-8 md:px-10 py-3 sm:py-[14px] text-[11px] sm:text-[12px] md:text-[13px] font-semibold uppercase tracking-[0.15em] text-white transition hover:bg-white/10 text-center"
+          <a
+            href="https://drive.google.com/uc?export=download&id=1D8jQkFswT10sW_9I_LYxAHwgnu-UFhh_"
+            download
+            className="inline-flex box-border items-center justify-center border-2 border-white bg-transparent px-6 sm:px-8 md:px-10 py-3 sm:py-[14px] text-[11px] sm:text-[12px] md:text-[13px] font-semibold uppercase tracking-[0.15em] text-white transition hover:bg-white/10 text-center"
             style={{
               fontFamily: '"Courier Prime", monospace',
               fontWeight: 700,
@@ -66,7 +67,7 @@ export default function HeroSection() {
             }}
           >
             Download Our Solution Brief
-          </Link>
+          </a>
         </div>
       </div>
     </section>

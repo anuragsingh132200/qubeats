@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "QuBeats Quantum Sensing",
+  title: "Qubeats - Quantum Sensing with Atomic Precision",
   description:
     "Quantum sensing platforms built for aerospace, defense, and life sciences innovators.",
   icons: {
