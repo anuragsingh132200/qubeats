@@ -45,7 +45,7 @@ export default function TeamExpertiseSection() {
               src="/images/about/bg-about.png"
               alt=""
               fill
-              className="object-cover opacity-100"
+              className="object-cover opacity-100 grayscale"
             />
           </div>
 

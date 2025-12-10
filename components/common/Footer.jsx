@@ -44,7 +44,7 @@ export default function Footer() {
         }} />
       </div>
 
-      <div className="relative z-10 mx-auto w-full max-w-[1440px] px-4 sm:px-6 py-12 sm:py-16 md:px-12">
+      <div className="relative z-10 mx-auto w-full max-w-[1440px] px-4 sm:px-6 pt-12 sm:pt-16 pb-4 sm:pb-6 md:px-12">
         {/* Main Content: Two-column layout with top alignment */}
         <div className="flex flex-col gap-8 sm:gap-12 md:flex-row md:items-start md:justify-between">
           {/* Left: Logo, Company Name, Tagline, and Description */}
@@ -105,7 +105,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom: Copyright */}
-        <div className="mt-8 sm:mt-12 border-t border-white/10 pt-4 sm:pt-6">
+        <div className=" border-t border-white/10 pt-3 sm:pt-4 pb-0">
           <p className="text-center font-['Courier_Prime',monospace] text-xs sm:text-sm md:text-[17px] font-bold leading-[21.6px] text-[rgba(243,243,243,0.8)] px-4">
             @2025. Qubeats. All Rights Reserved. | Made in India, Build for the World
           </p>

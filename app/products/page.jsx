@@ -1,8 +1,5 @@
 import ProductsHeroSection from "@/components/products/ProductsHeroSection";
-import MagnetometersSection from "@/components/products/MagnetometersSection";
-import SystemsSection from "@/components/products/SystemsSection";
-import SoftwareSection from "@/components/products/SoftwareSection";
-import ProductFamilyOverviewSection from "@/components/products/ProductFamilyOverviewSection";
+import ProductsTabsSection from "@/components/products/ProductsTabsSection";
 import FindPerfectSolutionSection from "@/components/products/FindPerfectSolutionSection";
 
 export const metadata = {
@@ -14,7 +11,7 @@ export const metadata = {
 export default function ProductsPage() {
   return (
     <>
-      {/* Wrapper with background image that extends to cover hero and magnetometer sections */}
+      {/* Wrapper with background image that extends to cover hero and tabs sections */}
       <div 
         className="relative bg-black"
         style={{ 
@@ -36,12 +33,10 @@ export default function ProductsPage() {
         {/* Content sections */}
         <div className="relative z-10">
           <ProductsHeroSection />
-          <MagnetometersSection />
+          <ProductsTabsSection />
         </div>
       </div>
       
-      <SystemsSection />
-      <SoftwareSection />
       <FindPerfectSolutionSection />
     </>
   );
