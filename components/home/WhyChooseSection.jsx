@@ -19,7 +19,7 @@ export default function WhyChooseSection() {
         <div className="pointer-events-none absolute right-4 sm:right-8 md:right-17 -top-2 sm:-top-4 h-[50px] sm:h-[60px] md:h-[76px] w-[70px] sm:w-[90px] md:w-[108px] bg-[rgba(192,192,192,1)] max-md:hidden" />
 
         {/* Top label */}
-        <p className="mb-4 sm:mb-6 sm:ml-6 md:ml-14 font-regular font-weight-200 uppercase text-[rgba(243,243,243,0.8)] text-lg sm:text-xl md:text-[24px] font-['Courier_New']">
+        <p className="mb-4 sm:mb-6 sm:ml-6 md:ml-15 font-regular font-weight-200 uppercase text-[rgba(243,243,243,0.8)] text-lg sm:text-xl md:text-[24px] font-['Courier_New']">
           Why Qubeats
         </p>
 
