@@ -7,24 +7,28 @@ const teamMembers = [
     description:
       "Madhu Trivikram Talluri is a postdoc at UC Berkeley and a researcher at the Lawrence Berkeley National Laboratory, having earned his doctorate at Vrije University, Amsterdam. An experienced Experimental Physicist, he brings to table his ability to lead the setting up of a world-class laboratory from scratch.",
     image: "/images/WhatsApp Image 2025-12-08 at 00.47.59_bee03dc1.jpg",
+    linkedin: "https://www.linkedin.com/in/madhuttalluri/",
   },
   {
     name: "Mallikarjun Karra",
     description:
       "Mallikarjun Karra is an entrepreneur, a published theoretical Physicist, and a graduating PhD candidate at the Fritz Haber Institute of the Max Planck Society, Berlin. His specialty lies in the understanding of manipulation of cold and ultra cold polar polarisable molecules in trapped arrays or doped into superfluid helium nanodroplets.",
     image: "/images/Screenshot 2025-12-08 134520.png",
+    linkedin: "https://www.linkedin.com/in/mallikarjun-k-628ab417/",
   },
   {
     name: "Rajat Sethi",
     description:
       "Rajat Sethi has worked as a technocrat and a public intellectual, having served as an Advisor to three Chief Ministers. He has also worked on various Govt of India Committees on tech policy and economic planning. Rajat is a public policy graduate from Harvard Kennedy School, management graduate from MIT Sloan School and a computer science grad from IIT Kharagpur (2009).",
     image: "/images/WhatsApp Image 2025-12-07 at 21.13.05_02a8a2e3.jpg",
+    linkedin: "https://www.linkedin.com/in/sethirajat/",
   },
   {
     name: "Shouvik Mukherjee",
     description:
       "Shouvik Mukherjee is a postdoc at the Joint Quantum Institute, University of Maryland and specialises in the trapping and probing of ultracold atomic gases. He holds a PhD in experimental Condensed Matter Physics from the University of Pittsburgh, having worked on the dynamics of a polariton Bose Einstein Condensate (BEC) in a ring geometry. At QuBeats Shouvik will lead the efforts to build compact and robust quantum sensing devices from platforms such as atomic vapour cells, atom-chip interferometry, and Nitrogen Vacancy centre in Diamonds.",
     image: "/images/WhatsApp Image 2025-12-07 at 22.06.02_e7064b99.jpg",
+    linkedin: "https://www.linkedin.com/feed/",
   },
 ];
 
@@ -69,20 +73,39 @@ export default function TeamExpertiseSection() {
                   />
                 </div>
 
-                {/* Heading inside image box */}
-                <h3
-                  className="mb-3"
-                  style={{
-                    color: "rgba(255,255,255,1)",
-                    fontFamily: '"Courier Prime", monospace',
-                    fontWeight: 700,
-                    fontSize: "22.05px",
-                    lineHeight: "30px",
-                    letterSpacing: "0",
-                  }}
-                >
-                  {member.name}
-                </h3>
+                {/* Heading inside image box with LinkedIn button */}
+                <div className="mb-3 flex items-center gap-3">
+                  <h3
+                    style={{
+                      color: "rgba(255,255,255,1)",
+                      fontFamily: '"Courier Prime", monospace',
+                      fontWeight: 700,
+                      fontSize: "22.05px",
+                      lineHeight: "30px",
+                      letterSpacing: "0",
+                    }}
+                  >
+                    {member.name}
+                  </h3>
+                  {member.linkedin && (
+                    <a
+                      href={member.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
+                      aria-label={`${member.name} LinkedIn profile`}
+                    >
+                      <svg
+                        className="w-5 h-5 text-white"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                      </svg>
+                    </a>
+                  )}
+                </div>
 
                 {/* Smaller content inside image box */}
                 <p
