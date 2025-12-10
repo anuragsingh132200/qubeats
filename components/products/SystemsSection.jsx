@@ -44,7 +44,7 @@ export default function SystemsSection() {
 
       <div className="relative z-20 mx-auto w-full max-w-7xl">
         {/* Page title */}
-        <h1 className="mb-4 sm:mb-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight">
+        <h1 className="mb-4 sm:mb-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1px]">
           Systems
         </h1>
 

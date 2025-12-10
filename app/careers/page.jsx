@@ -21,7 +21,7 @@ export default function CareersPage() {
         }}
       >
         <div className="flex flex-col gap-4 sm:gap-6 md:gap-8 relative z-10">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white lg:text-6xl xl:text-7xl">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1px] text-white">
             Careers at <span className="text-[#CB3F24]">QuBeats</span>
           </h1>
           <p className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-slate-300 max-w-3xl">
@@ -43,7 +43,7 @@ export default function CareersPage() {
         <div className="relative z-10 grid gap-8 sm:gap-10 md:gap-12 lg:grid-cols-2">
           {/* Why Work at QuBeats Section */}
           <div className="space-y-4 sm:space-y-6">
-            <h2 className="text-2xl sm:text-3xl font-bold text-white">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1px] text-white">
               Why Work at QuBeats?
             </h2>
             <ul className="space-y-3 sm:space-y-4 text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-slate-300">
@@ -69,7 +69,7 @@ export default function CareersPage() {
           {/* Job Openings Section */}
           <div className="space-y-4 sm:space-y-6">
             <div className="space-y-4">
-              <h2 className="text-2xl sm:text-3xl font-bold text-white">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1px] text-white">
                 Current Job Openings
               </h2>
               <p className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-slate-300">

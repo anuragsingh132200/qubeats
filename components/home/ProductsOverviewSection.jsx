@@ -99,7 +99,7 @@ export default function ProductsOverviewSection() {
         </p>
 
         {/* Main heading */}
-        <h2 className="mb-8 sm:mb-12 md:mb-14 text-left text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
+        <h2 className="mb-8 sm:mb-12 md:mb-14 text-left text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1px]">
           <span
             style={{
               ...headingBase,

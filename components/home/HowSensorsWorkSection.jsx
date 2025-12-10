@@ -57,7 +57,7 @@ export default function HowSensorsWorkSection() {
               APPLICATIONS
             </p>
             <h2
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-['Courier_Prime'] font-bold"
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-['Courier_Prime'] font-bold leading-[1.1] tracking-[-1px]"
             >
               <span className="text-white">Where our sensors </span>
               <span className="text-[#CB3F24] font-weight-700">

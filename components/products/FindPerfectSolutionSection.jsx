@@ -40,7 +40,7 @@ export default function FindPerfectSolutionSection() {
 
         {/* Main heading */}
         <h2
-          className="text-3xl leading-tight sm:text-[40px] md:text-[48px]"
+          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1px]"
           style={{
             fontFamily: '"Courier Prime", monospace',
             fontWeight: 700,

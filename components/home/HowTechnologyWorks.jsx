@@ -35,11 +35,10 @@ export default function HowTechnologyWorks() {
         <div className="mt-6 flex flex-col gap-6 sm:gap-8 md:gap-10 lg:flex-row lg:items-start">
           <div className="flex-1">
             <h2
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[1.15] font-bold"
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-[1.1] font-bold tracking-[-1px]"
               style={{
                 fontFamily: '"Courier Prime", monospace',
                 fontWeight: 700,
-                letterSpacing: "-1px",
               }}
             >
               <span

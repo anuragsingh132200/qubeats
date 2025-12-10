@@ -43,7 +43,7 @@ export default function FusionStackSection() {
           {/* Content */}
           <div className="pl-12">
             <div className="text-2xl font-bold text-white mb-4">04</div>
-            <h2 className="text-3xl font-bold text-white mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1px] text-white mb-6">
               Fusion stack
             </h2>
             <p className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-slate-300 mb-8 max-w-xl">

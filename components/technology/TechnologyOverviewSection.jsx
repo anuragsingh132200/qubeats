@@ -84,7 +84,7 @@ export default function TechnologyOverviewSection() {
     <SectionWrapper id="technology-overview" className="bg-[rgba(7,7,7,1)] pt-16 pb-20">
       {/* Section Title */}
       <h2 
-        className="text-[32px] sm:text-[40px] md:text-[48px] lg:text-[53px] font-bold mb-8 sm:mb-12 md:mb-16 leading-[1.1] tracking-[-1px]"
+        className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-12 md:mb-16 leading-[1.1] tracking-[-1px]"
         style={{
           fontFamily: '"Courier Prime", monospace',
           color: "white"

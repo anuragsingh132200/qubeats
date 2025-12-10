@@ -40,7 +40,7 @@ export default function WhyChooseSection() {
           </div>
 
           {/* Heading */}
-          <h2 className="ml-2 sm:ml-4 md:ml-6 font-['Courier_Prime'] text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.1] text-[rgba(18,18,18,1)]">
+          <h2 className="ml-2 sm:ml-4 md:ml-6 font-['Courier_Prime'] text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1px] text-[rgba(18,18,18,1)]">
             Why Customers choose QuBeats
           </h2>
 

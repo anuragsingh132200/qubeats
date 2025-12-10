@@ -33,7 +33,7 @@ export default function MissionSection() {
       <div className="grid gap-8 sm:gap-10 md:gap-12 lg:grid-cols-2 lg:items-center">
         {/* Left: Heading + Mission points */}
         <div className="flex flex-col gap-6 sm:gap-8 md:gap-10">
-          <h2 className="font-['Courier_Prime',monospace] text-[32px] sm:text-[40px] md:text-[50px] font-bold leading-tight text-white lg:text-[56px]">
+          <h2 className="font-['Courier_Prime',monospace] text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1px] text-white">
             <span className="mr-2">Our</span>
             <span className="text-[#cb3f24]">Mission</span>
           </h2>

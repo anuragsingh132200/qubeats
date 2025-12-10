@@ -28,7 +28,7 @@ export default function PartnerWithUsSection() {
       <div className="relative z-10 mx-auto mt-6 sm:mt-8 md:mt-10 flex max-w-6xl flex-col items-center gap-6 sm:gap-8 md:gap-10 px-4 sm:px-6 text-center">
         {/* Main heading */}
         <h2
-          className="text-3xl leading-tight sm:text-[40px] md:text-[48px]"
+          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1px]"
           style={{ fontFamily: '"Courier Prime", monospace', fontWeight: 700 }}
         >
           <span className="text-white">Partner with </span>

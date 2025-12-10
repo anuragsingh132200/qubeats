@@ -5,7 +5,7 @@ export default function WhoWeAreSection() {
   return (
     <SectionWrapper id="who-we-are" className="pt-24 sm:pt-32 md:pt-40 lg:pt-48 bg-[rgba(11,11,11,1)]">
       <div className="flex flex-col ml-0 sm:ml-2 md:ml-4 max-w-8xl gap-4 sm:gap-6">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white lg:text-6xl">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1px] text-white">
           Who We <span className="text-[#cb3f24]">Are</span>
         </h1>
         <div className="grid gap-4 sm:gap-6 lg:grid-cols-2 lg:gap-12">

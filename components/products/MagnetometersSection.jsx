@@ -58,7 +58,7 @@ export default function Magnetometers() {
     <section className="relative -mt-48 min-h-screen text-white px-4 sm:px-6 py-8 sm:py-12 md:px-10 lg:px-16 lg:py-16">
       <div className="relative mx-auto w-full max-w-7xl">
         {/* Page title */}
-        <h1 className="mb-4 sm:mb-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight">
+        <h1 className="mb-4 sm:mb-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1px]">
         Components
         </h1>
 

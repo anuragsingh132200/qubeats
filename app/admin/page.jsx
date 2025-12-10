@@ -326,7 +326,7 @@ export default function AdminPage() {
           <div className="space-y-8 rounded-3xl border border-slate-800 bg-[rgba(15,15,17,0.9)] p-6 sm:p-8 shadow-2xl backdrop-blur">
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <div>
-                <h1 className="text-3xl font-semibold text-white">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1px] text-white">
                   Admin Dashboard
                 </h1>
                 <p className="mt-1 text-sm text-slate-400">

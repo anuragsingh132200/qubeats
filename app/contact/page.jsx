@@ -74,7 +74,7 @@ export default function ContactPage() {
 
           <div className="relative z-10 mx-auto max-w-4xl px-4 sm:px-6 md:px-10 lg:px-16 py-12 sm:py-16 md:py-20">
             {/* Heading */}
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white lg:text-6xl mb-6 sm:mb-8">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1px] text-white mb-6 sm:mb-8">
               Contact <span className="text-[#cb3f24]">Us</span>
             </h1>
 

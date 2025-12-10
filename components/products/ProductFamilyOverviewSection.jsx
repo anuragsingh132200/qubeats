@@ -55,7 +55,7 @@ export default function ProductFamilyOverviewSection() {
   return (
     <SectionWrapper id="product-family" className="bg-black">
       <div className="flex flex-col gap-4 sm:gap-6 mb-8 sm:mb-12">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white lg:text-5xl">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1px] text-white">
           Product Family <span className="text-[#CB3F24]">Overview</span>
         </h2>
       </div>

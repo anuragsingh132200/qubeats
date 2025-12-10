@@ -121,7 +121,7 @@ export default function ResourcesPage() {
         </div>
         <div className="relative z-10 flex flex-col gap-4 sm:gap-6">
           <h1 
-            className="text-[36px] sm:text-[48px] md:text-[64px] lg:text-[88px] font-bold leading-[1.0] tracking-[-1px]"
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1px]"
             style={{
               fontFamily: '"Courier Prime", monospace'
             }}
@@ -155,7 +155,7 @@ export default function ResourcesPage() {
         <div className="relative z-10 mb-2 flex items-start gap-2">
           <div className="flex-1">
             <h2 
-              className="text-[32px] sm:text-[40px] md:text-[50px] lg:text-[58px] font-bold leading-[1.0] mb-3 sm:mb-4"
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1px] mb-3 sm:mb-4"
               style={{
                 fontFamily: '"Courier Prime", monospace'
               }}
@@ -274,7 +274,7 @@ export default function ResourcesPage() {
         <div className="relative z-10 mb-2 flex items-start gap-2">
           <div className="flex-1">
             <h2 
-              className="text-[32px] sm:text-[40px] md:text-[50px] lg:text-[58px] font-bold leading-[1.0] mb-3 sm:mb-4"
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1px] mb-3 sm:mb-4"
               style={{
                 fontFamily: '"Courier Prime", monospace'
               }}
@@ -393,7 +393,7 @@ export default function ResourcesPage() {
         <div className="relative z-10 mb-2 flex items-start gap-2">
           <div className="flex-1">
             <h2 
-              className="text-[32px] sm:text-[40px] md:text-[50px] lg:text-[58px] font-bold leading-[1.0] mb-3 sm:mb-4"
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1px] mb-3 sm:mb-4"
               style={{
                 fontFamily: '"Courier Prime", monospace'
               }}
@@ -511,7 +511,7 @@ export default function ResourcesPage() {
         </div>
         <div className="relative z-10 mb-0">
           <h2 
-            className="text-[32px] sm:text-[40px] md:text-[50px] lg:text-[58px] font-bold leading-[1.0] mb-3 sm:mb-4"
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1px] mb-3 sm:mb-4"
             style={{
               fontFamily: '"Courier Prime", monospace'
             }}

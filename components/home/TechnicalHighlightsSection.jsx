@@ -44,11 +44,10 @@ export default function TechnicalHighlightsSection() {
 
           {/* Main Heading */}
           <h2
-            className="mb-6 sm:mb-8 md:mb-10 text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[1.15] font-bold"
+            className="mb-6 sm:mb-8 md:mb-10 text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-[1.1] font-bold tracking-[-1px]"
             style={{
               fontFamily: '"Courier Prime", monospace',
               fontWeight: 700,
-              letterSpacing: "-1px",
             }}
           >
             <span

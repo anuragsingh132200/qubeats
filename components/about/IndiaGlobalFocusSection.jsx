@@ -13,7 +13,7 @@ export default function IndiaGlobalFocusSection() {
         
         {/* Heading — right aligned, no grey above */}
         <div className="absolute top-0 -right-2 sm:-right-4 md:-right-6 lg:-right-8 bg-[rgba(7,7,7,1)] w-[calc(100%+1rem)] sm:w-[calc(100%+2rem)] md:w-[600px] lg:w-[720px] h-[100px] sm:h-[120px] px-4 sm:px-6 md:px-8 lg:px-12 py-2">
-          <h2 className="font-['Courier_Prime',monospace] font-bold text-[28px] sm:text-[36px] md:text-[48px] lg:text-[60px] leading-[1.1] tracking-[-1.2px] mt-6">
+          <h2 className="font-['Courier_Prime',monospace] font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-[1.1] tracking-[-1px] mt-6">
             <span className="text-white">
               India +
             </span>{' '}

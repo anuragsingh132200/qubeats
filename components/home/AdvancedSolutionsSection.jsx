@@ -58,7 +58,7 @@ export default function AdvancedSolutionsSection() {
           <div className="w-full lg:flex-1">
             <h2
               id="advanced-quantum-heading"
-              className="mb-8 sm:mb-12 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.05] tracking-[-1px]"
+              className="mb-8 sm:mb-12 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1px]"
             >
               <span className="block heading-bold">Advanced Quantum</span>
               <span className="block heading-bold">
