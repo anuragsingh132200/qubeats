@@ -5,15 +5,17 @@ import Link from "next/link";
 export default function HeroSection() {
   return (
     <section className="relative flex min-h-screen w-full items-center overflow-hidden pt-20 sm:pt-24">
-      {/* Background Image Layer */}
+      {/* Background Video Layer */}
       <div className="absolute inset-0">
-        <Image
-          src="/images/hero-airplane-placeholder.png"
-          alt="Aerial landscape with aircraft"
-          fill
-          priority
-          className="object-cover"
-        />
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover grayscale"
+        >
+          <source src="/Video_Generation_Navy_Above_Sea.mp4" type="video/mp4" />
+        </video>
       </div>
 
       {/* Target Pattern Overlay - centered */}
@@ -55,19 +57,6 @@ export default function HeroSection() {
           >
             Talk to a Scientist 
           </Link>
-          <a
-            href="https://drive.google.com/uc?export=download&id=1D8jQkFswT10sW_9I_LYxAHwgnu-UFhh_"
-            download
-            className="inline-flex box-border items-center justify-center border-2 border-white bg-transparent px-6 sm:px-8 md:px-10 py-3 sm:py-[14px] text-[11px] sm:text-[12px] md:text-[13px] font-semibold uppercase tracking-[0.15em] text-white transition hover:bg-white/10 text-center"
-            style={{
-              fontFamily: '"Courier Prime", monospace',
-              fontWeight: 700,
-              letterSpacing: "0.07em",
-              color: "#FFFFFF",
-            }}
-          >
-            Download Our Solution Brief
-          </a>
         </div>
       </div>
     </section>

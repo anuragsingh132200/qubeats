@@ -171,11 +171,15 @@ export default function WhyChooseSection() {
         {/* Bottom buttons */}
         <div className="mt-8 sm:mt-10 flex flex-col items-center justify-center gap-4 md:mt-12 md:flex-row w-full">
           <button className="w-full sm:w-[280px] md:w-[300px] h-[55px] sm:h-[60px] md:h-[65px] border border-[#CB3F24] bg-gradient-to-r from-[#CB3F24] to-[#BE3B22] text-xs sm:text-sm font-bold tracking-[0.18em] text-white">
-            Start a Scoped Pilot
+            START A SCOPED PILOT
           </button>
-          <button className="w-full sm:w-[280px] md:w-[300px] h-[55px] sm:h-[60px] md:h-[65px] border border-slate-100 bg-transparent text-xs sm:text-sm font-semibold uppercase tracking-[0.18em] text-slate-50">
+          <a
+            href="https://drive.google.com/uc?export=download&id=1D8jQkFswT10sW_9I_LYxAHwgnu-UFhh_"
+            download
+            className="inline-flex w-full sm:w-[280px] md:w-[300px] h-[55px] sm:h-[60px] md:h-[65px] items-center justify-center border border-slate-100 bg-transparent text-xs sm:text-sm font-semibold uppercase tracking-[0.18em] text-slate-50"
+          >
             Download Specs
-          </button>
+          </a>
         </div>
       </div>
     </div>

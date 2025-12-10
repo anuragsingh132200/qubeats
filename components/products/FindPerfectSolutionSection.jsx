@@ -76,10 +76,11 @@ export default function FindPerfectSolutionSection() {
               color: "#FFFFFF",
             }}
           >
-            Start a Scoped Pilot
+            START A SCOPED PILOT
           </Link>
-          <Link
-            href="#"
+          <a
+            href="https://drive.google.com/uc?export=download&id=1D8jQkFswT10sW_9I_LYxAHwgnu-UFhh_"
+            download
             className="inline-flex w-full sm:w-auto sm:min-w-[260px] items-center justify-center border border-white px-6 sm:px-8 md:px-10 py-3 sm:py-4 text-sm sm:text-base transition hover:bg-white/5"
             style={{
               fontFamily: '"Courier Prime", monospace',
@@ -89,7 +90,7 @@ export default function FindPerfectSolutionSection() {
             }}
           >
             Download Specs
-          </Link>
+          </a>
         </div>
       </div>
     </section>

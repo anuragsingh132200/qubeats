@@ -140,10 +140,14 @@ export default function SoftwareSection() {
                 </div>
 
                 {/* Download link */}
-                <button className="inline-flex items-center gap-2 text-xs font-semibold tracking-wide text-[#CB3F24] transition-colors hover:text-[#BE3B22] sm:text-sm">
+                <a
+                  href="https://drive.google.com/uc?export=download&id=1D8jQkFswT10sW_9I_LYxAHwgnu-UFhh_"
+                  download
+                  className="inline-flex items-center gap-2 text-xs font-semibold tracking-wide text-[#CB3F24] transition-colors hover:text-[#BE3B22] sm:text-sm"
+                >
                   <span>Download Specs</span>
                   <span className="text-base">➜</span>
-                </button>
+                </a>
               </div>
             ))}
           </div>
