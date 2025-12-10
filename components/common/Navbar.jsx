@@ -66,7 +66,7 @@ export default function Navbar() {
       <div className="mx-auto flex h-[60px] sm:h-[80px] max-w-[1400px] items-center justify-between pl-0 pr-4 transition-all duration-300 ">
         <Link href="/" className="mt-2 sm:mt-4 sm:ml-4 flex items-center">
           <img
-            src="/images/LogoNew.png"
+            src="/images/home/logo 1.png"
             alt="QuBeats logo"
             className="h-[60px] w-auto sm:h-[80px] object-contain"
           />
