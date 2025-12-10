@@ -28,7 +28,7 @@ export default function IndiaGlobalFocusSection() {
           
           {/* Left image box */}
           <div className="flex w-full lg:w-2/5 justify-center">
-            <div className="flex items-center justify-center bg-black w-full max-w-[300px] sm:max-w-[380px] md:max-w-[480px] aspect-square">
+            <div className="flex items-center justify-center mt-4 bg-black w-full max-w-[300px] sm:max-w-[380px] md:max-w-[480px] aspect-square">
               <Image
                 src="/images/about/atomic-placeholder.png"
                 alt="Quantum applications"

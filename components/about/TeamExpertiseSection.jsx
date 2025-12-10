@@ -5,7 +5,7 @@ const teamMembers = [
   {
     name: "Madhu Trivikram Talluri",
     description:
-      "Madhu Trivikram Talluri has worked as a postdoctoral researcher at Lawrence Berkeley National Laboratory. He earned his Ph.D. in precision quantum measurements from LaserLaB, Vrije University, Amsterdam. An accomplished experimental physicist, he brings extensive experience in building world-class laboratories from the ground up.",
+      "Dr. Madhu Trivikram Talluri is an experimental physicist specialising in precision quantum measurements and ultrafast laser spectroscopy. He was previously a postdoctoral scholar at UC Berkeley and a researcher at the Lawrence Berkeley National Laboratory's Chemical Sciences Division, where he developed advanced laser-based spectroscopic methods to probe light–matter interactions at the quantum limit. Prior to this, he held research positions at the Max Born Institute for Nonlinear Optics and Short Pulse Spectroscopy in Berlin. Madhu earned his Ph.D. in physics from LaserLaB, Vrije Universiteit Amsterdam, with work on high-precision molecular spectroscopy of hydrogen and its isotopologues that set stringent tests for modern molecular theory and quantum electrodynamics.",
     image: "/images/WhatsApp Image 2025-12-08 at 00.47.59_bee03dc1.jpg",
     linkedin: "https://www.linkedin.com/in/madhuttalluri/",
   },
@@ -28,7 +28,7 @@ const teamMembers = [
     description:
       "Dr. Shouvik Mukherjee combines deep expertise in atomic vapor and solid-state quantum platforms with a command of complex optics, precision electronics, nanofabrication, and ultrahigh vacuum technology. A former Postdoctoral Scholar at the prestigious Joint Quantum Institute (NIST/University of Maryland), he conducted advanced research on Bose-Einstein condensates and analogue cosmology. He earned his Ph.D. in Experimental Condensed Matter Physics from the University of Pittsburgh, pioneering work on exciton-polariton transport in semiconductor microcavities, and is an alumnus of IIT Kharagpur.",
     image: "/images/WhatsApp Image 2025-12-07 at 22.06.02_e7064b99.jpg",
-    linkedin: "https://www.linkedin.com/feed/",
+    linkedin: "https://www.linkedin.com/in/shouvik-mukherjee-b35b3919/",
   },
 ];
 
@@ -42,7 +42,7 @@ export default function TeamExpertiseSection() {
       {/* Whole framed block */}
       <div className="relative w-full max-w-8xl">
         {/* Background panel that holds the 4 cards */}
-        <div className="relative mt-12 sm:mt-16 md:mt-20 lg:mt-24 overflow-hidden border border-white/10 bg-[rgba(7,7,7,0.95)] px-4 sm:px-6 md:px-8 lg:px-10 pb-8 sm:pb-10 md:pb-14 pt-12 sm:pt-16 md:pt-20 lg:pt-24">
+        <div className="relative mt-10 sm:mt-12 md:mt-16 lg:mt-20 xl:mt-24 overflow-hidden border border-white/10 bg-[rgba(7,7,7,0.95)] px-3 sm:px-4 md:px-6 lg:px-8 xl:px-10 pb-6 sm:pb-8 md:pb-10 lg:pb-12 xl:pb-14 pt-10 sm:pt-12 md:pt-16 lg:pt-20 xl:pt-24">
           {/* Background image placeholder inside which the 4 boxes sit */}
           <div className="pointer-events-none absolute inset-0">
             <Image
@@ -54,17 +54,17 @@ export default function TeamExpertiseSection() {
           </div>
 
           {/* 2 x 2 grid of team members */}
-          <div className="relative mt-8 sm:mt-12 md:mt-16 grid gap-x-6 sm:gap-x-8 md:gap-x-10 gap-y-6 sm:gap-y-8 md:gap-y-10 md:grid-cols-2 items-start">
+          <div className="relative mt-8 sm:mt-12 md:mt-16 grid gap-x-4 sm:gap-x-6 md:gap-x-8 lg:gap-x-10 gap-y-6 sm:gap-y-8 md:gap-y-10 grid-cols-1 md:grid-cols-2 items-start">
             {teamMembers.map((member) => (
               <article
                 key={member.name}
-                className="relative border border-white/10 max-w-[550px] bg-[rgba(255,255,255,0.1)] p-6 shadow-[0px_4px_20px_0px_rgba(189,189,189,0.15)] flex flex-col"
+                className="relative border border-white/10 w-full max-w-full md:max-w-[550px] bg-[rgba(255,255,255,0.1)] p-4 sm:p-5 md:p-6 shadow-[0px_4px_20px_0px_rgba(189,189,189,0.15)] flex flex-col mx-auto"
               >
                 {/* Small grey box at top-right of each image box */}
-                <div className="absolute z-10 right-0 top-0 h-[60px] w-[109px] bg-[rgba(192,192,192,0.3)]" />
+                <div className="absolute z-10 right-0 top-0 h-[50px] sm:h-[55px] md:h-[60px] w-[90px] sm:w-[100px] md:w-[109px] bg-[rgba(192,192,192,0.3)]" />
 
                 {/* Image container within image box */}
-                <div className="relative left-0 mb-6 flex h-[190px] w-1/2 aspect-square items-center justify-center bg-[rgba(192,192,192,1)] overflow-hidden">
+                <div className="relative left-0 mb-4 sm:mb-5 md:mb-6 flex h-[160px] sm:h-[175px] md:h-[190px] w-[140px] sm:w-[150px] md:w-[180px] aspect-square items-center justify-center bg-[rgba(192,192,192,1)] overflow-hidden">
                   <Image
                     src={member.image}
                     alt={member.name}
@@ -74,14 +74,13 @@ export default function TeamExpertiseSection() {
                 </div>
 
                 {/* Heading inside image box with LinkedIn button */}
-                <div className="mb-3 flex items-center gap-3">
+                <div className="mb-2 sm:mb-3 flex items-center gap-2 sm:gap-3 flex-wrap">
                   <h3
+                    className="text-lg sm:text-xl md:text-[22.05px] leading-tight sm:leading-[28px] md:leading-[30px]"
                     style={{
                       color: "rgba(255,255,255,1)",
                       fontFamily: '"Courier Prime", monospace',
                       fontWeight: 700,
-                      fontSize: "22.05px",
-                      lineHeight: "30px",
                       letterSpacing: "0",
                     }}
                   >
@@ -92,11 +91,11 @@ export default function TeamExpertiseSection() {
                       href={member.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center justify-center w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
+                      className="flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-white/10 hover:bg-white/20 transition-colors flex-shrink-0"
                       aria-label={`${member.name} LinkedIn profile`}
                     >
                       <svg
-                        className="w-5 h-5 text-white"
+                        className="w-4 h-4 sm:w-5 sm:h-5 text-white"
                         fill="currentColor"
                         viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg"
@@ -109,7 +108,7 @@ export default function TeamExpertiseSection() {
 
                 {/* Smaller content inside image box */}
                 <p
-                  className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight flex-1 overflow-hidden"
+                  className="text-xs sm:text-sm md:text-[14px] lg:text-[16px] leading-[1.6] sm:leading-[1.7] tracking-tight flex-1"
                   style={{
                     color: "rgba(243,243,243,0.75)",
                     fontFamily: '"Courier Prime", monospace',
@@ -124,9 +123,9 @@ export default function TeamExpertiseSection() {
           </div>
         </div>
         {/* Top black title bar overlapping the background panel */}
-      <div className="absolute left-0 top-0 bg-[rgba(11,11,11,1)] px-4 sm:px-6 md:px-8 py-2 pb-4 sm:pb-6 w-full sm:w-4/5 md:w-2/3">
+      <div className="absolute left-0 top-0 bg-[rgba(11,11,11,1)] px-4 sm:px-6 md:px-8 lg:px-10 py-2 sm:py-3 md:py-4 pb-4 sm:pb-5 md:pb-6 w-full sm:w-4/5 md:w-2/3 lg:w-3/5">
         <h2
-          className="mb-2 sm:mb-3 text-2xl sm:text-3xl md:text-4xl lg:text-[53px] leading-[1.1]"
+          className="mb-2 sm:mb-3 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[53px] leading-[1.1] sm:leading-[1.15]"
           style={{
             color: "rgba(255,255,255,1)",
             fontFamily: '"Courier Prime", monospace',
@@ -140,7 +139,7 @@ export default function TeamExpertiseSection() {
           </span>
         </h2>
         <p
-          className="max-w-xl text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight"
+          className="max-w-full sm:max-w-xl text-xs sm:text-sm md:text-[14px] lg:text-[16px] leading-[1.6] sm:leading-[1.7] tracking-tight"
           style={{
             color: "rgba(243,243,243,0.9)",
             fontFamily: '"Courier Prime", monospace',
