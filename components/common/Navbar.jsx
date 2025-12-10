@@ -63,12 +63,12 @@ export default function Navbar() {
           : "bg-transparent"
       }`}
     >
-      <div className="mx-auto flex h-[80px] sm:h-[100px] max-w-[1400px] items-center justify-between pl-0 pr-4 transition-all duration-300 ">
-        <Link href="/" className="mt-2 sm:mt-4 sm:ml-4 flex items-center">
+      <div className="mx-auto flex h-[60px] sm:h-[80px] max-w-[1400px] items-center justify-between pl-4 pb-2 pr-4 transition-all duration-300 ">
+        <Link href="/" className="mt-2 sm:mt-4 sm:ml-4  flex items-center">
           <img
             src="/images/home/logo 1.png"
             alt="QuBeats logo"
-            className="h-[80px] w-auto sm:h-[100px] object-contain"
+            className="h-[40px] w-auto sm:h-[80px] object-contain"
           />
         </Link>
         <nav className="hidden items-center gap-6 lg:gap-10 md:flex">
