@@ -83,7 +83,7 @@ export default function ProductsOverviewSection() {
         />
       </div>
 
-      <div className="relative z-10 mx-auto w-full max-w-[1400px] px-4 sm:px-6 md:px-10 lg:px-16">
+      <div className="relative z-10 mx-auto w-full max-w-[1400px] px-4 sm:px-6 md:px-10 md:pr-24 lg:px-20 lg:pr-36">
         {/* Small label */}
         <p
           style={{
