@@ -14,7 +14,7 @@ export default function HeroSection() {
           playsInline
           className="absolute inset-0 w-full h-full object-cover grayscale"
         >
-          <source src="/Video_Generation_Navy_Above_Sea.mp4" type="video/mp4" />
+          <source src="/Generated video 1.mp4" type="video/mp4" />
         </video>
       </div>
 
