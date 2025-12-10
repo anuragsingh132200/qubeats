@@ -89,7 +89,7 @@ export default function FindPerfectSolutionSection() {
               color: "#FFFFFF",
             }}
           >
-            Download Specs
+            DOWNLOAD SPECS
           </a>
         </div>
       </div>

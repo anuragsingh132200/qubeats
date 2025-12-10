@@ -61,7 +61,7 @@ export default function HowSensorsWorkSection() {
             >
               <span className="text-white">Where our sensors </span>
               <span className="text-[#CB3F24] font-weight-700">
-                Operate
+                operate
               </span>
             </h2>
           </header>

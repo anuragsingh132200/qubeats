@@ -76,7 +76,7 @@ export default function CollaborateSection() {
               color: "#FFFFFF",
             }}
           >
-            Download Specs
+            DOWNLOAD SPECS
           </a>
         </div>
       </div>

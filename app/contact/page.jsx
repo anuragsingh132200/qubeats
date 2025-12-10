@@ -1,13 +1,62 @@
+"use client";
+
+import { useState } from "react";
 import SectionWrapper from "@/components/common/SectionWrapper";
 import Image from "next/image";
 
-export const metadata = {
-  title: "Contact Us | QuBeats",
-  description:
-    "Get in touch with QuBeats. Contact us for inquiries about quantum sensing solutions, partnerships, and collaborations.",
-};
-
 export default function ContactPage() {
+  const [formValues, setFormValues] = useState({
+    subject: "",
+    message: "",
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState("");
+  const [submitSuccess, setSubmitSuccess] = useState(false);
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setFormValues((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    setSubmitError("");
+    setSubmitSuccess(false);
+
+    if (!formValues.subject.trim() || !formValues.message.trim()) {
+      setSubmitError("Please fill in all fields before submitting.");
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch("/api/messages", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formValues),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send message. Please try again.");
+      }
+
+      setSubmitSuccess(true);
+      setFormValues({ subject: "", message: "" });
+      
+      // Clear success message after 5 seconds
+      setTimeout(() => {
+        setSubmitSuccess(false);
+      }, 5000);
+    } catch (error) {
+      setSubmitError(error.message || "Something went wrong while sending your message.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <>
       <SectionWrapper id="contact" className="pt-24 sm:pt-32 md:pt-40 lg:pt-48 bg-[rgba(11,11,11,1)]">
@@ -38,13 +87,64 @@ export default function ContactPage() {
               We'd love to hear from you. Get in touch with our team.
             </p>
 
-            {/* Contact Button */}
-            <div className="flex justify-start">
-              <a
-                href="mailto:contact@qubeats.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-6 sm:px-8 md:px-10 py-3 sm:py-4 text-sm sm:text-base transition-all hover:opacity-90"
+            {/* Contact Form */}
+            <form onSubmit={handleSubmit} className="space-y-6 max-w-2xl">
+              {submitSuccess && (
+                <div className="rounded-lg border border-green-500/60 bg-green-500/10 px-4 py-3 text-sm text-green-400">
+                  Message sent successfully! We'll get back to you soon.
+                </div>
+              )}
+
+              {submitError && (
+                <div className="rounded-lg border border-red-500/60 bg-red-500/10 px-4 py-3 text-sm text-red-400">
+                  {submitError}
+                </div>
+              )}
+
+              <div className="flex flex-col gap-2">
+                <label
+                  htmlFor="subject"
+                  className="text-sm font-medium text-slate-200"
+                  style={{ fontFamily: '"Courier Prime", monospace' }}
+                >
+                  Subject
+                </label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  value={formValues.subject}
+                  onChange={handleInputChange}
+                  className="rounded-lg border border-slate-800 bg-[#111111] px-4 py-3 text-sm text-white outline-none transition focus:border-[#CB3F24] focus:ring-2 focus:ring-[#CB3F24]/40"
+                  placeholder="Enter subject..."
+                  required
+                />
+              </div>
+
+              <div className="flex flex-col gap-2">
+                <label
+                  htmlFor="message"
+                  className="text-sm font-medium text-slate-200"
+                  style={{ fontFamily: '"Courier Prime", monospace' }}
+                >
+                  Message
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  value={formValues.message}
+                  onChange={handleInputChange}
+                  rows={6}
+                  className="rounded-lg border border-slate-800 bg-[#111111] px-4 py-3 text-sm text-white outline-none transition focus:border-[#CB3F24] focus:ring-2 focus:ring-[#CB3F24]/40 resize-none"
+                  placeholder="Enter your message..."
+                  required
+                />
+              </div>
+
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className="inline-flex items-center justify-center px-6 sm:px-8 md:px-10 py-3 sm:py-4 text-sm sm:text-base transition-all hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-70"
                 style={{
                   fontFamily: '"Courier Prime", monospace',
                   fontWeight: 700,
@@ -53,9 +153,9 @@ export default function ContactPage() {
                   color: "#FFFFFF",
                 }}
               >
-                Contact Us
-              </a>
-            </div>
+                {isSubmitting ? "Sending..." : "Send Message"}
+              </button>
+            </form>
           </div>
         </div>
       </SectionWrapper>

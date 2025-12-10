@@ -90,7 +90,7 @@ export default function Navbar() {
                   }`}
                   style={{
                     fontFamily: "'Courier New', monospace",
-                    fontSize: "14px",
+                    fontSize: "19px",
                     lineHeight: "21.6px",
                     letterSpacing: "0px",
                   }}

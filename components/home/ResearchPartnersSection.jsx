@@ -68,7 +68,7 @@ export default function ResearchPartnersSection() {
 
       scrollIntervalRef.current = setInterval(() => {
         if (slider && isScrollingRef.current && !isPaused && firstSetWidth > 0) {
-          slider.scrollLeft += 0.5;
+          slider.scrollLeft += 2.5;
           
           // When we've scrolled past the first set, reset to start seamlessly
           if (slider.scrollLeft >= firstSetWidth) {
@@ -175,7 +175,7 @@ export default function ResearchPartnersSection() {
       </div>
 
       {/* Small atom tile placeholder (top-right) */}
-      <div className="pointer-events-none absolute hidden lg:flex items-center justify-center w-[70px] h-[68px] bg-[rgba(192,192,192,1)] right-20 lg:right-85 top-20">
+      <div className="pointer-events-none absolute hidden lg:flex items-center justify-center w-[70px] h-[68px] bg-[rgba(192,192,192,1)] right-20 lg:right-71 top-20">
         <Image
           src="/images/home/vector-1.png"
           alt=""
@@ -186,7 +186,7 @@ export default function ResearchPartnersSection() {
       </div>
 
       {/* Main content container */}
-      <div className="relative mx-auto w-full max-w-[1400px] flex flex-col gap-6 sm:gap-8 px-4 sm:px-6 md:px-10 lg:px-16">
+      <div className="relative mx-auto w-full max-w-[1400px] flex flex-col gap-6 sm:gap-8 px-4 sm:px-6 md:px-10 lg:px-16 pt-2">
         {/* OUR PARTNERS label */}
         <p
           className="inline py-2 uppercase"
@@ -199,23 +199,23 @@ export default function ResearchPartnersSection() {
             letterSpacing: "0px",
           }}
         >
-          OUR PARTNERS
+          PARTNERS AND AFFILIATIONS
         </p>
 
         {/* Heading */}
         <h2
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-[-1px]"
+          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1px]"
           style={{ fontFamily: '"Courier Prime", monospace' }}
         >
           <span className="text-white">
-            Our Research{" "}
+            INSTITUTIONAL PARTNERS{" "}
           </span>
           <span className="text-[#CB3F24]">
-            Partners
+            AND AFFILIATIONS
           </span>
         </h2>
 
-        <div className="absolute hidden lg:block bg-[rgba(192,192,192,1)] w-[180px] md:w-[200px] lg:w-[220px] h-[100px] md:h-[115px] lg:h-[130px] right-4 md:right-16 top-16 md:top-18 lg:top-21"></div>
+        <div className="absolute hidden lg:block bg-[rgba(192,192,192,1)] w-[180px] md:w-[200px] lg:w-[160px] h-[100px] md:h-[115px] lg:h-[130px] right-4 md:right-16 top-16 md:top-18 lg:top-21"></div>
 
         {/* Grey container with partner cards slider */}
         <div className="relative mt-4 bg-[rgba(192,192,192,1)] min-w-[100%] sm:min-w-[90%] md:min-w-[80%] px-4 sm:px-6 pt-6 sm:pt-8 md:pt-10 pb-4 sm:pb-10">

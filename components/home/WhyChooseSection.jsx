@@ -178,7 +178,7 @@ export default function WhyChooseSection() {
             download
             className="inline-flex w-full sm:w-[280px] md:w-[300px] h-[55px] sm:h-[60px] md:h-[65px] items-center justify-center border border-slate-100 bg-transparent text-xs sm:text-sm font-semibold uppercase tracking-[0.18em] text-slate-50"
           >
-            Download Specs
+            DOWNLOAD SPECS
           </a>
         </div>
       </div>

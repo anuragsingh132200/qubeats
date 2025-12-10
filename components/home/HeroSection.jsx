@@ -55,7 +55,7 @@ export default function HeroSection() {
               color: "#FFFFFF",
             }}
           >
-            Talk to a Scientist 
+            Talk to our Scientists 
           </Link>
         </div>
       </div>

@@ -99,7 +99,7 @@ export default function TechnicalHighlightsSection() {
         </div>
 
         {/* RIGHT: Image + overlay boxes */}
-        <div className="relative flex-1 mt-8 lg:mt-0 lg:flex lg:items-center lg:justify-end max-md:hidden">
+        <div className="relative flex-1 mt-8 lg:mt-0 lg:flex lg:items-end lg:justify-end max-md:hidden">
           <div className="relative ml-auto h-[300px] sm:h-[380px] md:h-[450px] lg:h-[480px] w-full max-w-[640px]">
             
 

@@ -30,6 +30,12 @@ export default function AdminPage() {
   const [jobsError, setJobsError] = useState("");
   const [deletingId, setDeletingId] = useState(null);
 
+  // Messages state
+  const [messages, setMessages] = useState([]);
+  const [messagesLoading, setMessagesLoading] = useState(false);
+  const [messagesError, setMessagesError] = useState("");
+  const [selectedMessage, setSelectedMessage] = useState(null);
+
   const [formValues, setFormValues] = useState({
     title: "",
     experience: "",
@@ -99,12 +105,33 @@ export default function AdminPage() {
     }
   }, []);
 
+  const fetchMessages = useCallback(async () => {
+    setMessagesLoading(true);
+    setMessagesError("");
+
+    try {
+      const response = await fetch("/api/messages", { cache: "no-store" });
+
+      if (!response.ok) {
+        throw new Error("Unable to load messages. Please try again.");
+      }
+
+      const data = await response.json();
+      setMessages(Array.isArray(data.messages) ? data.messages : []);
+    } catch (error) {
+      setMessagesError(error.message || "Something went wrong while loading messages.");
+    } finally {
+      setMessagesLoading(false);
+    }
+  }, []);
+
   useEffect(() => {
     if (isLoggedIn) {
       fetchJobs();
       fetchBannerSettings();
+      fetchMessages();
     }
-  }, [isLoggedIn, fetchJobs, fetchBannerSettings]);
+  }, [isLoggedIn, fetchJobs, fetchBannerSettings, fetchMessages]);
 
   const handleLogin = (event) => {
     event.preventDefault();
@@ -303,7 +330,7 @@ export default function AdminPage() {
                   Admin Dashboard
                 </h1>
                 <p className="mt-1 text-sm text-slate-400">
-                  Manage job openings and keep the careers page up to date.
+                  Manage job openings, contact messages, and keep the site up to date.
                 </p>
               </div>
               <button
@@ -497,9 +524,151 @@ export default function AdminPage() {
                 </div>
               )}
             </div>
+
+            {/* Messages Section */}
+            <div className="space-y-4 rounded-2xl border border-slate-800 bg-[#101113] p-6">
+              <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+                <h2 className="text-xl font-semibold text-white">
+                  Contact Messages
+                </h2>
+                <button
+                  onClick={fetchMessages}
+                  disabled={messagesLoading}
+                  className="inline-flex items-center justify-center rounded-lg border border-slate-700 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-slate-200 transition hover:border-[#CB3F24] hover:text-[#CB3F24] disabled:cursor-not-allowed disabled:opacity-60"
+                >
+                  {messagesLoading ? "Refreshing..." : "Refresh"}
+                </button>
+              </div>
+
+              {messagesError ? (
+                <p className="text-sm font-medium text-red-400">{messagesError}</p>
+              ) : null}
+
+              {messagesLoading ? (
+                <p className="text-sm text-slate-300">
+                  Loading messages...
+                </p>
+              ) : messages.length === 0 ? (
+                <p className="text-sm text-slate-300">
+                  No messages yet.
+                </p>
+              ) : (
+                <div className="overflow-x-auto">
+                  <table className="w-full border-collapse">
+                    <thead>
+                      <tr className="border-b border-slate-800">
+                        <th className="px-4 py-3 text-left text-xs font-semibold uppercase tracking-wide text-slate-400">
+                          Subject
+                        </th>
+                        <th className="px-4 py-3 text-left text-xs font-semibold uppercase tracking-wide text-slate-400">
+                          Date
+                        </th>
+                        <th className="px-4 py-3 text-left text-xs font-semibold uppercase tracking-wide text-slate-400">
+                          Preview
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {messages.map((message) => (
+                        <tr
+                          key={message._id}
+                          onClick={() => setSelectedMessage(message)}
+                          className="cursor-pointer border-b border-slate-800 transition hover:bg-slate-900/50"
+                        >
+                          <td className="px-4 py-3 text-sm font-medium text-white">
+                            {message.subject}
+                          </td>
+                          <td className="px-4 py-3 text-xs text-slate-400">
+                            {formatPostedDate(message.createdAt)}
+                          </td>
+                          <td className="px-4 py-3 text-xs text-slate-400">
+                            {message.message.length > 50
+                              ? `${message.message.substring(0, 50)}...`
+                              : message.message}
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              )}
+            </div>
           </div>
         )}
       </SectionWrapper>
+
+      {/* Message Detail Popup */}
+      {selectedMessage && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4"
+          onClick={() => setSelectedMessage(null)}
+        >
+          <div
+            className="relative w-full max-w-2xl rounded-2xl border border-slate-800 bg-[#101113] p-6 shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-start justify-between mb-4">
+              <h3 className="text-xl font-semibold text-white">
+                Message Details
+              </h3>
+              <button
+                onClick={() => setSelectedMessage(null)}
+                className="rounded-lg p-2 text-slate-400 transition hover:bg-slate-800 hover:text-white"
+              >
+                <svg
+                  className="h-5 w-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <div className="space-y-4">
+              <div>
+                <label className="text-xs font-semibold uppercase tracking-wide text-slate-400">
+                  Subject
+                </label>
+                <p className="mt-1 text-sm text-white">{selectedMessage.subject}</p>
+              </div>
+
+              <div>
+                <label className="text-xs font-semibold uppercase tracking-wide text-slate-400">
+                  Date
+                </label>
+                <p className="mt-1 text-sm text-slate-300">
+                  {formatPostedDate(selectedMessage.createdAt)}
+                </p>
+              </div>
+
+              <div>
+                <label className="text-xs font-semibold uppercase tracking-wide text-slate-400">
+                  Message
+                </label>
+                <p className="mt-1 whitespace-pre-wrap text-sm leading-relaxed text-slate-200">
+                  {selectedMessage.message}
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-6 flex justify-end">
+              <button
+                onClick={() => setSelectedMessage(null)}
+                className="rounded-lg border border-slate-700 px-4 py-2 text-sm font-semibold text-slate-200 transition hover:border-[#CB3F24] hover:text-[#CB3F24]"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

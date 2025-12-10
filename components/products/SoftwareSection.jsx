@@ -145,7 +145,7 @@ export default function SoftwareSection() {
                   download
                   className="inline-flex items-center gap-2 text-xs font-semibold tracking-wide text-[#CB3F24] transition-colors hover:text-[#BE3B22] sm:text-sm"
                 >
-                  <span>Download Specs</span>
+                  <span>DOWNLOAD SPECS</span>
                   <span className="text-base">➜</span>
                 </a>
               </div>

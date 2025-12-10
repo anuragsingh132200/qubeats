@@ -39,21 +39,19 @@ export default function AdvancedSolutionsSection() {
           {/* Left: image block + top-right rectangular box grouped inside same parent */}
           <div className="relative w-full max-w-[640px] lg:flex-1">
             {/* This wrapper holds both the aircraft image and the top-right box so the box visually sits *on top of* the image */}
-            <div className="relative overflow-hidden">
+            <div className="relative overflow-hidden w-full max-w-[580px] aspect-[580/503]">
               {/* Airplane image (full cover of wrapper) */}
               <Image
-                src="/images/home/drone.png"
+                src="/images/home/heroimage.jpg"
                 alt="Stealth aircraft formation"
                 width={580}
                 height={503}
-                className="object-cover"
+                className="w-full h-full object-cover grayscale"
                 priority
               />
             </div>
 
             {/* TOP-RIGHT rectangular box that is *part of the same visual block* (positioned relative to wrapper) */}
-            {/* It's placed overlapping the image container: top aligned, with a small offset from top and right and a slight bottom/left offset to mimic the screenshot */}
-            <div className="absolute top-0 right-0 hidden h-19 w-28 bg-[#BBBBBB] lg:block transform translate-y-0 translate-x-[-26px]" />
           </div>
 
           {/* Right: text block */}
