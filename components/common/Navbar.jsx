@@ -19,7 +19,7 @@ const navLinks = [
     label: "ABOUT US", 
     dropdown: true,
     dropdownItems: [
-      { href: "/about", label: "About Us" },
+      { href: "/about", label: "Founding Team" },
       { href: "/advisors", label: "Advisors" },
       { href: "/contact", label: "Contact Us" },
       { href: "/products/resources", label: "Resources" }

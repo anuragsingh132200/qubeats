@@ -5,28 +5,28 @@ const teamMembers = [
   {
     name: "Mallikarjun Karra",
     description:
-      "Mallikarjun Karra is an entrepreneur and a published theoretical physicist. His research at the Fritz Haber Institute of the Max Planck Society, Berlin, was focused on understanding and controlling cold and ultracold polar, polarisable molecules — either in trapped arrays or doped into superfluid helium nanodroplets. He has previously worked on quantum computing with molecules, proposing an architecture for universal quantum computation based on arrays of trapped ultracold polar paramagnetic molecules, including schemes for optically controlled CNOT gates and field-tunable entanglement.",
+      "Mallikarjun Karra is an entrepreneur and published theoretical physicist whose work spans ultracold polar and polarisable molecules in trapped arrays and helium nanodroplets, quantum computing with molecules, and architectures for universal quantum computation using optically controlled CNOT gates and tunable entanglement.",
     image: "/images/Screenshot 2025-12-08 134520.png",
     linkedin: "https://www.linkedin.com/in/mallikarjun-k-628ab417/",
   },
   {
     name: "Rajat Sethi",
     description:
-      "Rajat Sethi has worked as a technocrat and a public intellectual, having served as an Advisor to three Chief Ministers. He has also worked on various Govt of India Committees on tech policy and economic planning. Rajat is a public policy graduate from Harvard Kennedy School, management graduate from MIT Sloan School and a computer science grad from IIT Kharagpur (2009).",
+      "Rajat Sethi is a technocrat and public intellectual who has advised three Chief Ministers and contributed to Government of India committees on technology policy and economic planning. He holds degrees in public policy from Harvard Kennedy School, management from MIT Sloan, and computer science from IIT Kharagpur, class of 2009.",
     image: "/images/WhatsApp Image 2025-12-07 at 21.13.05_02a8a2e3.jpg",
     linkedin: "https://www.linkedin.com/in/sethirajat/",
   },
   {
     name: "Shouvik Mukherjee",
     description:
-      "Dr. Shouvik Mukherjee combines deep expertise in atomic vapor and solid-state quantum platforms with a command of complex optics, precision electronics, nanofabrication, and ultrahigh vacuum technology. A former Postdoctoral Scholar at the prestigious Joint Quantum Institute (NIST/University of Maryland), he conducted advanced research on Bose-Einstein condensates and analogue cosmology. He earned his Ph.D. in Experimental Condensed Matter Physics from the University of Pittsburgh, pioneering work on exciton-polariton transport in semiconductor microcavities, and is an alumnus of IIT Kharagpur.",
+      "Dr. Shouvik Mukherjee is an experimental physicist with expertise in atomic vapor and solid-state quantum systems, complex optics, precision electronics, nanofabrication, and ultrahigh vacuum platforms. A former Postdoctoral Scholar at the Joint Quantum Institute, he earned his Ph.D. in condensed matter physics and is an IIT Kharagpur alumnus.",
     image: "/images/WhatsApp Image 2025-12-07 at 22.06.02_e7064b99.jpg",
     linkedin: "https://www.linkedin.com/in/shouvik-mukherjee-b35b3919/",
   },
   {
     name: "Madhu Trivikram Talluri",
     description:
-      "Dr. Madhu Trivikram Talluri is an experimental physicist specialising in precision quantum measurements and ultrafast laser spectroscopy. He was previously a postdoctoral scholar at UC Berkeley and a researcher at the Lawrence Berkeley National Laboratory's Chemical Sciences Division, where he developed advanced laser-based spectroscopic methods to probe light–matter interactions at the quantum limit. Prior to this, he held research positions at the Max Born Institute for Nonlinear Optics and Short Pulse Spectroscopy in Berlin. Madhu earned his Ph.D. in physics from LaserLaB, Vrije Universiteit Amsterdam, with work on high-precision molecular spectroscopy of hydrogen and its isotopologues that set stringent tests for modern molecular theory and quantum electrodynamics.",
+      "Dr. Madhu Trivikram Talluri is an experimental physicist specialising in precision quantum measurements and ultrafast laser spectroscopy. He has held research positions at UC Berkeley, Lawrence Berkeley National Laboratory, and the Max Born Institute, and earned a Ph.D. in physics from LaserLaB, Vrije Universiteit Amsterdam.",
     image: "/images/WhatsApp Image 2025-12-08 at 00.47.59_bee03dc1.jpg",
     linkedin: "https://www.linkedin.com/in/madhuttalluri/",
   },
