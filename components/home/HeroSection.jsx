@@ -12,9 +12,9 @@ export default function HeroSection() {
           loop
           muted
           playsInline
-          className="absolute inset-0 w-full h-full object-cover grayscale"
+          className="absolute inset-0 w-full h-full object-cover "
         >
-          <source src="/Generated video 1.mp4" type="video/mp4" />
+          <source src="/images/Video_Editing_Blue_Graph_Highlight.mp4" type="video/mp4" />
         </video>
       </div>
 
