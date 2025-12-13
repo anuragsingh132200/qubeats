@@ -8,12 +8,7 @@ export default function AdvancedSolutionsSection() {
       id: 1,
       content: (
         <>
-          We deliver robust navigation for{" "}
-          <span id="highlight-strong">GPS-denied environments</span>.
-          Our atomic sensors simultaneously offer magnetic anomaly detection
-          and electromagnetic spectrum awareness for total battlefield
-          clarity—all in a compact, power-efficient, and cost-effective
-          package.
+         We deliver robust navigation for GNSS-denied environments, magnetic anomaly detection, and high sensitivity electromagnetic spectrum awareness solutions. Our atomic sensors are compact, power-efficient, and cost-effective packages.
         </>
       ),
     },

@@ -7,17 +7,17 @@ const products = [
   {
     name: "Quantum Magnetometers",
     summary:
-      "Compact vapor-cell OPM arrays delivering picotesla precision for navigation, mineral exploration, and biomedical imaging.",
+      "Compact vapor-cell OPMs delivering femtotesla to picotesla range sensitivity for navigation, mineral exploration, and biomedical imaging.",
   },
   {
     name: "RF Sensing Platforms",
     summary:
-      "Rydberg atom-based receivers that decode RF signatures with ultra-wide bandwidth for electronic warfare and secure comms.",
+      "Rydberg atom-based RF receivers with ultra-wide bandwidth for electronic support measures and secure communications.",
   },
   {
     name: "Navigation Engine & Sensor Fusion",
     summary:
-      "Real-time fusion of quantum magnetic data with inertial and RF streams for GPS-denied navigation accuracy.",
+      "Real-time fusion of magnetic sensor data with IMU data and onboard edge compute for magnetically aided inertial navigation systems (MAINS).",
   },
   {
     name: "Magnetic Navigation System",

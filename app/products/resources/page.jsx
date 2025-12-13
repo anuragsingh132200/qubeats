@@ -7,21 +7,18 @@ const whitePapers = [
     title: "Magnetic-Aided Navigation in GPS-Denied Environments",
     description: "Comprehensive analysis of quantum magnetometer architectures and their application in resilient navigation systems for defense and aerospace platforms.",
     date: "Oct 2024",
-    pages: "24 Pages",
     link: "#"
   },
   {
     title: "Optical Pumping in Vapor Cell Sensors",
     description: "Technical deep-dive into optical pumping mechanisms, spin polarization dynamics, and signal processing in alkali vapor cell magnetometers.",
     date: "Sep 2024",
-    pages: "18 Pages",
     link: "#"
   },
   {
     title: "System Integration and Calibration Protocols",
     description: "Best practices for integrating quantum sensors into mission-critical systems, including calibration procedures and performance optimization.",
     date: "Aug 2024",
-    pages: "32 Pages",
     link: "#"
   }
 ];
@@ -31,21 +28,18 @@ const solutionBriefs = [
     title: "MagNav Systems for Submarine Operations",
     description: "Overview of quantum magnetometer-based navigation systems designed for GPS-denied underwater environments and strategic naval applications.",
     date: "Oct 2024",
-    pages: "12 Pages",
     link: "#"
   },
   {
     title: "Quantum Gradiometer Arrays for Anomaly Detection",
     description: "Application brief on deploying quantum gradiometer systems for geophysical surveying, mineral exploration, and underwater surveillance.",
     date: "Sep 2024",
-    pages: "16 Pages",
     link: "#"
   },
   {
     title: "Biomedical Applications of Quantum Sensing",
     description: "Solution overview for using quantum magnetometers in medical imaging, brain activity monitoring, and precision diagnostics.",
     date: "Aug 2024",
-    pages: "14 Pages",
     link: "#"
   }
 ];
@@ -55,21 +49,18 @@ const technicalNotes = [
     title: "QB-OPM-S Performance Specifications",
     description: "Detailed technical specifications, measurement protocols, and performance benchmarks for the QB-OPM-S scalar magnetometer system.",
     date: "Oct 2024",
-    pages: "28 Pages",
     link: "#"
   },
   {
     title: "Calibration and Maintenance Procedures",
     description: "Step-by-step calibration guides, maintenance schedules, and troubleshooting procedures for QuBeats sensor products.",
     date: "Sep 2024",
-    pages: "22 Pages",
     link: "#"
   },
   {
     title: "API Reference and Integration Guide",
     description: "Complete API documentation, SDK reference, and integration examples for software developers working with QuBeats sensor platforms.",
     date: "Aug 2024",
-    pages: "36 Pages",
     link: "#"
   }
 ];
@@ -231,21 +222,7 @@ export default function ResourcesPage() {
                       {paper.date}
                     </span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <Image
-                      src="/images/products/physics-svgrepo-com (1) 3.svg"
-                      alt=""
-                      width={20}
-                      height={20}
-                      className="object-contain"
-                    />
-                    <span 
-                      className="text-[13px] text-white"
-                      style={{ fontFamily: '"Courier New", monospace' }}
-                    >
-                      {paper.pages}
-                    </span>
-                  </div>
+                  
                 </div>
                 <Link
                   href={paper.link}
@@ -350,21 +327,7 @@ export default function ResourcesPage() {
                       {brief.date}
                     </span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <Image
-                      src="/images/products/physics-svgrepo-com (1) 3.svg"
-                      alt=""
-                      width={20}
-                      height={20}
-                      className="object-contain"
-                    />
-                    <span 
-                      className="text-[13px] text-white"
-                      style={{ fontFamily: '"Courier New", monospace' }}
-                    >
-                      {brief.pages}
-                    </span>
-                  </div>
+                 
                 </div>
                 <Link
                   href={brief.link}
@@ -469,21 +432,7 @@ export default function ResourcesPage() {
                       {note.date}
                     </span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <Image
-                      src="/images/products/physics-svgrepo-com (1) 3.svg"
-                      alt=""
-                      width={20}
-                      height={20}
-                      className="object-contain"
-                    />
-                    <span 
-                      className="text-[13px] text-white"
-                      style={{ fontFamily: '"Courier New", monospace' }}
-                    >
-                      {note.pages}
-                    </span>
-                  </div>
+                  
                 </div>
                 <Link
                   href={note.link}
@@ -517,7 +466,7 @@ export default function ResourcesPage() {
             }}
           >
             <span className="text-white">Media & </span>
-            <span className="text-[#CB3F24]">Press Conference</span>
+            <span className="text-[#CB3F24]">Press Releases</span>
           </h2>
           <p 
             className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-white max-w-[710px]"
