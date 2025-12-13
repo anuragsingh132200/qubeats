@@ -12,7 +12,7 @@ export default function CareersPage() {
     <>
       <SectionWrapper 
         id="careers-hero" 
-        className="bg-[rgba(7,7,7,1)] pt-32 sm:pt-40 md:pt-52 lg:pt-64 pb-16 sm:pb-20 md:pb-24 relative "
+        className="bg-[rgba(7,7,7,1)] pt-32 sm:pt-40 md:pt-52 lg:pt-64 pb-16 sm:pb-20 md:pb-24 relative pl-4 sm:pl-8 md:pl-12 lg:pl-28 "
         style={{ 
           backgroundImage: 'url(/images/Background pattern (1).png)',
           backgroundSize: 'cover',
@@ -20,7 +20,7 @@ export default function CareersPage() {
           backgroundRepeat: 'no-repeat'
         }}
       >
-        <div className="flex flex-col gap-4 sm:gap-6 md:gap-8 relative z-10 ml-4 sm:ml-8 md:ml-12 lg:ml-32">
+        <div className="flex flex-col gap-4 sm:gap-6 md:gap-8 relative z-10 ">
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1px] text-white ">
             Careers at <span className="text-[#CB3F24]">QuBeats</span>
           </h1>
@@ -32,7 +32,7 @@ export default function CareersPage() {
 
       <SectionWrapper 
         id="careers-content" 
-        className="bg-[rgba(7,7,7,1)] relative"
+        className="bg-[rgba(7,7,7,1)] relative pl-4 sm:pl-8 md:pl-12 lg:pl-28 pr-4 sm:pr-8 md:pr-12 lg:pr-28"
         style={{ 
           backgroundImage: 'url(/images/Background pattern (1).png)',
           backgroundSize: 'cover',

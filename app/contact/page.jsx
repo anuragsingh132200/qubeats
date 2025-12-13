@@ -93,7 +93,7 @@ export default function ContactPage() {
               <div className="space-y-6">
                 {/* Email */}
                 <div className="flex flex-col gap-2">
-                  <h3 className="text-sm font-medium text-slate-200 mb-2" style={{ fontFamily: '"Courier Prime", monospace' }}>
+                  <h3 className="text-md  font-bold text-[#CB3F24] mb-2" style={{ fontFamily: '"Courier Prime", monospace' }}>
                     Email
                   </h3>
                   <a 
@@ -107,7 +107,7 @@ export default function ContactPage() {
 
                 {/* Research Lab Address */}
                 <div className="flex flex-col gap-2">
-                  <h3 className="text-sm font-medium text-slate-200 mb-2" style={{ fontFamily: '"Courier Prime", monospace' }}>
+                  <h3 className="text-md  font-bold text-[#CB3F24] mb-2" style={{ fontFamily: '"Courier Prime", monospace' }}>
                     Research Lab
                   </h3>
                   <p 
@@ -123,7 +123,10 @@ export default function ContactPage() {
 
                 {/* Company Address */}
                 <div className="flex flex-col gap-2">
-                  <h3 className="text-sm font-medium text-slate-200 mb-2" style={{ fontFamily: '"Courier Prime", monospace' }}>
+                  <h3 className="text-md  font-bold text-[#CB3F24] mb-2" style={{ fontFamily: '"Courier Prime", monospace' }}>
+                    Corporate Office
+                  </h3>
+                  <h3 className="text-sm font-medium text-slate-200" style={{ fontFamily: '"Courier Prime", monospace' }}>
                     M/s. Nostradamus Technologies Private Limited
                   </h3>
                   <p 

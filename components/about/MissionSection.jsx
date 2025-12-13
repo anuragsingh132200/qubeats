@@ -16,7 +16,7 @@ export default function MissionSection() {
   return (
     <SectionWrapper
       id="mission"
-      className="relative overflow-hidden bg-[rgba(11,11,11,1)]"
+      className="relative overflow-hidden bg-[rgba(11,11,11,1)] pl-4 sm:pl-8 md:pl-12 lg:pl-36 pr-4 sm:pr-8 md:pr-12 lg:pr-28"
       containerClassName="relative z-10 py-16 lg:py-20"
     >
       {/* Background pattern (update src to your actual bg-pattern path) */}

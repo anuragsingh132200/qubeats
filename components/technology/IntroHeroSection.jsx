@@ -23,7 +23,7 @@ export default function IntroHeroSection() {
           aria-hidden="true"
         />
 
-        <div className="relative flex flex-col mr-0 sm:mr-8 md:mr-12 lg:mr-20 gap-6 sm:gap-8 md:gap-10 mt-30 ml-4 sm:ml-8 md:ml-12 lg:ml-16">
+        <div className="relative flex flex-col mr-0 sm:mr-8 md:mr-12 lg:mr-20 gap-6 sm:gap-8 md:gap-10 mt-20 ">
           {/* Heading */}
           <h1
             className="text-2xl sm:text-3xl md:text-5xl lg:text-5xl text-white leading-[1.1] font-bold tracking-[-1px]"

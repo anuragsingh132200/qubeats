@@ -44,9 +44,7 @@ export default function CollaborateSection() {
             letterSpacing: "0.03em",
           }}
         >
-          Whether the need is a custom array, a MagNav drop-in, or a biomedical
-          tile set, the team co-designs the sensor architecture, mechanics, and
-          fusion stack around each mission profile.
+          Whether you need a custom array, MagNav drop-in, or biomedical tile, the team co-designs sensor architecture, mechanics, and fusion stack for your mission.
         </p>
 
         {/* CTA buttons */}

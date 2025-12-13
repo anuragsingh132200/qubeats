@@ -41,7 +41,7 @@ export default function TeamExpertiseSection() {
       {/* Container wrapper */}
       <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12">
         {/* Main content container */}
-        <div className="relative overflow-hidden bg-[rgba(7,7,7,0.95)] border border-white/10 rounded-sm mt-8 sm:mt-12 md:mt-16 lg:mt-20 xl:mt-24">
+        <div className="relative overflow-hidden bg-[rgba(7,7,7,0.95)] border border-white/10 rounded-sm ">
           {/* Background image */}
           <div className="pointer-events-none absolute inset-0 opacity-30">
             <Image

@@ -69,7 +69,7 @@ export default function AnnouncementBanner() {
   }, [isVisible, isAutoHidden, isLoading]);
 
   const handleClick = () => {
-    router.push('/products/resources');
+    
   };
 
   const handleClose = (e) => {

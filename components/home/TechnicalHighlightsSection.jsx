@@ -39,7 +39,7 @@ export default function TechnicalHighlightsSection() {
               color: "rgba(243, 243, 243, 0.8)",
             }}
           >
-            Technical Highlights
+            Key Features
           </p>
 
           {/* Main Heading */}

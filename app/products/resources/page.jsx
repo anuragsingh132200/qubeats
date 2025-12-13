@@ -108,7 +108,7 @@ export default function ResourcesPage() {
   return (
     <>
       {/* Hero Section */}
-      <SectionWrapper id="resources-hero" className="bg-[rgba(7,7,7,1)] pt-32 sm:pt-40 md:pt-52 lg:pt-64 pb-12 sm:pb-14 md:pb-16 relative">
+      <SectionWrapper id="resources-hero" className="bg-[rgba(7,7,7,1)] pt-32 sm:pt-40 md:pt-52 lg:pt-64 pb-12 sm:pb-14 md:pb-16 relative pl-4 sm:pl-8 md:pl-16 lg:pl-32">
         {/* Background Pattern */}
         <div className="pointer-events-none absolute inset-0 opacity-50">
           <Image
@@ -119,7 +119,7 @@ export default function ResourcesPage() {
             priority
           />
         </div>
-        <div className="relative z-10 flex flex-col gap-4 sm:gap-6 ml-4 sm:ml-8 md:ml-12 lg:ml-32 max-w-5xl mb-16">
+        <div className="relative z-10 flex flex-col gap-4 sm:gap-6  max-w-5xl mb-16">
           <h1 
             className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1px]"
             style={{
@@ -142,7 +142,7 @@ export default function ResourcesPage() {
       </SectionWrapper>
 
       {/* White Papers Section */}
-      <SectionWrapper id="white-papers" className="bg-[rgba(7,7,7,1)] py-16 relative ">
+      <SectionWrapper id="white-papers" className="bg-[rgba(7,7,7,1)] py-16 relative pl-4 sm:pl-8 md:pl-16 lg:pl-32 ">
         {/* Background Pattern */}
         <div className="pointer-events-none absolute inset-0 opacity-50">
           <Image
@@ -261,7 +261,7 @@ export default function ResourcesPage() {
       </SectionWrapper>
 
       {/* Solution Brief Section */}
-      <SectionWrapper id="solution-briefs" className="bg-[rgba(7,7,7,1)] py-16 relative">
+      <SectionWrapper id="solution-briefs" className="bg-[rgba(7,7,7,1)] py-16 relative pl-4 sm:pl-8 md:pl-16 lg:pl-32">
         {/* Background Pattern */}
         <div className="pointer-events-none absolute inset-0 opacity-50">
           <Image
@@ -380,7 +380,7 @@ export default function ResourcesPage() {
       </SectionWrapper>
 
       {/* Technical Notes & Data Sheets Section */}
-      <SectionWrapper id="technical-notes" className="bg-[rgba(7,7,7,1)] py-16 relative">
+      <SectionWrapper id="technical-notes" className="bg-[rgba(7,7,7,1)] py-16 relative pl-4 sm:pl-8 md:pl-16 lg:pl-32">
         {/* Background Pattern */}
         <div className="pointer-events-none absolute inset-0 opacity-50">
           <Image
@@ -499,7 +499,7 @@ export default function ResourcesPage() {
       </SectionWrapper>
 
       {/* Media & Press Conference Section */}
-      <SectionWrapper id="media-press" className="bg-[rgba(7,7,7,1)] py-16 relative">
+      <SectionWrapper id="media-press" className="bg-[rgba(7,7,7,1)] py-16 relative pl-4 sm:pl-8 md:pl-16 lg:pl-32">
         {/* Background Pattern */}
         <div className="pointer-events-none absolute inset-0 opacity-50">
           <Image

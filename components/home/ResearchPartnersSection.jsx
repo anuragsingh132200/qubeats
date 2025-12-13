@@ -199,7 +199,7 @@ export default function ResearchPartnersSection() {
             letterSpacing: "0px",
           }}
         >
-          PARTNERS AND AFFILIATIONS
+          Customers & Academic Associations
         </p>
 
         {/* Heading */}
@@ -208,7 +208,7 @@ export default function ResearchPartnersSection() {
           style={{ fontFamily: '"Courier Prime", monospace' }}
         >
           <span className="text-white">
-            Institutional Partners{" "}
+          Partners{" "}
           </span>
           <span className="text-[#CB3F24]">
             And Affiliations

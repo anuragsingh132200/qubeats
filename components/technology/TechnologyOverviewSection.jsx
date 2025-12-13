@@ -81,7 +81,7 @@ const technologySections = [
 
 export default function TechnologyOverviewSection() {
   return (
-    <SectionWrapper id="technology-overview" className="bg-[rgba(7,7,7,1)] pt-16 pb-20">
+    <SectionWrapper id="technology-overview" className="bg-[rgba(7,7,7,1)] pt-16 pb-20 pl-4 sm:pl-8 md:pl-12 lg:pl-28">
       {/* Section Title */}
       <h2 
         className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-12 md:mb-16 leading-[1.1] tracking-[-1px]"

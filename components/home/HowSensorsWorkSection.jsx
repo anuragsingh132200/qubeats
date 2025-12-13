@@ -143,23 +143,7 @@ export default function HowSensorsWorkSection() {
             </div>
           </div>
 
-          {/* Bottom CTA */}
-          <div className="flex justify-center">
-            <button
-              type="button"
-              className="text-base"
-              style={{
-                color: "rgba(193, 61, 35, 1)",
-                fontFamily: '"Courier Prime", monospace',
-                fontWeight: 700,
-                letterSpacing: "0.07em",
-              }}
-            >
-              <span className="text-[rgba(193, 61, 35, 1)]">
-                Explore all applications →
-              </span>
-            </button>
-          </div>
+          
         </div>
       </div>
   );
