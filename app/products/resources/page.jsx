@@ -2,92 +2,33 @@ import SectionWrapper from "@/components/common/SectionWrapper";
 import Link from "next/link";
 import Image from "next/image";
 
-const whitePapers = [
-  {
-    title: "Magnetic-Aided Navigation in GPS-Denied Environments",
-    description: "Comprehensive analysis of quantum magnetometer architectures and their application in resilient navigation systems for defense and aerospace platforms.",
-    date: "Oct 2024",
-    link: "#"
-  },
-  {
-    title: "Optical Pumping in Vapor Cell Sensors",
-    description: "Technical deep-dive into optical pumping mechanisms, spin polarization dynamics, and signal processing in alkali vapor cell magnetometers.",
-    date: "Sep 2024",
-    link: "#"
-  },
-  {
-    title: "System Integration and Calibration Protocols",
-    description: "Best practices for integrating quantum sensors into mission-critical systems, including calibration procedures and performance optimization.",
-    date: "Aug 2024",
-    link: "#"
-  }
-];
+async function getPublishedResources() {
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+  const response = await fetch(`${baseUrl}/api/resources?published=true`, {
+    cache: "no-store",
+  });
 
-const solutionBriefs = [
-  {
-    title: "MagNav Systems for Submarine Operations",
-    description: "Overview of quantum magnetometer-based navigation systems designed for GPS-denied underwater environments and strategic naval applications.",
-    date: "Oct 2024",
-    link: "#"
-  },
-  {
-    title: "Quantum Gradiometer Arrays for Anomaly Detection",
-    description: "Application brief on deploying quantum gradiometer systems for geophysical surveying, mineral exploration, and underwater surveillance.",
-    date: "Sep 2024",
-    link: "#"
-  },
-  {
-    title: "Biomedical Applications of Quantum Sensing",
-    description: "Solution overview for using quantum magnetometers in medical imaging, brain activity monitoring, and precision diagnostics.",
-    date: "Aug 2024",
-    link: "#"
+  if (!response.ok) {
+    return [];
   }
-];
 
-const technicalNotes = [
-  {
-    title: "QB-OPM-S Performance Specifications",
-    description: "Detailed technical specifications, measurement protocols, and performance benchmarks for the QB-OPM-S scalar magnetometer system.",
-    date: "Oct 2024",
-    link: "#"
-  },
-  {
-    title: "Calibration and Maintenance Procedures",
-    description: "Step-by-step calibration guides, maintenance schedules, and troubleshooting procedures for QuBeats sensor products.",
-    date: "Sep 2024",
-    link: "#"
-  },
-  {
-    title: "API Reference and Integration Guide",
-    description: "Complete API documentation, SDK reference, and integration examples for software developers working with QuBeats sensor platforms.",
-    date: "Aug 2024",
-    link: "#"
-  }
-];
+  const data = await response.json();
+  return Array.isArray(data.resources) ? data.resources : [];
+}
 
-const mediaItems = [
-  {
-    date: "Dec 2024",
-    source: "THE PRINT",
-    title: "QuBeats Secures Defense Grant for Quantum Navigation Systems",
-    description: "Indian defense ministry awards funding for development of GPS-denied navigation technology using quantum magnetometers for strategic applications.",
-    link: "#"
-  },
-  {
-    date: "Nov 2024",
-    source: "NAVAL TECHNOLOGY",
-    title: "Naval Innovation: Quantum Sensors for Submarine Detection",
-    description: "QuBeats partners with Indian Navy to deploy quantum gradiometer arrays for enhanced underwater surveillance and anomaly detection capabilities.",
-    link: "#"
-  },
-  {
-    date: "Oct 2024",
-    source: "TECH REVIEW",
-    title: "Inside India's Quantum Hardware Revolution",
-    description: "Indian defense ministry awards funding for development of GPS-denied navigation technology using quantum magnetometers for strategic applications.",
-    link: "#"
+async function getPublishedMediaItems() {
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+  const response = await fetch(`${baseUrl}/api/media?published=true`, {
+    cache: "no-store",
+  });
+
+  if (!response.ok) {
+    return [];
   }
-];
+
+  const data = await response.json();
+  return Array.isArray(data.items) ? data.items : [];
+}
 
 export const metadata = {
   title: "Resources | QuBeats Quantum Sensing",
@@ -95,7 +36,20 @@ export const metadata = {
     "Access technical documentation, datasheets, white papers, integration guides, and other resources for QuBeats quantum sensing products.",
 };
 
-export default function ResourcesPage() {
+export default async function ResourcesPage() {
+  const resources = await getPublishedResources();
+  const mediaItems = await getPublishedMediaItems();
+
+  const whitePapers = resources.filter(
+    (resource) => resource.category === "white_paper"
+  );
+  const solutionBriefs = resources.filter(
+    (resource) => resource.category === "solution_brief"
+  );
+  const technicalNotes = resources.filter(
+    (resource) => resource.category === "technical_note_data_sheet"
+  );
+
   return (
     <>
       {/* Hero Section */}
@@ -133,6 +87,7 @@ export default function ResourcesPage() {
       </SectionWrapper>
 
       {/* White Papers Section */}
+      {whitePapers.length > 0 && (
       <SectionWrapper id="white-papers" className="bg-[rgba(7,7,7,1)] py-16 relative pl-4 sm:pl-8 md:pl-16 lg:pl-32 ">
         {/* Background Pattern */}
         <div className="pointer-events-none absolute inset-0 opacity-50">
@@ -225,7 +180,7 @@ export default function ResourcesPage() {
                   
                 </div>
                 <Link
-                  href={paper.link}
+                  href={paper.link || "#"}
                   className="inline-flex items-center gap-2 text-sm font-semibold text-[#CB3F24] hover:text-[#BE3B22] transition-colors"
                   style={{ fontFamily: '"Courier New", monospace' }}
                 >
@@ -236,8 +191,10 @@ export default function ResourcesPage() {
           </div>
         </div>
       </SectionWrapper>
+      )}
 
       {/* Solution Brief Section */}
+      {solutionBriefs.length > 0 && (
       <SectionWrapper id="solution-briefs" className="bg-[rgba(7,7,7,1)] py-16 relative pl-4 sm:pl-8 md:pl-16 lg:pl-32">
         {/* Background Pattern */}
         <div className="pointer-events-none absolute inset-0 opacity-50">
@@ -330,7 +287,7 @@ export default function ResourcesPage() {
                  
                 </div>
                 <Link
-                  href={brief.link}
+                  href={brief.link || "#"}
                   className="inline-flex items-center gap-2 text-sm font-semibold text-[#CB3F24] hover:text-[#BE3B22] transition-colors"
                   style={{ fontFamily: '"Courier New", monospace' }}
                 >
@@ -341,8 +298,10 @@ export default function ResourcesPage() {
           </div>
         </div>
       </SectionWrapper>
+      )}
 
       {/* Technical Notes & Data Sheets Section */}
+      {technicalNotes.length > 0 && (
       <SectionWrapper id="technical-notes" className="bg-[rgba(7,7,7,1)] py-16 relative pl-4 sm:pl-8 md:pl-16 lg:pl-32">
         {/* Background Pattern */}
         <div className="pointer-events-none absolute inset-0 opacity-50">
@@ -435,7 +394,7 @@ export default function ResourcesPage() {
                   
                 </div>
                 <Link
-                  href={note.link}
+                  href={note.link || "#"}
                   className="inline-flex items-center gap-2 text-sm font-semibold text-[#CB3F24] hover:text-[#BE3B22] transition-colors"
                   style={{ fontFamily: '"Courier New", monospace' }}
                 >
@@ -446,8 +405,10 @@ export default function ResourcesPage() {
           </div>
         </div>
       </SectionWrapper>
+      )}
 
       {/* Media & Press Conference Section */}
+      {mediaItems.length > 0 && (
       <SectionWrapper id="media-press" className="bg-[rgba(7,7,7,1)] py-16 relative pl-4 sm:pl-8 md:pl-16 lg:pl-32">
         {/* Background Pattern */}
         <div className="pointer-events-none absolute inset-0 opacity-50">
@@ -538,7 +499,7 @@ export default function ResourcesPage() {
                 {/* Read Article Link - Right */}
                 <div className="flex-shrink-0">
                   <Link
-                    href={item.link}
+                    href={item.link || "#"}
                     className="inline-flex items-center gap-2 text-[18px] font-bold text-[#CB3F24] hover:text-[#BE3B22] transition-colors"
                     style={{ 
                       fontFamily: '"Courier Prime", monospace',
@@ -554,6 +515,7 @@ export default function ResourcesPage() {
           ))}
         </div>
       </SectionWrapper>
+      )}
     </>
   );
 }
