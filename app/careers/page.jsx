@@ -46,6 +46,9 @@ export default function CareersPage() {
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1px] text-white">
               Why Work at QuBeats?
             </h2>
+            <p className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-slate-300 mb-6">
+              QuBeats is looking for exceptional, top-tier talent to help address the challenges of delivering innovative quantum-based technologies and solutions to the world. Our team flourishes through interdisciplinary collaboration spanning atomic and quantum physics, engineering, lasers, optics, photonics, design, testing, operations, business, and management. At QuBeats, we set ambitious goals and work with focus and energy in a highly collaborative, fast-moving environment, where each individual's development and achievements contribute directly to the success of the entire organization. We are an equal opportunity employer and provide competitive compensation along with comprehensive benefits.
+            </p>
             <ul className="space-y-3 sm:space-y-4 text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-slate-300">
               <li className="flex items-start gap-3">
                 <span className="text-[#CB3F24] mt-1">▸</span>
