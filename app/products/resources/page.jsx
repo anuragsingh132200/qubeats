@@ -1,33 +1,32 @@
 import SectionWrapper from "@/components/common/SectionWrapper";
 import Link from "next/link";
 import Image from "next/image";
+import connectDB from "@/lib/mongodb";
+import Resource from "@/models/Resource";
+import MediaPress from "@/models/MediaPress";
 
 async function getPublishedResources() {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
-  const response = await fetch(`${baseUrl}/api/resources?published=true`, {
-    cache: "no-store",
-  });
+  await connectDB();
+  const resources = await Resource.find({ isPublished: true })
+    .sort({ sortOrder: 1, createdAt: -1 })
+    .lean();
 
-  if (!response.ok) {
-    return [];
-  }
-
-  const data = await response.json();
-  return Array.isArray(data.resources) ? data.resources : [];
+  return resources.map((resource) => ({
+    ...resource,
+    _id: resource._id?.toString?.() || resource._id,
+  }));
 }
 
 async function getPublishedMediaItems() {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
-  const response = await fetch(`${baseUrl}/api/media?published=true`, {
-    cache: "no-store",
-  });
+  await connectDB();
+  const items = await MediaPress.find({ isPublished: true })
+    .sort({ sortOrder: 1, createdAt: -1 })
+    .lean();
 
-  if (!response.ok) {
-    return [];
-  }
-
-  const data = await response.json();
-  return Array.isArray(data.items) ? data.items : [];
+  return items.map((item) => ({
+    ...item,
+    _id: item._id?.toString?.() || item._id,
+  }));
 }
 
 export const metadata = {
