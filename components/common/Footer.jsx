@@ -42,7 +42,7 @@ export default function Footer() {
             {/* Logo */}
             <div className="flex items-center gap-4">
               <Image
-                src="/Updated Logo.png"
+                src="/updated logo (2).png"
                 alt="QuBeats logo"
                 width={80}
                 height={68}
