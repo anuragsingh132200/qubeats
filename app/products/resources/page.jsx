@@ -5,6 +5,8 @@ import connectDB from "@/lib/mongodb";
 import Resource from "@/models/Resource";
 import MediaPress from "@/models/MediaPress";
 
+export const dynamic = "force-dynamic";
+
 async function getPublishedResources() {
   await connectDB();
   const resources = await Resource.find({ isPublished: true })
