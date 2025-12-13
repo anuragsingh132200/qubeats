@@ -23,10 +23,10 @@ export default function IntroHeroSection() {
           aria-hidden="true"
         />
 
-        <div className="relative flex flex-col mr-0 sm:mr-8 md:mr-12 lg:mr-20 gap-6 sm:gap-8 md:gap-10">
+        <div className="relative flex flex-col mr-0 sm:mr-8 md:mr-12 lg:mr-20 gap-6 sm:gap-8 md:gap-10 mt-30 ml-4 sm:ml-8 md:ml-12 lg:ml-16">
           {/* Heading */}
           <h1
-            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white leading-[1.1] font-bold tracking-[-1px]"
+            className="text-2xl sm:text-3xl md:text-5xl lg:text-5xl text-white leading-[1.1] font-bold tracking-[-1px]"
             style={{ fontFamily: '"Courier Prime", monospace' }}
           >
             The Quantum Behind  
@@ -36,7 +36,7 @@ export default function IntroHeroSection() {
           </h1>
 
           {/* Two-column body text */}
-          <div className="grid gap-x-4 sm:gap-x-6 gap-y-6 sm:gap-y-8 md:gap-y-10 md:grid-cols-2">
+          <div className="grid gap-x-4 sm:gap-x-6 gap-y-6 sm:gap-y-8 md:gap-y-10 md:grid-cols-2 max-w-5xl">
             <p
               className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-[rgba(243,243,243,0.7)]"
               style={{ fontFamily: '"Courier New", monospace', fontWeight: 400, }}

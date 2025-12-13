@@ -208,10 +208,10 @@ export default function ResearchPartnersSection() {
           style={{ fontFamily: '"Courier Prime", monospace' }}
         >
           <span className="text-white">
-            INSTITUTIONAL PARTNERS{" "}
+            Institutional Partners{" "}
           </span>
           <span className="text-[#CB3F24]">
-            AND AFFILIATIONS
+            And Affiliations
           </span>
         </h2>
 

@@ -47,18 +47,10 @@ export default function AdvisorsPage() {
       className="bg-[rgba(11,11,11,1)] pt-28 sm:pt-32 lg:pt-36 pb-24"
       containerClassName="gap-8 sm:gap-10"
     >
-      <div className="flex flex-col gap-8 sm:gap-10 lg:gap-12">
+      <div className="flex flex-col gap-8 sm:gap-10 lg:gap-12 mt-30">
         {/* Header Section */}
-        <div className="flex flex-col gap-4 sm:gap-5">
-          <p
-            className="uppercase text-xs sm:text-sm tracking-[0.2em]"
-            style={{
-              color: "rgba(243,243,243,0.6)",
-              fontFamily: "'Courier New', monospace",
-            }}
-          >
-            ADVISORY COUNCIL
-          </p>
+        <div className="flex flex-col gap-4 sm:gap-5 ml-4 sm:ml-8 md:ml-12 lg:ml-32 max-w-5xl mb-30">
+          
           <h1
             className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1px]"
             style={{

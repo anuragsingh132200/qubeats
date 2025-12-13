@@ -62,7 +62,7 @@ export default function AdvancedSolutionsSection() {
             >
               <span className="block heading-bold">Advanced Quantum</span>
               <span className="block heading-bold">
-                sensing <span className="orange-word">solutions</span>
+                Sensing <span className="orange-word">Solutions</span>
               </span>
             </h2>
 

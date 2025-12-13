@@ -41,7 +41,7 @@ export default function WhyChooseSection() {
 
           {/* Heading */}
           <h2 className="ml-2 sm:ml-4 md:ml-6 font-['Courier_Prime'] text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1px] text-[rgba(18,18,18,1)]">
-            Why Customers choose QuBeats
+            Why Customers Choose QuBeats
           </h2>
 
           {/* Cards – NO LOOPS, each card is a separate div */}

@@ -12,7 +12,7 @@ const teamMembers = [
   {
     name: "Rajat Sethi",
     description:
-      "Rajat Sethi is a technocrat and public intellectual who has advised three Chief Ministers and contributed to Government of India committees on technology policy and economic planning. He holds degrees in public policy from Harvard Kennedy School, management from MIT Sloan, and computer science from IIT Kharagpur, class of 2009.",
+      "Rajat Sethi is a technology strategist with a background in computer science and advanced management, specialising in translating frontier quantum and laser-based sensing technologies into operational defence capabilities. He leads systems architecture, strategic integration, and deployment pathways for cutting-edge tech solutions.",
     image: "/images/WhatsApp Image 2025-12-07 at 21.13.05_02a8a2e3.jpg",
     linkedin: "https://www.linkedin.com/in/sethirajat/",
   },

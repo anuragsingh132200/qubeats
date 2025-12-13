@@ -119,7 +119,7 @@ export default function ResourcesPage() {
             priority
           />
         </div>
-        <div className="relative z-10 flex flex-col gap-4 sm:gap-6">
+        <div className="relative z-10 flex flex-col gap-4 sm:gap-6 ml-4 sm:ml-8 md:ml-12 lg:ml-32 max-w-5xl mb-16">
           <h1 
             className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-1px]"
             style={{
@@ -142,7 +142,7 @@ export default function ResourcesPage() {
       </SectionWrapper>
 
       {/* White Papers Section */}
-      <SectionWrapper id="white-papers" className="bg-[rgba(7,7,7,1)] py-16 relative">
+      <SectionWrapper id="white-papers" className="bg-[rgba(7,7,7,1)] py-16 relative ">
         {/* Background Pattern */}
         <div className="pointer-events-none absolute inset-0 opacity-50">
           <Image
