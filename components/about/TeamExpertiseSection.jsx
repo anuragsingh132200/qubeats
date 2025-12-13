@@ -5,28 +5,28 @@ const teamMembers = [
   {
     name: "Mallikarjun Karra",
     description:
-      "Mallikarjun Karra is an entrepreneur and published theoretical physicist whose work spans ultracold polar and polarisable molecules in trapped arrays and helium nanodroplets, quantum computing with molecules, and architectures for universal quantum computation using optically controlled CNOT gates and tunable entanglement.",
+      "Mallikarjun Karra is an entrepreneur and published theoretical physicist. His research at the Fritz Haber Institute of the Max Planck Society, Berlin, focused on controlling cold/ultracold polar molecules. He also worked on quantum computing architecture using trapped ultracold polar paramagnetic molecules, including schemes for optically controlled CNOT gates.",
     image: "/images/Screenshot 2025-12-08 134520.png",
     linkedin: "https://www.linkedin.com/in/mallikarjun-k-628ab417/",
   },
   {
     name: "Rajat Sethi",
     description:
-      "Rajat Sethi is a technology strategist with a background in computer science and advanced management, specialising in translating frontier quantum and laser-based sensing technologies into operational defence capabilities. He leads systems architecture, strategic integration, and deployment pathways for cutting-edge tech solutions.",
+      "Rajat Sethi is a technology strategist specializing in translating frontier quantum and laser-based sensing technologies into operational defense capabilities. He has an MPA from Harvard, an MBA from MIT Sloan, and a B.Tech (Computer Science) from IIT Kharagpur, focusing on systems architecture and strategic tech integration.",
     image: "/images/WhatsApp Image 2025-12-07 at 21.13.05_02a8a2e3.jpg",
     linkedin: "https://www.linkedin.com/in/sethirajat/",
   },
   {
     name: "Shouvik Mukherjee",
     description:
-      "Dr. Shouvik Mukherjee is an experimental physicist with expertise in atomic vapor and solid-state quantum systems, complex optics, precision electronics, nanofabrication, and ultrahigh vacuum platforms. A former Postdoctoral Scholar at the Joint Quantum Institute, he earned his Ph.D. in condensed matter physics and is an IIT Kharagpur alumnus.",
+      "Dr. Shouvik Mukherjee is an expert in atomic vapor and solid-state quantum platforms, with skills in optics, electronics, and nanofabrication. He was a former Postdoctoral Scholar at the Joint Quantum Institute (NIST/UMD). He earned his Ph.D. in Experimental Condensed Matter Physics from the University of Pittsburgh and is an alumnus of IIT Kharagpur.",
     image: "/images/WhatsApp Image 2025-12-07 at 22.06.02_e7064b99.jpg",
     linkedin: "https://www.linkedin.com/in/shouvik-mukherjee-b35b3919/",
   },
   {
     name: "Madhu Trivikram Talluri",
     description:
-      "Dr. Madhu Trivikram Talluri is an experimental physicist specialising in precision quantum measurements and ultrafast laser spectroscopy. He has held research positions at UC Berkeley, Lawrence Berkeley National Laboratory, and the Max Born Institute, and earned a Ph.D. in physics from LaserLaB, Vrije Universiteit Amsterdam.",
+      "Dr. Madhu Trivikram Talluri is an experimental physicist specializing in precision quantum measurements and ultrafast laser spectroscopy. He was a postdoctoral scholar at UC Berkeley/LBNL, developing advanced laser-based methods for light–matter interactions. He holds a Ph.D. from LaserLaB, Vrije Universiteit Amsterdam, for high-precision molecular spectroscopy that set stringent tests for quantum electrodynamics.",
     image: "/images/WhatsApp Image 2025-12-08 at 00.47.59_bee03dc1.jpg",
     linkedin: "https://www.linkedin.com/in/madhuttalluri/",
   },
