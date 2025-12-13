@@ -139,7 +139,7 @@ export default async function ResourcesPage() {
             {whitePapers.map((paper, index) => (
               <div
                 key={index}
-                className="bg-[rgba(18,18,18,1)] p-6 relative"
+                className="bg-[rgba(18,18,18,1)] p-6 relative flex flex-col h-full"
               >
                 <div className="mb-4 flex items-center gap-2">
                   <Image
@@ -162,31 +162,33 @@ export default async function ResourcesPage() {
                 >
                   {paper.description}
                 </p>
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="flex items-center gap-2">
-                    <Image
-                      src="/images/products/physics-svgrepo-com (1) 3.svg"
-                      alt=""
-                      width={20}
-                      height={20}
-                      className="object-contain"
-                    />
-                    <span 
-                      className="text-[13px] text-white"
-                      style={{ fontFamily: '"Courier New", monospace' }}
-                    >
-                      {paper.date}
-                    </span>
+                <div className="mt-auto">
+                  <div className="flex items-center gap-4 mb-4">
+                    <div className="flex items-center gap-2">
+                      <Image
+                        src="/images/products/physics-svgrepo-com (1) 3.svg"
+                        alt=""
+                        width={20}
+                        height={20}
+                        className="object-contain"
+                      />
+                      <span 
+                        className="text-[13px] text-white"
+                        style={{ fontFamily: '"Courier New", monospace' }}
+                      >
+                        {paper.date}
+                      </span>
+                    </div>
+                    
                   </div>
-                  
+                  <Link
+                    href={paper.link || "#"}
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-[#CB3F24] hover:text-[#BE3B22] transition-colors"
+                    style={{ fontFamily: '"Courier New", monospace' }}
+                  >
+                    Download PDF <span>➜</span>
+                  </Link>
                 </div>
-                <Link
-                  href={paper.link || "#"}
-                  className="inline-flex items-center gap-2 text-sm font-semibold text-[#CB3F24] hover:text-[#BE3B22] transition-colors"
-                  style={{ fontFamily: '"Courier New", monospace' }}
-                >
-                  Download PDF <span>➜</span>
-                </Link>
               </div>
             ))}
           </div>
@@ -246,7 +248,7 @@ export default async function ResourcesPage() {
             {solutionBriefs.map((brief, index) => (
               <div
                 key={index}
-                className="bg-[rgba(18,18,18,1)] p-6 relative"
+                className="bg-[rgba(18,18,18,1)] p-6 relative flex flex-col h-full"
               >
                 <div className="mb-4 flex items-center gap-2">
                   <Image
@@ -269,31 +271,33 @@ export default async function ResourcesPage() {
                 >
                   {brief.description}
                 </p>
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="flex items-center gap-2">
-                    <Image
-                      src="/images/products/physics-svgrepo-com (1) 3.svg"
-                      alt=""
-                      width={20}
-                      height={20}
-                      className="object-contain"
-                    />
-                    <span 
-                      className="text-[13px] text-white"
-                      style={{ fontFamily: '"Courier New", monospace' }}
-                    >
-                      {brief.date}
-                    </span>
+                <div className="mt-auto">
+                  <div className="flex items-center gap-4 mb-4">
+                    <div className="flex items-center gap-2">
+                      <Image
+                        src="/images/products/physics-svgrepo-com (1) 3.svg"
+                        alt=""
+                        width={20}
+                        height={20}
+                        className="object-contain"
+                      />
+                      <span 
+                        className="text-[13px] text-white"
+                        style={{ fontFamily: '"Courier New", monospace' }}
+                      >
+                        {brief.date}
+                      </span>
+                    </div>
+                   
                   </div>
-                 
+                  <Link
+                    href={brief.link || "#"}
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-[#CB3F24] hover:text-[#BE3B22] transition-colors"
+                    style={{ fontFamily: '"Courier New", monospace' }}
+                  >
+                    Download PDF <span>➜</span>
+                  </Link>
                 </div>
-                <Link
-                  href={brief.link || "#"}
-                  className="inline-flex items-center gap-2 text-sm font-semibold text-[#CB3F24] hover:text-[#BE3B22] transition-colors"
-                  style={{ fontFamily: '"Courier New", monospace' }}
-                >
-                  Download PDF <span>➜</span>
-                </Link>
               </div>
             ))}
           </div>
@@ -353,7 +357,7 @@ export default async function ResourcesPage() {
             {technicalNotes.map((note, index) => (
               <div
                 key={index}
-                className="bg-[rgba(18,18,18,1)] p-6 relative"
+                className="bg-[rgba(18,18,18,1)] p-6 relative flex flex-col h-full"
               >
                 <div className="mb-4 flex items-center gap-2">
                   <Image
@@ -376,31 +380,33 @@ export default async function ResourcesPage() {
                 >
                   {note.description}
                 </p>
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="flex items-center gap-2">
-                    <Image
-                      src="/images/products/physics-svgrepo-com (1) 3.svg"
-                      alt=""
-                      width={20}
-                      height={20}
-                      className="object-contain"
-                    />
-                    <span 
-                      className="text-[13px] text-white"
-                      style={{ fontFamily: '"Courier New", monospace' }}
-                    >
-                      {note.date}
-                    </span>
+                <div className="mt-auto">
+                  <div className="flex items-center gap-4 mb-4">
+                    <div className="flex items-center gap-2">
+                      <Image
+                        src="/images/products/physics-svgrepo-com (1) 3.svg"
+                        alt=""
+                        width={20}
+                        height={20}
+                        className="object-contain"
+                      />
+                      <span 
+                        className="text-[13px] text-white"
+                        style={{ fontFamily: '"Courier New", monospace' }}
+                      >
+                        {note.date}
+                      </span>
+                    </div>
+                    
                   </div>
-                  
+                  <Link
+                    href={note.link || "#"}
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-[#CB3F24] hover:text-[#BE3B22] transition-colors"
+                    style={{ fontFamily: '"Courier New", monospace' }}
+                  >
+                    Download PDF <span>➜</span>
+                  </Link>
                 </div>
-                <Link
-                  href={note.link || "#"}
-                  className="inline-flex items-center gap-2 text-sm font-semibold text-[#CB3F24] hover:text-[#BE3B22] transition-colors"
-                  style={{ fontFamily: '"Courier New", monospace' }}
-                >
-                  Download PDF <span>➜</span>
-                </Link>
               </div>
             ))}
           </div>
