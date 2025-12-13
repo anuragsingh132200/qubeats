@@ -36,7 +36,7 @@ export default function HeroSection() {
             QuBeats
           </h1>
           <p className="text-[20px] sm:text-[24px] md:text-[26px] font-normal leading-tight tracking-wide text-white lg:text-[28px]">
-            Quantum sensors with<br className="hidden sm:block" /> atomic precision.
+            Quantum Sensors with<br className="hidden sm:block" /> Atomic Precision.
           </p>
         </div>
 
