@@ -50,7 +50,7 @@ export default function CollaborateSection() {
         {/* CTA buttons */}
         <div className="mt-4 flex flex-col items-center gap-4 sm:flex-row sm:justify-center w-full sm:w-auto">
           <Link
-            href="#"
+            href="/contact"
             className="inline-flex w-full sm:w-auto sm:min-w-[260px] items-center justify-center px-6 sm:px-8 md:px-10 py-3 sm:py-4 text-sm sm:text-base"
             style={{
               fontFamily: '"Courier Prime", monospace',

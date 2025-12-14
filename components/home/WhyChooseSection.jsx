@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function WhyChooseSection() {
   return (
@@ -162,9 +163,11 @@ export default function WhyChooseSection() {
 
         {/* Bottom buttons */}
         <div className="mt-8 sm:mt-10 flex flex-col items-center justify-center gap-4 md:mt-12 md:flex-row w-full">
-          <button className="w-full sm:w-[280px] md:w-[300px] h-[55px] sm:h-[60px] md:h-[65px] border border-[#CB3F24] bg-gradient-to-r from-[#CB3F24] to-[#BE3B22] text-xs sm:text-sm font-bold tracking-[0.18em] text-white">
+          <Link 
+            href="/contact"
+            className="w-full sm:w-[280px] md:w-[300px] h-[55px] sm:h-[60px] md:h-[65px] border border-[#CB3F24] bg-gradient-to-r from-[#CB3F24] to-[#BE3B22] text-xs sm:text-sm font-bold tracking-[0.18em] text-white inline-flex items-center justify-center">
             START A SCOPED PILOT
-          </button>
+          </Link>
           <a
             href="https://drive.google.com/uc?export=download&id=1D8jQkFswT10sW_9I_LYxAHwgnu-UFhh_"
             download

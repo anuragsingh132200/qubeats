@@ -21,7 +21,7 @@ export default function ResearchPartnersSection() {
     "/images/home/researchparteners/University-of-Maryland.png",
     "/images/home/researchparteners/Vrije-Universiteit-Amsterdam_thumb.png",
     "/images/home/researchparteners/DRDO-logo.png",
-    "/images/home/researchparteners/IDEX-Optical.png",
+    "/images/home/researchparteners/image.png",
     "/images/home/researchparteners/images (2).jpeg",
     "/images/home/researchparteners/Indian_Army_Insignia_circular.png",
     "/images/home/researchparteners/Logo_NQM.png",
