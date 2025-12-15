@@ -3,13 +3,18 @@ import Image from "next/image";
 
 const advisors = [
   {
-    name: "Adm Karambir Singh",
-    title: "Former Chief of Naval Staff",
+    name: "Adm Karambir Singh (Retd)",
+    title: "Former Chief of Naval Staff, PVSM, AVSM, ADC",
     image: "/images/advisors/Screenshot 2025-12-10 101626.png",
   },
   {
-    name: "R Adm Surendra Ahuja",
-    title: "Former Test Pilot at Indian Navy, ex-Managing Director Boeing Defense India",
+    name: "Vice Admiral Shekhar Sinha (Retd)",
+    title: "PVSM, AVSM, NM & Bar, ADC",
+    image: "/images/advisors/image.png",
+  },
+  {
+    name: "R Adm Surendra Ahuja (Retd)",
+    title: "Navy Test Pilot & ex-MD, Boeing Defense India",
     image: "/images/advisors/Screenshot 2025-12-10 101553.png",
   },
   {
@@ -21,11 +26,6 @@ const advisors = [
     name: "Dr. G Rajalakshmi",
     title: "Senior Scientist, TIFR Hyderabad",
     image: "/images/advisors/Screenshot 2025-12-10 101529.png",
-  },
-  {
-    name: "Dr G Satish Reddy",
-    title: "ex-Chairman, DRDO",
-    image: "/images/advisors/Screenshot 2025-12-10 101643.png",
   },
   {
     name: "Rahul Bhasin",
