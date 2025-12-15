@@ -37,11 +37,11 @@ export default function AdvancedSolutionsSection() {
             <div className="relative overflow-hidden w-full max-w-[580px] aspect-[580/503]">
               {/* Airplane image (full cover of wrapper) */}
               <Image
-                src="/images/home/heroimage.jpg"
-                alt="Stealth aircraft formation"
+                src="/images/home/image.png"
+                alt="Advanced solutions technology"
                 width={580}
                 height={503}
-                className="w-full h-full object-cover grayscale"
+                className="w-full h-full object-cover "
                 priority
               />
             </div>
