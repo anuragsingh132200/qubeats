@@ -43,7 +43,7 @@ export default function IntroHeroSection() {
                     fontWeight: 400,
                     color: "rgba(243, 243, 243, 0.9)", }}
             >
-              At QuBeats Technologies, we offer a comprehensive suite of quantum
+              At QuBeats, we offer a comprehensive suite of quantum
               sensing and metrology products designed to deliver unmatched
               precision and performance across various applications.
             </p>
