@@ -125,7 +125,9 @@ export default function TechnologyOverviewSection() {
                 
                 <p 
                   className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-[rgba(243,243,243,0.6)]"
-                  style={{ fontFamily: '"Courier Prime", monospace' }}
+                  style={{  fontFamily: '"Courier New", monospace',
+                    fontWeight: 400,
+                    color: "rgba(243, 243, 243, 0.9)", }}
                 >
                   {section.description}
                 </p>
@@ -154,7 +156,9 @@ export default function TechnologyOverviewSection() {
                         </div>
                         <p 
                           className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-[rgba(243,243,243,0.6)] pl-[52px]"
-                          style={{ fontFamily: '"Courier Prime", monospace' }}
+                          style={{  fontFamily: '"Courier New", monospace',
+                    fontWeight: 400,
+                    color: "rgba(243, 243, 243, 0.9)", }}
                         >
                           {feature.description}
                         </p>

@@ -56,8 +56,9 @@ export default function FindPerfectSolutionSection() {
         <p
           className="max-w-4xl text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-slate-100/90"
           style={{
-            fontFamily: '"Courier Prime", monospace',
-            letterSpacing: "0.03em",
+            fontFamily: '"Courier New", monospace',
+                    fontWeight: 400,
+                    color: "rgba(243, 243, 243, 0.9)",
           }}
         >
           Not sure which product fits your application? Our engineering team can help you select the right quantum sensor configuration, customize integration, and design a complete system around your mission requirements.

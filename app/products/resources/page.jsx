@@ -79,7 +79,8 @@ export default async function ResourcesPage() {
             className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-white max-w-[712px]"
             style={{
               fontFamily: '"Courier New", monospace',
-              fontWeight: 400
+                    fontWeight: 400,
+                    color: "rgba(243, 243, 243, 0.9)",
             }}
           >
             Deep-dive into quantum sensing technology with our white papers, solution briefs, technical documentation, and latest media coverage.
@@ -113,8 +114,9 @@ export default async function ResourcesPage() {
             <p 
               className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-white max-w-[771px]"
               style={{
-                fontFamily: '"Courier New", monospace',
-                fontWeight: 400
+                 fontFamily: '"Courier New", monospace',
+                    fontWeight: 400,
+                    color: "rgba(243, 243, 243, 0.9)",
               }}
             >
               In-depth technical analyses of quantum sensing principles, system architectures, and application performance.
@@ -158,7 +160,9 @@ export default async function ResourcesPage() {
                 </h3>
                 <p 
                   className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-gray-300 mb-4"
-                  style={{ fontFamily: '"Courier New", monospace', fontWeight: 400 }}
+                  style={{  fontFamily: '"Courier New", monospace',
+                    fontWeight: 400,
+                    color: "rgba(243, 243, 243, 0.9)", }}
                 >
                   {paper.description}
                 </p>
@@ -223,7 +227,8 @@ export default async function ResourcesPage() {
               className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-white max-w-[771px]"
               style={{
                 fontFamily: '"Courier New", monospace',
-                fontWeight: 400
+                    fontWeight: 400,
+                    color: "rgba(243, 243, 243, 0.9)",
               }}
             >
               Concise overviews of QuBeats products, system capabilities, and application-specific configurations.
@@ -267,7 +272,9 @@ export default async function ResourcesPage() {
                 </h3>
                 <p 
                   className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-gray-300 mb-4"
-                  style={{ fontFamily: '"Courier New", monospace', fontWeight: 400 }}
+                  style={{ fontFamily: '"Courier New", monospace',
+                    fontWeight: 400,
+                    color: "rgba(243, 243, 243, 0.9)", }}
                 >
                   {brief.description}
                 </p>
@@ -331,8 +338,9 @@ export default async function ResourcesPage() {
             <p 
               className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-white max-w-[710px]"
               style={{
-                fontFamily: '"Courier New", monospace',
-                fontWeight: 400
+                 fontFamily: '"Courier New", monospace',
+                    fontWeight: 400,
+                    color: "rgba(243, 243, 243, 0.9)",
               }}
             >
               Detailed specifications, calibration procedures, and application notes for QuBeats sensor products.
@@ -376,7 +384,9 @@ export default async function ResourcesPage() {
                 </h3>
                 <p 
                   className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-gray-300 mb-4"
-                  style={{ fontFamily: '"Courier New", monospace', fontWeight: 400 }}
+                  style={{  fontFamily: '"Courier New", monospace',
+                    fontWeight: 400,
+                    color: "rgba(243, 243, 243, 0.9)",}}
                 >
                   {note.description}
                 </p>
@@ -439,8 +449,9 @@ export default async function ResourcesPage() {
           <p 
             className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-white max-w-[710px]"
             style={{
-              fontFamily: '"Courier New", monospace',
-              fontWeight: 400
+               fontFamily: '"Courier New", monospace',
+                    fontWeight: 400,
+                    color: "rgba(243, 243, 243, 0.9)",
             }}
           >
             Latest news on defense grants, naval innovation initiatives, strategic collaborations, and technology breakthroughs.
@@ -495,8 +506,9 @@ export default async function ResourcesPage() {
                   <p 
                     className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-[rgba(243,243,243,0.65)] max-w-[819px]"
                     style={{ 
-                      fontFamily: '"Courier Prime", monospace',
-                      fontWeight: 400
+                      fontFamily: '"Courier New", monospace',
+                    fontWeight: 400,
+                    color: "rgba(243, 243, 243, 0.9)",
                     }}
                   >
                     {item.description}

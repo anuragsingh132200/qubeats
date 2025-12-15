@@ -39,7 +39,9 @@ export default function IntroHeroSection() {
           <div className="grid gap-x-4 sm:gap-x-6 gap-y-6 sm:gap-y-8 md:gap-y-10 md:grid-cols-2 max-w-5xl">
             <p
               className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-[rgba(243,243,243,0.7)]"
-              style={{ fontFamily: '"Courier New", monospace', fontWeight: 400, }}
+              style={{  fontFamily: '"Courier New", monospace',
+                    fontWeight: 400,
+                    color: "rgba(243, 243, 243, 0.9)", }}
             >
               At QuBeats Technologies, we offer a comprehensive suite of quantum
               sensing and metrology products designed to deliver unmatched
@@ -47,7 +49,9 @@ export default function IntroHeroSection() {
             </p>
             <p
               className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-[rgba(243,243,243,0.7)]"
-              style={{ fontFamily: '"Courier New", monospace', fontWeight: 400, }}
+              style={{  fontFamily: '"Courier New", monospace',
+                    fontWeight: 400,
+                    color: "rgba(243, 243, 243, 0.9)", }}
             >
               Our innovative solutions harness the principles of quantum
               mechanics to meet the rigorous demands of industries such as

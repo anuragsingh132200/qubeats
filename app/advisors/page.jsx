@@ -64,8 +64,9 @@ export default function AdvisorsPage() {
           <p
             className="text-sm sm:text-base max-w-2xl leading-relaxed"
             style={{
-              color: "rgba(243,243,243,0.7)",
-              fontFamily: "'Courier New', monospace",
+              fontFamily: '"Courier New", monospace',
+                    fontWeight: 400,
+                    color: "rgba(243, 243, 243, 0.9)",
             }}
           >
             Strategic, scientific, and mission-focused advisors guiding QuBeats in building quantum sensing systems.
@@ -121,9 +122,9 @@ export default function AdvisorsPage() {
                 <p
                   className="text-sm sm:text-base leading-relaxed"
                   style={{
-                    color: "rgba(243,243,243,0.8)",
-                    fontFamily: "'Courier New', monospace",
-                    lineHeight: "1.6",
+                     fontFamily: '"Courier New", monospace',
+                    fontWeight: 400,
+                    color: "rgba(243, 243, 243, 0.9)",
                   }}
                 >
                   {advisor.title}

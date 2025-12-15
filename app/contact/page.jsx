@@ -81,7 +81,9 @@ export default function ContactPage() {
             {/* Description */}
             <p
               className="max-w-2xl text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-[rgba(255, 255, 255, 0.8)] mb-8 sm:mb-12"
-              style={{ fontFamily: "Courier New", fontWeight: 400, letterSpacing: "-0.1em" }}
+              style={{  fontFamily: '"Courier New", monospace',
+                    fontWeight: 400,
+                    color: "rgba(243, 243, 243, 0.9)", }}
             >
               Have questions about our quantum sensing solutions? Want to explore partnership opportunities? 
               We'd love to hear from you. Get in touch with our team.
@@ -93,13 +95,17 @@ export default function ContactPage() {
               <div className="space-y-6">
                 {/* Email */}
                 <div className="flex flex-col gap-2">
-                  <h3 className="text-md  font-bold text-[#CB3F24] mb-2" style={{ fontFamily: '"Courier Prime", monospace' }}>
+                  <h3 className="text-md  font-bold text-[#CB3F24] mb-2" style={{  fontFamily: '"Courier New", monospace',
+                    
+                    }}>
                     Email
                   </h3>
                   <a 
                     href="mailto:info@qubeats.com" 
                     className="text-sm text-[rgba(255, 255, 255, 0.8)] hover:text-[#cb3f24] transition-colors"
-                    style={{ fontFamily: "Courier New", letterSpacing: "-0.05em" }}
+                    style={{  fontFamily: '"Courier New", monospace',
+                    fontWeight: 400,
+                    color: "rgba(243, 243, 243, 0.9)", }}
                   >
                     info@qubeats.com
                   </a>
@@ -112,7 +118,9 @@ export default function ContactPage() {
                   </h3>
                   <p 
                     className="text-sm text-[rgba(255, 255, 255, 0.8)] leading-relaxed"
-                    style={{ fontFamily: "Courier New", letterSpacing: "-0.05em" }}
+                    style={{  fontFamily: '"Courier New", monospace',
+                    fontWeight: 400,
+                    color: "rgba(243, 243, 243, 0.9)", }}
                   >
                     Institution of Eminence (IoE),<br />
                     Ground Floor, Room No. CWC-A-003,<br />
@@ -126,12 +134,16 @@ export default function ContactPage() {
                   <h3 className="text-md  font-bold text-[#CB3F24] mb-2" style={{ fontFamily: '"Courier Prime", monospace' }}>
                     Corporate Office
                   </h3>
-                  <h3 className="text-sm font-medium text-slate-200" style={{ fontFamily: '"Courier Prime", monospace' }}>
+                  <h3 className="text-sm font-medium text-slate-200" style={{  fontFamily: '"Courier New", monospace',
+                    fontWeight: 400,
+                    color: "rgba(243, 243, 243, 0.9)", }}>
                     M/s. Nostradamus Technologies Private Limited
                   </h3>
                   <p 
                     className="text-sm text-[rgba(255, 255, 255, 0.8)] leading-relaxed"
-                    style={{ fontFamily: "Courier New", letterSpacing: "-0.05em" }}
+                    style={{  fontFamily: '"Courier New", monospace',
+                    fontWeight: 400,
+                    color: "rgba(243, 243, 243, 0.9)", }}
                   >
                     Cabin 79, 7th Floor C/o T-Hub Foundation,<br />
                     1/C, 83/1, Raidurg Panmaktha,<br />
@@ -159,7 +171,9 @@ export default function ContactPage() {
                 <label
                   htmlFor="subject"
                   className="text-sm font-medium text-slate-200"
-                  style={{ fontFamily: '"Courier Prime", monospace' }}
+                  style={{  fontFamily: '"Courier New", monospace',
+                   
+                    color: "rgba(243, 243, 243, 0.9)", }}
                 >
                   Subject
                 </label>
@@ -179,7 +193,9 @@ export default function ContactPage() {
                 <label
                   htmlFor="message"
                   className="text-sm font-medium text-slate-200"
-                  style={{ fontFamily: '"Courier Prime", monospace' }}
+                  style={{  fontFamily: '"Courier New", monospace',
+                    
+                    color: "rgba(243, 243, 243, 0.9)", }}
                 >
                   Message
                 </label>

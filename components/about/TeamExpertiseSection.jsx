@@ -71,10 +71,9 @@ export default function TeamExpertiseSection() {
               <p
                 className="text-xs sm:text-sm md:text-base lg:text-lg leading-relaxed sm:leading-[1.6] md:leading-[1.7] max-w-full sm:max-w-2xl md:max-w-3xl"
                 style={{
-                  color: "rgba(243,243,243,0.9)",
-                  fontFamily: '"Courier Prime", monospace',
-                  fontWeight: 400,
-                  letterSpacing: "0.02em",
+                   fontFamily: '"Courier New", monospace',
+                    fontWeight: 400,
+                    color: "rgba(243, 243, 243, 0.9)",
                 }}
               >
                 The team spans atomic physics, low-noise photonics, precision
@@ -143,10 +142,9 @@ export default function TeamExpertiseSection() {
                   <p
                     className="text-xs sm:text-sm md:text-[14px] lg:text-[15px] xl:text-[16px] leading-[1.5] sm:leading-[1.6] md:leading-[1.7] flex-1"
                     style={{
-                      color: "rgba(243,243,243,0.75)",
-                      fontFamily: '"Courier Prime", monospace',
-                      fontWeight: 400,
-                      letterSpacing: "0.01em",
+                       fontFamily: '"Courier New", monospace',
+                    fontWeight: 400,
+                    color: "rgba(243, 243, 243, 0.9)",
                     }}
                   >
                     {member.description}

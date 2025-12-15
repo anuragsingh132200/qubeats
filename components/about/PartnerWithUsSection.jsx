@@ -41,9 +41,9 @@ export default function PartnerWithUsSection() {
         <p
           className="max-w-4xl text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-slate-100/90"
           style={{
-            color: "rgba(243,243,243,0.7)",
-            fontFamily: '"Courier Prime", monospace',
-            letterSpacing: "0.03em",
+             fontFamily: '"Courier New", monospace',
+                    fontWeight: 400,
+                    color: "rgba(243, 243, 243, 0.9)",
           }}
         >
           Whether you're developing next-generation navigation systems, advancing space missions, or pioneering biomedical diagnostics—let's explore how quantum sensing can transform your capabilities.

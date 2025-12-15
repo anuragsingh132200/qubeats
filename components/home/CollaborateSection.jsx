@@ -40,8 +40,9 @@ export default function CollaborateSection() {
         <p
           className="max-w-4xl text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-slate-100/90"
           style={{
-            fontFamily: '"Courier Prime", monospace',
-            letterSpacing: "0.03em",
+             fontFamily: '"Courier New", monospace',
+                    fontWeight: 400,
+                    color: "rgba(243, 243, 243, 0.9)",
           }}
         >
           Whether you need a custom array, MagNav drop-in, or biomedical tile, the team co-designs sensor architecture, mechanics, and fusion stack for your mission.
