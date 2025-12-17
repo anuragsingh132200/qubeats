@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function HeroSection() {
   return (
-    <section className="relative flex min-h-screen w-full items-center overflow-hidden pt-20 sm:pt-24">
+    <section className="relative flex min-h-screen w-full items-start pt-16 sm:items-center sm:pt-24">
       {/* Background Video Layer */}
       <div className="absolute inset-0">
         {/* Mobile Video - Hidden on desktop */}
@@ -15,7 +15,7 @@ export default function HeroSection() {
           playsInline
           className="absolute inset-0 w-full h-full object-cover md:hidden"
         >
-          <source src="/images/Video_Editing_Blue_Graph_Highlight (online-video-cutter.com).mp4" type="video/mp4" />
+          <source src="/images/Video_Generation_With_Customization (online-video-cutter.com).mp4" type="video/mp4" />
         </video>
         
         {/* Desktop Video - Hidden on mobile */}
@@ -42,7 +42,7 @@ export default function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 mx-auto flex w-full max-w-[1400px] flex-col gap-4 sm:gap-6 px-4 sm:px-6 md:px-10 lg:px-16 py-20 sm:py-24 md:py-32 text-white">
+      <div className="relative z-10 mx-auto flex w-full max-w-[1400px] flex-col gap-3 sm:gap-6 px-4 sm:px-6 md:px-10 lg:px-16 pt-16 pb-12 sm:py-24 md:py-32 text-white">
         <div className="max-w-2xl space-y-4 sm:space-y-6">
           <h1 className="text-[48px] sm:text-[60px] md:text-[72px] font-bold leading-[0.95] tracking-wide text-white lg:text-[80px] xl:text-[90px]">
             QuBeats
