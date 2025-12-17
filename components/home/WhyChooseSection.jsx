@@ -152,7 +152,7 @@ export default function WhyChooseSection() {
                     From Benchtop to Fleet
                   </h3>
                 </div>
-                <p className="mt-2 font-['Courier_Prime'] text-[18.9px] font-normal leading-[26.6px] tracking-[0.01em] text-[rgba(0,0,0,0.6)]">
+                <p className="mt-2 font-['Courier_Prime',monospace] text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-[rgba(0,0,0,0.6)]">
                   The same core sensors scale from lab validation to vehicle
                   pods and space payloads.
                 </p>
