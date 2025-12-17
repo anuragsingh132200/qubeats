@@ -7,12 +7,24 @@ export default function HeroSection() {
     <section className="relative flex min-h-screen w-full items-center overflow-hidden pt-20 sm:pt-24">
       {/* Background Video Layer */}
       <div className="absolute inset-0">
+        {/* Mobile Video - Hidden on desktop */}
         <video
           autoPlay
           loop
           muted
           playsInline
-          className="absolute inset-0 w-full h-full object-cover "
+          className="absolute inset-0 w-full h-full object-cover md:hidden"
+        >
+          <source src="/images/Video_Editing_Blue_Graph_Highlight (online-video-cutter.com).mp4" type="video/mp4" />
+        </video>
+        
+        {/* Desktop Video - Hidden on mobile */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="hidden md:block absolute inset-0 w-full h-full object-cover"
         >
           <source src="/images/Video_Editing_Blue_Graph_Highlight.mp4" type="video/mp4" />
         </video>
