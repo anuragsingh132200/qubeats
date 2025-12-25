@@ -8,7 +8,7 @@ export default function AdvancedSolutionsSection() {
       id: 1,
       content: (
         <>
-         We deliver robust navigation for GNSS-denied environments, magnetic anomaly detection, and high sensitivity electromagnetic spectrum awareness solutions. Our atomic sensors are compact, power-efficient, and cost-effective packages.
+         We deliver robust navigation for<strong className="text-white"> GNSS-denied environments</strong>, magnetic anomaly detection, and high sensitivity electromagnetic spectrum awareness solutions. Our atomic sensors are compact, power-efficient, and cost-effective packages.
         </>
       ),
     },
@@ -63,7 +63,7 @@ export default function AdvancedSolutionsSection() {
 
             <div className="space-y-8">
               {points.map((item) => (
-                <div key={item.id} className="flex items-start gap-5">
+                <div key={item.id} className="flex items-start gap-6 max-w-xl">
                   <div className="mt-1 flex h-12 w-12 shrink-0 items-center justify-center">
                     <Image
                       src="/images/home/vector-2.png"
@@ -73,7 +73,6 @@ export default function AdvancedSolutionsSection() {
                       className="h-5 w-5 object-contain"
                     />
                   </div>
-
                   <p className="body-light-text">{item.content}</p>
                 </div>
               ))}
