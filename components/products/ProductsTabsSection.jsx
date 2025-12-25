@@ -119,6 +119,7 @@ export default function ProductsTabsSection() {
       key={item.id}
       className="relative bg-black px-6 sm:px-8 py-6 sm:py-8 flex flex-col h-full"
     >
+      <div className="bg-[#C0C0C0] absolute top-0 right-0 h-[60px] w-[150px] hidden lg:block"></div>
       {/* Title block */}
       <div className="mb-4">
         <h3 className="text-lg sm:text-xl md:text-2xl font-mono font-semibold text-[#CB3F24] mb-2">
