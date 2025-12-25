@@ -24,7 +24,7 @@ export default function HeroSection() {
           playsInline
           className="hidden md:block absolute inset-0 w-full h-full object-cover"
         >
-          <source src="/images/Video_Editing_Blue_Graph_Highlight.mp4" type="video/mp4" />
+          <source src="/images/js1mw9ge0srmy0cvavz95vk9yr_result_ (online-video-cutter.com).mp4" type="video/mp4" />
         </video>
       </div>
 
