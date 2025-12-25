@@ -117,83 +117,85 @@ export default function ProductsTabsSection() {
   const renderProductCard = (item) => (
     <div
       key={item.id}
-      className="relative bg-[rgba(18,18,18,1)] px-4 sm:px-6 py-3"
+      className="relative bg-black px-6 sm:px-8 py-6 sm:py-8 flex flex-col h-full"
     >
-      {/* Title block that sits on top edge */}
-      <div className="absolute -top-6 sm:-top-8 left-0 bg-[rgba(18,18,18,1)] w-4/5 sm:w-4/5 h-[45px] sm:h-[50px] md:h-[55px] px-4 sm:px-6 py-2">
-        <h3 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold tracking-tight text-[#CB3F24]">
+      {/* Title block */}
+      <div className="mb-4">
+        <h3 className="text-lg sm:text-xl md:text-2xl font-mono font-semibold text-[#CB3F24] mb-2">
           {item.title}
         </h3>
-        <p className="text-[10px] sm:text-[11px] text-gray-400 md:text-xs">
+        <p className="text-sm sm:text-base text-white font-light">
           {item.subtitle}
         </p>
       </div>
 
       {/* Description */}
-      <p className="mb-4 mt-3 text-xs sm:text-[13px] md:text-[15px] leading-[1.6] tracking-tight text-gray-300">
+      <p className="mb-6 text-sm sm:text-base leading-relaxed text-gray-400">
         {item.description}
       </p>
 
       {/* Metadata */}
-      <div className="mb-4 space-y-2 text-xs sm:text-[13px] md:text-[15px] leading-[1.6] tracking-tight">
-        <div className="flex items-start gap-2">
-          <span className="mt-1 flex h-5 w-5 items-center justify-center">
+      <div className="mb-6 space-y-3 flex-grow">
+        <div className="flex items-start gap-3">
+          <span className="mt-1 flex h-6 w-6 items-center justify-center flex-shrink-0">
             <img
               src="/images/products/physics-svgrepo-com (1) 3.svg"
               alt=""
-              className="h-4 w-4"
+              className="h-5 w-5"
             />
           </span>
           <div>
-            <p className="uppercase tracking-[0.14em] text-gray-400 text-[10px] sm:text-[11px]">
-              {item.typeLabel}
+            <p className="text-gray-400  mb-0.5">
+              <span className="text-white mr-1">{item.typeLabel}:</span>
+              {item.type}
             </p>
-            <p className="text-gray-100">{item.type}</p>
           </div>
         </div>
 
-        <div className="flex items-start gap-2">
-          <span className="mt-1 flex h-5 w-5 items-center justify-center">
+        <div className="flex items-start gap-3">
+          <span className="mt-1 flex h-6 w-6 items-center justify-center flex-shrink-0">
             <img
               src="/images/products/physics-svgrepo-com (1) 3.svg"
               alt=""
-              className="h-4 w-4"
+              className="h-5 w-5"
             />
           </span>
           <div>
-            <p className="uppercase tracking-[0.14em] text-gray-400 text-[10px] sm:text-[11px]">
-              {item.useCaseLabel}
+            <p className="text-gray-400  mb-0.5">
+              <span className="text-white mr-1">{item.useCaseLabel}:</span>
+              {item.useCase}
             </p>
-            <p className="text-gray-100">{item.useCase}</p>
           </div>
         </div>
 
-        <div className="flex items-start gap-2">
-          <span className="mt-1 flex h-5 w-5 items-center justify-center">
+        <div className="flex items-start gap-3">
+          <span className="mt-1 flex h-6 w-6 items-center justify-center flex-shrink-0">
             <img
               src="/images/products/physics-svgrepo-com (1) 3.svg"
               alt=""
-              className="h-4 w-4"
+              className="h-5 w-5"
             />
           </span>
           <div>
-            <p className="uppercase tracking-[0.14em] text-gray-400 text-[10px] sm:text-[11px]">
-              {item.environmentLabel}
+            <p className="text-gray-400 mb-0.5">
+              <span className="text-white mr-1">{item.environmentLabel}:</span>
+              {item.environment}
             </p>
-            <p className="text-gray-100">{item.environment}</p>
           </div>
         </div>
       </div>
 
       {/* Download link */}
-      <a
-        href="https://drive.google.com/uc?export=download&id=1D8jQkFswT10sW_9I_LYxAHwgnu-UFhh_"
-        download
-        className="inline-flex items-center gap-2 text-[10px] font-semibold tracking-wide text-[#CB3F24] transition-colors hover:text-[#BE3B22] sm:text-xs"
-      >
-        <span>DOWNLOAD SPECS</span>
-        <span className="text-sm">➜</span>
-      </a>
+      <div className="mt-auto">
+        <a
+          href="https://drive.google.com/uc?export=download&id=1D8jQkFswT10sW_9I_LYxAHwgnu-UFhh_"
+          download
+          className="inline-flex items-center gap-2 text-sm font-semibold text-[#CB3F24] transition-colors hover:text-[#E64A2E]"
+        >
+          <span>Download Specs</span>
+          <span>→</span>
+        </a>
+      </div>
     </div>
   );
 
