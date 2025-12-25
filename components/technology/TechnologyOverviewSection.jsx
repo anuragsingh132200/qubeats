@@ -97,23 +97,22 @@ export default function TechnologyOverviewSection() {
       <div className="space-y-12 sm:space-y-16 md:space-y-20 lg:space-y-24">
         {technologySections.map((section, index) => (
           <div key={section.number} className="relative pl-8 sm:pl-12 md:pl-16 lg:pl-[60px]">
-            {/* Number and Vertical Line */}
-            <div className="absolute left-0 top-0 flex items-start h-full">
-              <div className="flex flex-col items-center relative">
+            {/* Number and Vertical Line Container */}
+            <div className="absolute left-0 top-0 h-full flex items-start">
+              <div className="flex flex-col items-center relative h-full">
                 <span 
                   className="text-sm sm:text-base md:text-[18px] font-bold text-white mb-2"
                   style={{ fontFamily: '"Courier Prime", monospace' }}
                 >
                   {section.number}
                 </span>
-                {/* Horizontal line from number */}
                 {/* Vertical line extending down */}
-                <div className="w-[3px] sm:w-[4px] bg-[#ffffff] mt-[18px] sm:mt-[20px] md:mt-[22px] flex-1 min-h-[300px] sm:min-h-[350px] md:min-h-[400px]" />
+                <div className="w-[3px] sm:w-[4px] bg-[#ffffff] mt-[18px] sm:mt-[20px] md:mt-[22px] flex-1" />
               </div>
             </div>
 
             {/* Content */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
               {/* Left Column - Text Content */}
               <div className="space-y-4 sm:space-y-5 md:space-y-6">
                 <h3 
@@ -124,21 +123,21 @@ export default function TechnologyOverviewSection() {
                 </h3>
                 
                 <p 
-                  className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-[rgba(243,243,243,0.6)]"
+                  className="text-sm sm:text-[14px] md:text-[15px] leading-[1.7] tracking-tight text-[rgba(243,243,243,0.6)]"
                   style={{  fontFamily: '"Courier New", monospace',
                     fontWeight: 400,
-                    color: "rgba(243, 243, 243, 0.9)", }}
+                    color: "rgba(243, 243, 243, 0.6)", }}
                 >
                   {section.description}
                 </p>
 
                 {/* Feature Cards Grid */}
                 {section.features.length > 0 && (
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
                     {section.features.map((feature, idx) => (
-                      <div key={idx} className="space-y-3">
-                        <div className="flex items-center gap-3">
-                          <div className="w-[39.5px] h-[39.5px] bg-[#CB3F24] rounded flex items-center justify-center flex-shrink-0">
+                      <div key={idx} className="space-y-2">
+                        <div className="flex flex-col items-start">
+                          <div className="w-[39.5px] h-[39.5px] bg-[#CB3F24] flex items-center justify-center flex-shrink-0">
                             <Image
                               src={feature.icon}
                               alt={feature.title}
@@ -148,17 +147,17 @@ export default function TechnologyOverviewSection() {
                             />
                           </div>
                           <h4 
-                            className="text-[15.439px] font-bold text-white tracking-[0.3088px]"
+                            className="text-[15px] font-bold text-white tracking-[0.3088px] mt-2"
                             style={{ fontFamily: '"Courier Prime", monospace' }}
                           >
                             {feature.title}
                           </h4>
                         </div>
                         <p 
-                          className="text-sm sm:text-[14px] md:text-[16px] leading-[1.7] tracking-tight text-[rgba(243,243,243,0.6)] pl-[52px]"
+                          className="text-sm sm:text-[7px] md:text-[13px] leading-[1.4] tracking-tight text-[rgba(243,243,243,0.6)] font-light"
                           style={{  fontFamily: '"Courier New", monospace',
                     fontWeight: 400,
-                    color: "rgba(243, 243, 243, 0.9)", }}
+                    color: "rgba(243, 243, 243, 0.6)", }}
                         >
                           {feature.description}
                         </p>
