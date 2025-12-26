@@ -33,7 +33,7 @@ export default function PartnerWithUsSection() {
         >
           <span className="text-white">Partner with </span>
           <span className="text-[#CB3F24]">
-            Qubeats
+            QuBeats
           </span>
         </h2>
 

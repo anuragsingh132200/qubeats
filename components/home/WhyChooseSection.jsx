@@ -21,7 +21,7 @@ export default function WhyChooseSection() {
 
         {/* Top label */}
         <p className="mb-4 sm:mb-6 sm:ml-6 md:ml-15 font-regular font-weight-200 uppercase text-[rgba(243,243,243,0.8)] text-lg sm:text-xl md:text-[24px] font-['Courier_New']">
-          Why Qubeats
+          Why QuBeats
         </p>
 
         {/* CONTENT BOX */}

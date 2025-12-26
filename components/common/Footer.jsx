@@ -108,7 +108,7 @@ export default function Footer() {
         {/* Bottom: Copyright */}
         <div className=" border-t border-white/10 pt-3 sm:pt-4 pb-0">
           <p className="text-center font-['Courier_Prime',monospace] text-xs sm:text-sm md:text-[17px] font-bold leading-[21.6px] text-[rgba(243,243,243,0.8)] px-4">
-            @2025. Qubeats. All Rights Reserved. | Made in India, Build for the World
+            @2025. QuBeats. All Rights Reserved. | Made in India, Build for the World
           </p>
         </div>
       </div>

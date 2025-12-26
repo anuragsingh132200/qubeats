@@ -32,7 +32,7 @@ export default function CollaborateSection() {
         >
           <span className="text-white">Collaborate with </span>
           <span className="text-[#CB3F24]">
-            Qubeats
+            QuBeats
           </span>
         </h2>
 
