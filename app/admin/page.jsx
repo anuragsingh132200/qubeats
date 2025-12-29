@@ -711,6 +711,157 @@ export default function AdminPage() {
             </form>
 
             <form
+              onSubmit={handleCreateJob}
+              className="space-y-6 rounded-2xl border border-slate-800 bg-[#101113] p-6"
+            >
+              <h2 className="text-xl font-semibold text-white">
+                Create New Job
+              </h2>
+
+              {jobsError ? (
+                <p className="text-sm font-medium text-red-400">{jobsError}</p>
+              ) : null}
+
+              <div className="grid gap-5 md:grid-cols-2">
+                <div className="flex flex-col gap-2">
+                  <label className="text-sm font-medium text-slate-200">
+                    Job Title
+                  </label>
+                  <input
+                    type="text"
+                    name="title"
+                    value={formValues.title}
+                    onChange={handleInputChange}
+                    className="rounded-lg border border-slate-800 bg-[#111111] px-4 py-3 text-sm text-white outline-none transition focus:border-[#CB3F24] focus:ring-2 focus:ring-[#CB3F24]/40"
+                    placeholder="Senior Quantum Engineer"
+                    required
+                  />
+                </div>
+
+                <div className="flex flex-col gap-2">
+                  <label className="text-sm font-medium text-slate-200">
+                    Experience Level
+                  </label>
+                  <select
+                    name="experience"
+                    value={formValues.experience}
+                    onChange={handleInputChange}
+                    className="rounded-lg border border-slate-800 bg-[#111111] px-4 py-3 text-sm text-white outline-none transition focus:border-[#CB3F24] focus:ring-2 focus:ring-[#CB3F24]/40"
+                    required
+                  >
+                    <option value="">Select Experience</option>
+                    <option value="0-2 years">0-2 years</option>
+                    <option value="2-5 years">2-5 years</option>
+                    <option value="5-8 years">5-8 years</option>
+                    <option value="8+ years">8+ years</option>
+                  </select>
+                </div>
+              </div>
+
+              <div className="flex flex-col gap-2">
+                <label className="text-sm font-medium text-slate-200">
+                  Job Description Link
+                </label>
+                <input
+                  type="url"
+                  name="jdLink"
+                  value={formValues.jdLink}
+                  onChange={handleInputChange}
+                  className="rounded-lg border border-slate-800 bg-[#111111] px-4 py-3 text-sm text-white outline-none transition focus:border-[#CB3F24] focus:ring-2 focus:ring-[#CB3F24]/40"
+                  placeholder="https://..."
+                  required
+                />
+              </div>
+
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className="inline-flex items-center justify-center rounded-lg bg-[#CB3F24] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#BE3B22] disabled:cursor-not-allowed disabled:opacity-70"
+              >
+                {isSubmitting ? "Creating..." : "Create Job"}
+              </button>
+            </form>
+
+            <div className="space-y-4 rounded-2xl border border-slate-800 bg-[#101113] p-6">
+              <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+                <h2 className="text-xl font-semibold text-white">
+                  Job Openings
+                </h2>
+                <button
+                  onClick={fetchJobs}
+                  disabled={jobsLoading}
+                  className="inline-flex items-center justify-center rounded-lg border border-slate-700 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-slate-200 transition hover:border-[#CB3F24] hover:text-[#CB3F24] disabled:cursor-not-allowed disabled:opacity-60"
+                >
+                  {jobsLoading ? "Refreshing..." : "Refresh"}
+                </button>
+              </div>
+
+              {jobsLoading ? (
+                <p className="text-sm text-slate-300">Loading job openings...</p>
+              ) : jobs.length === 0 ? (
+                <p className="text-sm text-slate-300">
+                  No job openings yet. Create one above to get started.
+                </p>
+              ) : (
+                <div className="overflow-x-auto">
+                  <table className="w-full border-collapse">
+                    <thead>
+                      <tr className="border-b border-slate-800">
+                        <th className="px-4 py-3 text-left text-xs font-semibold uppercase tracking-wide text-slate-400">
+                          Title
+                        </th>
+                        <th className="px-4 py-3 text-left text-xs font-semibold uppercase tracking-wide text-slate-400">
+                          Experience
+                        </th>
+                        <th className="px-4 py-3 text-left text-xs font-semibold uppercase tracking-wide text-slate-400">
+                          Posted Date
+                        </th>
+                        <th className="px-4 py-3 text-right text-xs font-semibold uppercase tracking-wide text-slate-400">
+                          Actions
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {jobs.map((job) => (
+                        <tr
+                          key={job._id}
+                          className="border-b border-slate-800"
+                        >
+                          <td className="px-4 py-3 text-sm font-medium text-white">
+                            {job.title}
+                          </td>
+                          <td className="px-4 py-3 text-xs text-slate-300">
+                            {job.experience}
+                          </td>
+                          <td className="px-4 py-3 text-xs text-slate-300">
+                            {formatPostedDate(job.createdAt)}
+                          </td>
+                          <td className="px-4 py-3 text-right">
+                            <div className="inline-flex items-center gap-3">
+                              <button
+                                onClick={() => window.open(job.jdLink, '_blank')}
+                                className="inline-flex items-center justify-center rounded-lg border border-slate-700 px-3 py-1 text-xs font-semibold text-slate-200 transition hover:border-[#CB3F24] hover:text-[#CB3F24]"
+                              >
+                                View JD
+                              </button>
+                              <button
+                                onClick={() => handleDeleteJob(job._id)}
+                                disabled={deletingId === job._id}
+                                className="inline-flex items-center justify-center rounded-lg border border-red-500/60 px-3 py-1 text-xs font-semibold text-red-300 transition hover:border-red-500 hover:text-white disabled:cursor-not-allowed disabled:opacity-60"
+                              >
+                                {deletingId === job._id ? "Deleting..." : "Delete"}
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              )}
+            </div>
+
+            <form
               onSubmit={handleCreateResource}
               className="space-y-6 rounded-2xl border border-slate-800 bg-[#101113] p-6"
             >
