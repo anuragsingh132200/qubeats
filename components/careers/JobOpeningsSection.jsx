@@ -83,18 +83,18 @@ export default function JobOpeningsSection() {
                   </span>
                 </div>
               </div>
-              <div className="flex flex-wrap items-center gap-3">
+              <div className="flex items-center gap-3 sm:flex-shrink-0">
                 <a
                   href={job.jdLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center rounded-lg border border-[#CB3F24]/60 px-4 py-2 text-sm font-semibold text-[#CB3F24] transition hover:border-[#CB3F24] hover:text-white"
+                  className="inline-flex items-center justify-center rounded-lg border border-[#CB3F24]/60 px-4 py-2 text-sm font-semibold text-[#CB3F24] transition hover:border-[#CB3F24] hover:text-white min-w-[80px] text-center"
                 >
                   View JD
                 </a>
                 <a
                   href={`mailto:contact@qubeats.com?subject=Application for ${encodeURIComponent(job.title)}`}
-                  className="inline-flex items-center justify-center rounded-lg bg-[#CB3F24] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#BE3B22]"
+                  className="inline-flex items-center justify-center rounded-lg bg-[#CB3F24] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#BE3B22] min-w-[80px] text-center"
                 >
                   Apply
                 </a>
