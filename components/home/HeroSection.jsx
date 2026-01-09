@@ -14,7 +14,7 @@ export default function HeroSection() {
           muted
           playsInline
           className="absolute inset-0 w-full h-full object-cover md:hidden"
-          style={{ filter: 'grayscale(100%)' }}
+          
         >
           <source src="/images/Video_Generation_in_Format (online-video-cutter.com).mp4" type="video/mp4" />
         </video>
