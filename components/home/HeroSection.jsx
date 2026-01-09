@@ -7,14 +7,17 @@ export default function HeroSection() {
     <section className="relative flex min-h-screen w-full items-center overflow-hidden pt-50 sm:pt-24">
       {/* Background Video Layer */}
       <div className="absolute inset-0">
-        {/* Mobile Video - Hidden on desktop */}
-        <Image
-          src="/images/wmremove-transformed.png"
-          alt="Background Image"
-          fill
-          priority
+        {/* Mobile Video - Hidden on desktop, Grayscale */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
           className="absolute inset-0 w-full h-full object-cover md:hidden"
-        />
+          style={{ filter: 'grayscale(100%)' }}
+        >
+          <source src="/images/Video_Generation_in_Format (online-video-cutter.com).mp4" type="video/mp4" />
+        </video>
         
         {/* Desktop Video - Hidden on mobile */}
         <video
