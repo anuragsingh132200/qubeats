@@ -93,7 +93,7 @@ export default function JobOpeningsSection() {
                   View JD
                 </a>
                 <a
-                  href={`mailto:contact@qubeats.com?subject=Application for ${encodeURIComponent(job.title)}`}
+                  href={`mailto:careers@qubeats.com?subject=Application for ${encodeURIComponent(job.title)}`}
                   className="inline-flex items-center justify-center rounded-lg bg-[#CB3F24] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#BE3B22] min-w-[80px] text-center"
                 >
                   Apply
